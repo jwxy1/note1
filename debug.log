@@ -1,0 +1,5371 @@
++ db=MonCenter
++ restore
+++ dirname testrestore.sh
++ cd .
++ sort -u ./10024.tmp ./10480.tmp ./11481.tmp ./14361.tmp ./14427.tmp ./15790.tmp ./23656.tmp ./24681.tmp ./28431.tmp ./31381.tmp ./32543.tmp ./8006.tmp ./8396.tmp
++ read record
++ _product_name=
++ _product_owner=
++ _set=
++ _ip=
++ _port=
++ _state=
++ count=0
++ for i in '$record'
++ '[' 0 -eq 0 ']'
++ _bg_name=swallow01
++ '[' 0 -eq 1 ']'
++ '[' 0 -eq 2 ']'
++ '[' 0 -eq 3 ']'
++ '[' 0 -eq 4 ']'
++ '[' 0 -eq 5 ']'
++ '[' 0 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 1 -eq 0 ']'
++ '[' 1 -eq 1 ']'
++ _product_name=10.1.115.12
++ '[' 1 -eq 2 ']'
++ '[' 1 -eq 3 ']'
++ '[' 1 -eq 4 ']'
++ '[' 1 -eq 5 ']'
++ '[' 1 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 2 -eq 0 ']'
++ '[' 2 -eq 1 ']'
++ '[' 2 -eq 2 ']'
++ _product_owner=27018
++ '[' 2 -eq 3 ']'
++ '[' 2 -eq 4 ']'
++ '[' 2 -eq 5 ']'
++ '[' 2 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 3 -eq 0 ']'
++ '[' 3 -eq 1 ']'
++ '[' 3 -eq 2 ']'
++ '[' 3 -eq 3 ']'
++ _set=PRIMARY
++ '[' 3 -eq 4 ']'
++ '[' 3 -eq 5 ']'
++ '[' 3 -eq 6 ']'
++ let count++
++ mysql_cmd='replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "swallow01","10.1.115.12","27018","PRIMARY","","",""'
++ db=MonCenter
++ mysql -umyadmin '-pNum@$%^C0ntal' -h10.1.1.209 MonCenter --default-character-set=utf8 -e 'replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "swallow01","10.1.115.12","27018","PRIMARY","","",""'
++ '[' 0 -eq 0 ']'
++ echo inserted ok:swallow01 10.1.115.12 27018 PRIMARY
++ read record
++ _product_name=
++ _product_owner=
++ _set=
++ _ip=
++ _port=
++ _state=
++ count=0
++ for i in '$record'
++ '[' 0 -eq 0 ']'
++ _bg_name=$'\345\210\260\345\272\227\347\273\274\345\220\210\344\272\213\344\270\232\347\276\244'
++ '[' 0 -eq 1 ']'
++ '[' 0 -eq 2 ']'
++ '[' 0 -eq 3 ']'
++ '[' 0 -eq 4 ']'
++ '[' 0 -eq 5 ']'
++ '[' 0 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 1 -eq 0 ']'
++ '[' 1 -eq 1 ']'
++ _product_name=KTV
++ '[' 1 -eq 2 ']'
++ '[' 1 -eq 3 ']'
++ '[' 1 -eq 4 ']'
++ '[' 1 -eq 5 ']'
++ '[' 1 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 2 -eq 0 ']'
++ '[' 2 -eq 1 ']'
++ '[' 2 -eq 2 ']'
++ _product_owner=rong.ouyang
++ '[' 2 -eq 3 ']'
++ '[' 2 -eq 4 ']'
++ '[' 2 -eq 5 ']'
++ '[' 2 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 3 -eq 0 ']'
++ '[' 3 -eq 1 ']'
++ '[' 3 -eq 2 ']'
++ '[' 3 -eq 3 ']'
++ _set=hippo
++ '[' 3 -eq 4 ']'
++ '[' 3 -eq 5 ']'
++ '[' 3 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 4 -eq 0 ']'
++ '[' 4 -eq 1 ']'
++ '[' 4 -eq 2 ']'
++ '[' 4 -eq 3 ']'
++ '[' 4 -eq 4 ']'
++ _ip=10.1.1.185
++ '[' 4 -eq 5 ']'
++ '[' 4 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 5 -eq 0 ']'
++ '[' 5 -eq 1 ']'
++ '[' 5 -eq 2 ']'
++ '[' 5 -eq 3 ']'
++ '[' 5 -eq 4 ']'
++ '[' 5 -eq 5 ']'
++ _port=27017
++ '[' 5 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 6 -eq 0 ']'
++ '[' 6 -eq 1 ']'
++ '[' 6 -eq 2 ']'
++ '[' 6 -eq 3 ']'
++ '[' 6 -eq 4 ']'
++ '[' 6 -eq 5 ']'
++ '[' 6 -eq 6 ']'
++ _state=PRIMARY
++ let count++
++ mysql_cmd='replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "到店综合事业群","KTV","rong.ouyang","hippo","10.1.1.185","27017","PRIMARY"'
++ db=MonCenter
++ mysql -umyadmin '-pNum@$%^C0ntal' -h10.1.1.209 MonCenter --default-character-set=utf8 -e 'replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "到店综合事业群","KTV","rong.ouyang","hippo","10.1.1.185","27017","PRIMARY"'
++ '[' 0 -eq 0 ']'
++ echo inserted $'ok:\345\210\260\345\272\227\347\273\274\345\220\210\344\272\213\344\270\232\347\276\244' KTV rong.ouyang hippo 10.1.1.185 27017 PRIMARY
++ read record
++ _product_name=
++ _product_owner=
++ _set=
++ _ip=
++ _port=
++ _state=
++ count=0
++ for i in '$record'
++ '[' 0 -eq 0 ']'
++ _bg_name=$'\345\210\260\345\272\227\347\273\274\345\220\210\344\272\213\344\270\232\347\276\244'
++ '[' 0 -eq 1 ']'
++ '[' 0 -eq 2 ']'
++ '[' 0 -eq 3 ']'
++ '[' 0 -eq 4 ']'
++ '[' 0 -eq 5 ']'
++ '[' 0 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 1 -eq 0 ']'
++ '[' 1 -eq 1 ']'
++ _product_name=$'\346\224\257\344\273\230\344\270\255\345\277\203'
++ '[' 1 -eq 2 ']'
++ '[' 1 -eq 3 ']'
++ '[' 1 -eq 4 ']'
++ '[' 1 -eq 5 ']'
++ '[' 1 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 2 -eq 0 ']'
++ '[' 2 -eq 1 ']'
++ '[' 2 -eq 2 ']'
++ _product_owner=yifang.chen
++ '[' 2 -eq 3 ']'
++ '[' 2 -eq 4 ']'
++ '[' 2 -eq 5 ']'
++ '[' 2 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 3 -eq 0 ']'
++ '[' 3 -eq 1 ']'
++ '[' 3 -eq 2 ']'
++ '[' 3 -eq 3 ']'
++ _set=hippo
++ '[' 3 -eq 4 ']'
++ '[' 3 -eq 5 ']'
++ '[' 3 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 4 -eq 0 ']'
++ '[' 4 -eq 1 ']'
++ '[' 4 -eq 2 ']'
++ '[' 4 -eq 3 ']'
++ '[' 4 -eq 4 ']'
++ _ip=10.1.1.185
++ '[' 4 -eq 5 ']'
++ '[' 4 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 5 -eq 0 ']'
++ '[' 5 -eq 1 ']'
++ '[' 5 -eq 2 ']'
++ '[' 5 -eq 3 ']'
++ '[' 5 -eq 4 ']'
++ '[' 5 -eq 5 ']'
++ _port=27017
++ '[' 5 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 6 -eq 0 ']'
++ '[' 6 -eq 1 ']'
++ '[' 6 -eq 2 ']'
++ '[' 6 -eq 3 ']'
++ '[' 6 -eq 4 ']'
++ '[' 6 -eq 5 ']'
++ '[' 6 -eq 6 ']'
++ _state=PRIMARY
++ let count++
++ mysql_cmd='replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "到店综合事业群","支付中心","yifang.chen","hippo","10.1.1.185","27017","PRIMARY"'
++ db=MonCenter
++ mysql -umyadmin '-pNum@$%^C0ntal' -h10.1.1.209 MonCenter --default-character-set=utf8 -e 'replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "到店综合事业群","支付中心","yifang.chen","hippo","10.1.1.185","27017","PRIMARY"'
++ '[' 0 -eq 0 ']'
++ echo inserted $'ok:\345\210\260\345\272\227\347\273\274\345\220\210\344\272\213\344\270\232\347\276\244' $'\346\224\257\344\273\230\344\270\255\345\277\203' yifang.chen hippo 10.1.1.185 27017 PRIMARY
++ read record
++ _product_name=
++ _product_owner=
++ _set=
++ _ip=
++ _port=
++ _state=
++ count=0
++ for i in '$record'
++ '[' 0 -eq 0 ']'
++ _bg_name=$'\345\210\260\345\272\227\347\273\274\345\220\210\344\272\213\344\270\232\347\276\244'
++ '[' 0 -eq 1 ']'
++ '[' 0 -eq 2 ']'
++ '[' 0 -eq 3 ']'
++ '[' 0 -eq 4 ']'
++ '[' 0 -eq 5 ']'
++ '[' 0 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 1 -eq 0 ']'
++ '[' 1 -eq 1 ']'
++ _product_name=$'\346\225\231\350\202\262\345\237\271\350\256\255\346\212\200\346\234\257'
++ '[' 1 -eq 2 ']'
++ '[' 1 -eq 3 ']'
++ '[' 1 -eq 4 ']'
++ '[' 1 -eq 5 ']'
++ '[' 1 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 2 -eq 0 ']'
++ '[' 2 -eq 1 ']'
++ '[' 2 -eq 2 ']'
++ _product_owner=jiwei.wang
++ '[' 2 -eq 3 ']'
++ '[' 2 -eq 4 ']'
++ '[' 2 -eq 5 ']'
++ '[' 2 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 3 -eq 0 ']'
++ '[' 3 -eq 1 ']'
++ '[' 3 -eq 2 ']'
++ '[' 3 -eq 3 ']'
++ _set=hippo
++ '[' 3 -eq 4 ']'
++ '[' 3 -eq 5 ']'
++ '[' 3 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 4 -eq 0 ']'
++ '[' 4 -eq 1 ']'
++ '[' 4 -eq 2 ']'
++ '[' 4 -eq 3 ']'
++ '[' 4 -eq 4 ']'
++ _ip=10.1.1.185
++ '[' 4 -eq 5 ']'
++ '[' 4 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 5 -eq 0 ']'
++ '[' 5 -eq 1 ']'
++ '[' 5 -eq 2 ']'
++ '[' 5 -eq 3 ']'
++ '[' 5 -eq 4 ']'
++ '[' 5 -eq 5 ']'
++ _port=27017
++ '[' 5 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 6 -eq 0 ']'
++ '[' 6 -eq 1 ']'
++ '[' 6 -eq 2 ']'
++ '[' 6 -eq 3 ']'
++ '[' 6 -eq 4 ']'
++ '[' 6 -eq 5 ']'
++ '[' 6 -eq 6 ']'
++ _state=PRIMARY
++ let count++
++ mysql_cmd='replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "到店综合事业群","教育培训技术","jiwei.wang","hippo","10.1.1.185","27017","PRIMARY"'
++ db=MonCenter
++ mysql -umyadmin '-pNum@$%^C0ntal' -h10.1.1.209 MonCenter --default-character-set=utf8 -e 'replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "到店综合事业群","教育培训技术","jiwei.wang","hippo","10.1.1.185","27017","PRIMARY"'
++ '[' 0 -eq 0 ']'
++ echo inserted $'ok:\345\210\260\345\272\227\347\273\274\345\220\210\344\272\213\344\270\232\347\276\244' $'\346\225\231\350\202\262\345\237\271\350\256\255\346\212\200\346\234\257' jiwei.wang hippo 10.1.1.185 27017 PRIMARY
++ read record
++ _product_name=
++ _product_owner=
++ _set=
++ _ip=
++ _port=
++ _state=
++ count=0
++ for i in '$record'
++ '[' 0 -eq 0 ']'
++ _bg_name=$'\345\210\260\345\272\227\347\273\274\345\220\210\344\272\213\344\270\232\347\276\244'
++ '[' 0 -eq 1 ']'
++ '[' 0 -eq 2 ']'
++ '[' 0 -eq 3 ']'
++ '[' 0 -eq 4 ']'
++ '[' 0 -eq 5 ']'
++ '[' 0 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 1 -eq 0 ']'
++ '[' 1 -eq 1 ']'
++ _product_name=$'\346\226\260\345\236\202\347\233\264\344\270\232\345\212\241'
++ '[' 1 -eq 2 ']'
++ '[' 1 -eq 3 ']'
++ '[' 1 -eq 4 ']'
++ '[' 1 -eq 5 ']'
++ '[' 1 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 2 -eq 0 ']'
++ '[' 2 -eq 1 ']'
++ '[' 2 -eq 2 ']'
++ _product_owner=guangyong.wang
++ '[' 2 -eq 3 ']'
++ '[' 2 -eq 4 ']'
++ '[' 2 -eq 5 ']'
++ '[' 2 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 3 -eq 0 ']'
++ '[' 3 -eq 1 ']'
++ '[' 3 -eq 2 ']'
++ '[' 3 -eq 3 ']'
++ _set=hippo
++ '[' 3 -eq 4 ']'
++ '[' 3 -eq 5 ']'
++ '[' 3 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 4 -eq 0 ']'
++ '[' 4 -eq 1 ']'
++ '[' 4 -eq 2 ']'
++ '[' 4 -eq 3 ']'
++ '[' 4 -eq 4 ']'
++ _ip=10.1.1.185
++ '[' 4 -eq 5 ']'
++ '[' 4 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 5 -eq 0 ']'
++ '[' 5 -eq 1 ']'
++ '[' 5 -eq 2 ']'
++ '[' 5 -eq 3 ']'
++ '[' 5 -eq 4 ']'
++ '[' 5 -eq 5 ']'
++ _port=27017
++ '[' 5 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 6 -eq 0 ']'
++ '[' 6 -eq 1 ']'
++ '[' 6 -eq 2 ']'
++ '[' 6 -eq 3 ']'
++ '[' 6 -eq 4 ']'
++ '[' 6 -eq 5 ']'
++ '[' 6 -eq 6 ']'
++ _state=PRIMARY
++ let count++
++ mysql_cmd='replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "到店综合事业群","新垂直业务","guangyong.wang","hippo","10.1.1.185","27017","PRIMARY"'
++ db=MonCenter
++ mysql -umyadmin '-pNum@$%^C0ntal' -h10.1.1.209 MonCenter --default-character-set=utf8 -e 'replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "到店综合事业群","新垂直业务","guangyong.wang","hippo","10.1.1.185","27017","PRIMARY"'
++ '[' 0 -eq 0 ']'
++ echo inserted $'ok:\345\210\260\345\272\227\347\273\274\345\220\210\344\272\213\344\270\232\347\276\244' $'\346\226\260\345\236\202\347\233\264\344\270\232\345\212\241' guangyong.wang hippo 10.1.1.185 27017 PRIMARY
++ read record
++ _product_name=
++ _product_owner=
++ _set=
++ _ip=
++ _port=
++ _state=
++ count=0
++ for i in '$record'
++ '[' 0 -eq 0 ']'
++ _bg_name=$'\345\210\260\345\272\227\347\273\274\345\220\210\344\272\213\344\270\232\347\276\244'
++ '[' 0 -eq 1 ']'
++ '[' 0 -eq 2 ']'
++ '[' 0 -eq 3 ']'
++ '[' 0 -eq 4 ']'
++ '[' 0 -eq 5 ']'
++ '[' 0 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 1 -eq 0 ']'
++ '[' 1 -eq 1 ']'
++ _product_name=$'\347\273\223\345\251\232'
++ '[' 1 -eq 2 ']'
++ '[' 1 -eq 3 ']'
++ '[' 1 -eq 4 ']'
++ '[' 1 -eq 5 ']'
++ '[' 1 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 2 -eq 0 ']'
++ '[' 2 -eq 1 ']'
++ '[' 2 -eq 2 ']'
++ _product_owner=qiwen.mao
++ '[' 2 -eq 3 ']'
++ '[' 2 -eq 4 ']'
++ '[' 2 -eq 5 ']'
++ '[' 2 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 3 -eq 0 ']'
++ '[' 3 -eq 1 ']'
++ '[' 3 -eq 2 ']'
++ '[' 3 -eq 3 ']'
++ _set=hippo
++ '[' 3 -eq 4 ']'
++ '[' 3 -eq 5 ']'
++ '[' 3 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 4 -eq 0 ']'
++ '[' 4 -eq 1 ']'
++ '[' 4 -eq 2 ']'
++ '[' 4 -eq 3 ']'
++ '[' 4 -eq 4 ']'
++ _ip=10.1.1.185
++ '[' 4 -eq 5 ']'
++ '[' 4 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 5 -eq 0 ']'
++ '[' 5 -eq 1 ']'
++ '[' 5 -eq 2 ']'
++ '[' 5 -eq 3 ']'
++ '[' 5 -eq 4 ']'
++ '[' 5 -eq 5 ']'
++ _port=27017
++ '[' 5 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 6 -eq 0 ']'
++ '[' 6 -eq 1 ']'
++ '[' 6 -eq 2 ']'
++ '[' 6 -eq 3 ']'
++ '[' 6 -eq 4 ']'
++ '[' 6 -eq 5 ']'
++ '[' 6 -eq 6 ']'
++ _state=PRIMARY
++ let count++
++ mysql_cmd='replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "到店综合事业群","结婚","qiwen.mao","hippo","10.1.1.185","27017","PRIMARY"'
++ db=MonCenter
++ mysql -umyadmin '-pNum@$%^C0ntal' -h10.1.1.209 MonCenter --default-character-set=utf8 -e 'replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "到店综合事业群","结婚","qiwen.mao","hippo","10.1.1.185","27017","PRIMARY"'
++ '[' 0 -eq 0 ']'
++ echo inserted $'ok:\345\210\260\345\272\227\347\273\274\345\220\210\344\272\213\344\270\232\347\276\244' $'\347\273\223\345\251\232' qiwen.mao hippo 10.1.1.185 27017 PRIMARY
++ read record
++ _product_name=
++ _product_owner=
++ _set=
++ _ip=
++ _port=
++ _state=
++ count=0
++ for i in '$record'
++ '[' 0 -eq 0 ']'
++ _bg_name=$'\345\210\260\345\272\227\347\273\274\345\220\210\344\272\213\344\270\232\347\276\244'
++ '[' 0 -eq 1 ']'
++ '[' 0 -eq 2 ']'
++ '[' 0 -eq 3 ']'
++ '[' 0 -eq 4 ']'
++ '[' 0 -eq 5 ']'
++ '[' 0 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 1 -eq 0 ']'
++ '[' 1 -eq 1 ']'
++ _product_name=$'\347\273\223\347\256\227\344\270\216\345\210\270\346\212\200\346\234\257'
++ '[' 1 -eq 2 ']'
++ '[' 1 -eq 3 ']'
++ '[' 1 -eq 4 ']'
++ '[' 1 -eq 5 ']'
++ '[' 1 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 2 -eq 0 ']'
++ '[' 2 -eq 1 ']'
++ '[' 2 -eq 2 ']'
++ _product_owner=bostin.wang
++ '[' 2 -eq 3 ']'
++ '[' 2 -eq 4 ']'
++ '[' 2 -eq 5 ']'
++ '[' 2 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 3 -eq 0 ']'
++ '[' 3 -eq 1 ']'
++ '[' 3 -eq 2 ']'
++ '[' 3 -eq 3 ']'
++ _set=hippo
++ '[' 3 -eq 4 ']'
++ '[' 3 -eq 5 ']'
++ '[' 3 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 4 -eq 0 ']'
++ '[' 4 -eq 1 ']'
++ '[' 4 -eq 2 ']'
++ '[' 4 -eq 3 ']'
++ '[' 4 -eq 4 ']'
++ _ip=10.1.1.185
++ '[' 4 -eq 5 ']'
++ '[' 4 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 5 -eq 0 ']'
++ '[' 5 -eq 1 ']'
++ '[' 5 -eq 2 ']'
++ '[' 5 -eq 3 ']'
++ '[' 5 -eq 4 ']'
++ '[' 5 -eq 5 ']'
++ _port=27017
++ '[' 5 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 6 -eq 0 ']'
++ '[' 6 -eq 1 ']'
++ '[' 6 -eq 2 ']'
++ '[' 6 -eq 3 ']'
++ '[' 6 -eq 4 ']'
++ '[' 6 -eq 5 ']'
++ '[' 6 -eq 6 ']'
++ _state=PRIMARY
++ let count++
++ mysql_cmd='replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "到店综合事业群","结算与券技术","bostin.wang","hippo","10.1.1.185","27017","PRIMARY"'
++ db=MonCenter
++ mysql -umyadmin '-pNum@$%^C0ntal' -h10.1.1.209 MonCenter --default-character-set=utf8 -e 'replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "到店综合事业群","结算与券技术","bostin.wang","hippo","10.1.1.185","27017","PRIMARY"'
++ '[' 0 -eq 0 ']'
++ echo inserted $'ok:\345\210\260\345\272\227\347\273\274\345\220\210\344\272\213\344\270\232\347\276\244' $'\347\273\223\347\256\227\344\270\216\345\210\270\346\212\200\346\234\257' bostin.wang hippo 10.1.1.185 27017 PRIMARY
++ read record
++ _product_name=
++ _product_owner=
++ _set=
++ _ip=
++ _port=
++ _state=
++ count=0
++ for i in '$record'
++ '[' 0 -eq 0 ']'
++ _bg_name=$'\345\210\260\345\272\227\347\273\274\345\220\210\344\272\213\344\270\232\347\276\244'
++ '[' 0 -eq 1 ']'
++ '[' 0 -eq 2 ']'
++ '[' 0 -eq 3 ']'
++ '[' 0 -eq 4 ']'
++ '[' 0 -eq 5 ']'
++ '[' 0 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 1 -eq 0 ']'
++ '[' 1 -eq 1 ']'
++ _product_name=$'\350\220\245\351\224\200\346\212\200\346\234\257'
++ '[' 1 -eq 2 ']'
++ '[' 1 -eq 3 ']'
++ '[' 1 -eq 4 ']'
++ '[' 1 -eq 5 ']'
++ '[' 1 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 2 -eq 0 ']'
++ '[' 2 -eq 1 ']'
++ '[' 2 -eq 2 ']'
++ _product_owner=xunzhi.cao
++ '[' 2 -eq 3 ']'
++ '[' 2 -eq 4 ']'
++ '[' 2 -eq 5 ']'
++ '[' 2 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 3 -eq 0 ']'
++ '[' 3 -eq 1 ']'
++ '[' 3 -eq 2 ']'
++ '[' 3 -eq 3 ']'
++ _set=hippo
++ '[' 3 -eq 4 ']'
++ '[' 3 -eq 5 ']'
++ '[' 3 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 4 -eq 0 ']'
++ '[' 4 -eq 1 ']'
++ '[' 4 -eq 2 ']'
++ '[' 4 -eq 3 ']'
++ '[' 4 -eq 4 ']'
++ _ip=10.1.1.185
++ '[' 4 -eq 5 ']'
++ '[' 4 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 5 -eq 0 ']'
++ '[' 5 -eq 1 ']'
++ '[' 5 -eq 2 ']'
++ '[' 5 -eq 3 ']'
++ '[' 5 -eq 4 ']'
++ '[' 5 -eq 5 ']'
++ _port=27017
++ '[' 5 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 6 -eq 0 ']'
++ '[' 6 -eq 1 ']'
++ '[' 6 -eq 2 ']'
++ '[' 6 -eq 3 ']'
++ '[' 6 -eq 4 ']'
++ '[' 6 -eq 5 ']'
++ '[' 6 -eq 6 ']'
++ _state=PRIMARY
++ let count++
++ mysql_cmd='replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "到店综合事业群","营销技术","xunzhi.cao","hippo","10.1.1.185","27017","PRIMARY"'
++ db=MonCenter
++ mysql -umyadmin '-pNum@$%^C0ntal' -h10.1.1.209 MonCenter --default-character-set=utf8 -e 'replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "到店综合事业群","营销技术","xunzhi.cao","hippo","10.1.1.185","27017","PRIMARY"'
++ '[' 0 -eq 0 ']'
++ echo inserted $'ok:\345\210\260\345\272\227\347\273\274\345\220\210\344\272\213\344\270\232\347\276\244' $'\350\220\245\351\224\200\346\212\200\346\234\257' xunzhi.cao hippo 10.1.1.185 27017 PRIMARY
++ read record
++ _product_name=
++ _product_owner=
++ _set=
++ _ip=
++ _port=
++ _state=
++ count=0
++ for i in '$record'
++ '[' 0 -eq 0 ']'
++ _bg_name=$'\345\210\260\345\272\227\351\244\220\351\245\256'
++ '[' 0 -eq 1 ']'
++ '[' 0 -eq 2 ']'
++ '[' 0 -eq 3 ']'
++ '[' 0 -eq 4 ']'
++ '[' 0 -eq 5 ']'
++ '[' 0 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 1 -eq 0 ']'
++ '[' 1 -eq 1 ']'
++ _product_name=$'\345\210\260\351\244\220DB\344\270\216\345\255\230\345\202\250'
++ '[' 1 -eq 2 ']'
++ '[' 1 -eq 3 ']'
++ '[' 1 -eq 4 ']'
++ '[' 1 -eq 5 ']'
++ '[' 1 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 2 -eq 0 ']'
++ '[' 2 -eq 1 ']'
++ '[' 2 -eq 2 ']'
++ _product_owner=dongxue.tian
++ '[' 2 -eq 3 ']'
++ '[' 2 -eq 4 ']'
++ '[' 2 -eq 5 ']'
++ '[' 2 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 3 -eq 0 ']'
++ '[' 3 -eq 1 ']'
++ '[' 3 -eq 2 ']'
++ '[' 3 -eq 3 ']'
++ _set=PayCenter
++ '[' 3 -eq 4 ']'
++ '[' 3 -eq 5 ']'
++ '[' 3 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 4 -eq 0 ']'
++ '[' 4 -eq 1 ']'
++ '[' 4 -eq 2 ']'
++ '[' 4 -eq 3 ']'
++ '[' 4 -eq 4 ']'
++ _ip=10.1.6.186
++ '[' 4 -eq 5 ']'
++ '[' 4 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 5 -eq 0 ']'
++ '[' 5 -eq 1 ']'
++ '[' 5 -eq 2 ']'
++ '[' 5 -eq 3 ']'
++ '[' 5 -eq 4 ']'
++ '[' 5 -eq 5 ']'
++ _port=27017
++ '[' 5 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 6 -eq 0 ']'
++ '[' 6 -eq 1 ']'
++ '[' 6 -eq 2 ']'
++ '[' 6 -eq 3 ']'
++ '[' 6 -eq 4 ']'
++ '[' 6 -eq 5 ']'
++ '[' 6 -eq 6 ']'
++ _state=PRIMARY
++ let count++
++ mysql_cmd='replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "到店餐饮","到餐DB与存储","dongxue.tian","PayCenter","10.1.6.186","27017","PRIMARY"'
++ db=MonCenter
++ mysql -umyadmin '-pNum@$%^C0ntal' -h10.1.1.209 MonCenter --default-character-set=utf8 -e 'replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "到店餐饮","到餐DB与存储","dongxue.tian","PayCenter","10.1.6.186","27017","PRIMARY"'
++ '[' 0 -eq 0 ']'
++ echo inserted $'ok:\345\210\260\345\272\227\351\244\220\351\245\256' $'\345\210\260\351\244\220DB\344\270\216\345\255\230\345\202\250' dongxue.tian PayCenter 10.1.6.186 27017 PRIMARY
++ read record
++ _product_name=
++ _product_owner=
++ _set=
++ _ip=
++ _port=
++ _state=
++ count=0
++ for i in '$record'
++ '[' 0 -eq 0 ']'
++ _bg_name=$'\345\210\260\345\272\227\351\244\220\351\245\256'
++ '[' 0 -eq 1 ']'
++ '[' 0 -eq 2 ']'
++ '[' 0 -eq 3 ']'
++ '[' 0 -eq 4 ']'
++ '[' 0 -eq 5 ']'
++ '[' 0 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 1 -eq 0 ']'
++ '[' 1 -eq 1 ']'
++ _product_name=$'\345\210\260\351\244\220DB\344\270\216\345\255\230\345\202\250'
++ '[' 1 -eq 2 ']'
++ '[' 1 -eq 3 ']'
++ '[' 1 -eq 4 ']'
++ '[' 1 -eq 5 ']'
++ '[' 1 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 2 -eq 0 ']'
++ '[' 2 -eq 1 ']'
++ '[' 2 -eq 2 ']'
++ _product_owner=dongxue.tian
++ '[' 2 -eq 3 ']'
++ '[' 2 -eq 4 ']'
++ '[' 2 -eq 5 ']'
++ '[' 2 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 3 -eq 0 ']'
++ '[' 3 -eq 1 ']'
++ '[' 3 -eq 2 ']'
++ '[' 3 -eq 3 ']'
++ _set=payorder02
++ '[' 3 -eq 4 ']'
++ '[' 3 -eq 5 ']'
++ '[' 3 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 4 -eq 0 ']'
++ '[' 4 -eq 1 ']'
++ '[' 4 -eq 2 ']'
++ '[' 4 -eq 3 ']'
++ '[' 4 -eq 4 ']'
++ _ip=10.3.10.48
++ '[' 4 -eq 5 ']'
++ '[' 4 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 5 -eq 0 ']'
++ '[' 5 -eq 1 ']'
++ '[' 5 -eq 2 ']'
++ '[' 5 -eq 3 ']'
++ '[' 5 -eq 4 ']'
++ '[' 5 -eq 5 ']'
++ _port=27017
++ '[' 5 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 6 -eq 0 ']'
++ '[' 6 -eq 1 ']'
++ '[' 6 -eq 2 ']'
++ '[' 6 -eq 3 ']'
++ '[' 6 -eq 4 ']'
++ '[' 6 -eq 5 ']'
++ '[' 6 -eq 6 ']'
++ _state=SECONDARY
++ let count++
++ mysql_cmd='replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "到店餐饮","到餐DB与存储","dongxue.tian","payorder02","10.3.10.48","27017","SECONDARY"'
++ db=MonCenter
++ mysql -umyadmin '-pNum@$%^C0ntal' -h10.1.1.209 MonCenter --default-character-set=utf8 -e 'replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "到店餐饮","到餐DB与存储","dongxue.tian","payorder02","10.3.10.48","27017","SECONDARY"'
++ '[' 0 -eq 0 ']'
++ echo inserted $'ok:\345\210\260\345\272\227\351\244\220\351\245\256' $'\345\210\260\351\244\220DB\344\270\216\345\255\230\345\202\250' dongxue.tian payorder02 10.3.10.48 27017 SECONDARY
++ read record
++ _product_name=
++ _product_owner=
++ _set=
++ _ip=
++ _port=
++ _state=
++ count=0
++ for i in '$record'
++ '[' 0 -eq 0 ']'
++ _bg_name=$'\345\210\260\345\272\227\351\244\220\351\245\256'
++ '[' 0 -eq 1 ']'
++ '[' 0 -eq 2 ']'
++ '[' 0 -eq 3 ']'
++ '[' 0 -eq 4 ']'
++ '[' 0 -eq 5 ']'
++ '[' 0 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 1 -eq 0 ']'
++ '[' 1 -eq 1 ']'
++ _product_name=$'\345\276\256\347\224\237\346\264\273'
++ '[' 1 -eq 2 ']'
++ '[' 1 -eq 3 ']'
++ '[' 1 -eq 4 ']'
++ '[' 1 -eq 5 ']'
++ '[' 1 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 2 -eq 0 ']'
++ '[' 2 -eq 1 ']'
++ '[' 2 -eq 2 ']'
++ _product_owner=jiaxing.fan
++ '[' 2 -eq 3 ']'
++ '[' 2 -eq 4 ']'
++ '[' 2 -eq 5 ']'
++ '[' 2 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 3 -eq 0 ']'
++ '[' 3 -eq 1 ']'
++ '[' 3 -eq 2 ']'
++ '[' 3 -eq 3 ']'
++ _set=hippo
++ '[' 3 -eq 4 ']'
++ '[' 3 -eq 5 ']'
++ '[' 3 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 4 -eq 0 ']'
++ '[' 4 -eq 1 ']'
++ '[' 4 -eq 2 ']'
++ '[' 4 -eq 3 ']'
++ '[' 4 -eq 4 ']'
++ _ip=10.1.1.185
++ '[' 4 -eq 5 ']'
++ '[' 4 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 5 -eq 0 ']'
++ '[' 5 -eq 1 ']'
++ '[' 5 -eq 2 ']'
++ '[' 5 -eq 3 ']'
++ '[' 5 -eq 4 ']'
++ '[' 5 -eq 5 ']'
++ _port=27017
++ '[' 5 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 6 -eq 0 ']'
++ '[' 6 -eq 1 ']'
++ '[' 6 -eq 2 ']'
++ '[' 6 -eq 3 ']'
++ '[' 6 -eq 4 ']'
++ '[' 6 -eq 5 ']'
++ '[' 6 -eq 6 ']'
++ _state=PRIMARY
++ let count++
++ mysql_cmd='replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "到店餐饮","微生活","jiaxing.fan","hippo","10.1.1.185","27017","PRIMARY"'
++ db=MonCenter
++ mysql -umyadmin '-pNum@$%^C0ntal' -h10.1.1.209 MonCenter --default-character-set=utf8 -e 'replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "到店餐饮","微生活","jiaxing.fan","hippo","10.1.1.185","27017","PRIMARY"'
++ '[' 0 -eq 0 ']'
++ echo inserted $'ok:\345\210\260\345\272\227\351\244\220\351\245\256' $'\345\276\256\347\224\237\346\264\273' jiaxing.fan hippo 10.1.1.185 27017 PRIMARY
++ read record
++ _product_name=
++ _product_owner=
++ _set=
++ _ip=
++ _port=
++ _state=
++ count=0
++ for i in '$record'
++ '[' 0 -eq 0 ']'
++ _bg_name=$'\345\244\226\345\215\226\351\205\215\351\200\201'
++ '[' 0 -eq 1 ']'
++ '[' 0 -eq 2 ']'
++ '[' 0 -eq 3 ']'
++ '[' 0 -eq 4 ']'
++ '[' 0 -eq 5 ']'
++ '[' 0 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 1 -eq 0 ']'
++ '[' 1 -eq 1 ']'
++ _product_name=$'\345\244\226\345\215\226'
++ '[' 1 -eq 2 ']'
++ '[' 1 -eq 3 ']'
++ '[' 1 -eq 4 ']'
++ '[' 1 -eq 5 ']'
++ '[' 1 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 2 -eq 0 ']'
++ '[' 2 -eq 1 ']'
++ '[' 2 -eq 2 ']'
++ _product_owner=ji.li
++ '[' 2 -eq 3 ']'
++ '[' 2 -eq 4 ']'
++ '[' 2 -eq 5 ']'
++ '[' 2 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 3 -eq 0 ']'
++ '[' 3 -eq 1 ']'
++ '[' 3 -eq 2 ']'
++ '[' 3 -eq 3 ']'
++ _set=hippo
++ '[' 3 -eq 4 ']'
++ '[' 3 -eq 5 ']'
++ '[' 3 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 4 -eq 0 ']'
++ '[' 4 -eq 1 ']'
++ '[' 4 -eq 2 ']'
++ '[' 4 -eq 3 ']'
++ '[' 4 -eq 4 ']'
++ _ip=10.1.1.185
++ '[' 4 -eq 5 ']'
++ '[' 4 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 5 -eq 0 ']'
++ '[' 5 -eq 1 ']'
++ '[' 5 -eq 2 ']'
++ '[' 5 -eq 3 ']'
++ '[' 5 -eq 4 ']'
++ '[' 5 -eq 5 ']'
++ _port=27017
++ '[' 5 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 6 -eq 0 ']'
++ '[' 6 -eq 1 ']'
++ '[' 6 -eq 2 ']'
++ '[' 6 -eq 3 ']'
++ '[' 6 -eq 4 ']'
++ '[' 6 -eq 5 ']'
++ '[' 6 -eq 6 ']'
++ _state=PRIMARY
++ let count++
++ mysql_cmd='replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "外卖配送","外卖","ji.li","hippo","10.1.1.185","27017","PRIMARY"'
++ db=MonCenter
++ mysql -umyadmin '-pNum@$%^C0ntal' -h10.1.1.209 MonCenter --default-character-set=utf8 -e 'replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "外卖配送","外卖","ji.li","hippo","10.1.1.185","27017","PRIMARY"'
++ '[' 0 -eq 0 ']'
++ echo inserted $'ok:\345\244\226\345\215\226\351\205\215\351\200\201' $'\345\244\226\345\215\226' ji.li hippo 10.1.1.185 27017 PRIMARY
++ read record
++ _product_name=
++ _product_owner=
++ _set=
++ _ip=
++ _port=
++ _state=
++ count=0
++ for i in '$record'
++ '[' 0 -eq 0 ']'
++ _bg_name=$'\345\256\242\346\234\215\345\271\263\345\217\260'
++ '[' 0 -eq 1 ']'
++ '[' 0 -eq 2 ']'
++ '[' 0 -eq 3 ']'
++ '[' 0 -eq 4 ']'
++ '[' 0 -eq 5 ']'
++ '[' 0 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 1 -eq 0 ']'
++ '[' 1 -eq 1 ']'
++ _product_name=$'\345\256\242\346\234\215'
++ '[' 1 -eq 2 ']'
++ '[' 1 -eq 3 ']'
++ '[' 1 -eq 4 ']'
++ '[' 1 -eq 5 ']'
++ '[' 1 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 2 -eq 0 ']'
++ '[' 2 -eq 1 ']'
++ '[' 2 -eq 2 ']'
++ _product_owner=sheng.chen
++ '[' 2 -eq 3 ']'
++ '[' 2 -eq 4 ']'
++ '[' 2 -eq 5 ']'
++ '[' 2 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 3 -eq 0 ']'
++ '[' 3 -eq 1 ']'
++ '[' 3 -eq 2 ']'
++ '[' 3 -eq 3 ']'
++ _set=hippo
++ '[' 3 -eq 4 ']'
++ '[' 3 -eq 5 ']'
++ '[' 3 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 4 -eq 0 ']'
++ '[' 4 -eq 1 ']'
++ '[' 4 -eq 2 ']'
++ '[' 4 -eq 3 ']'
++ '[' 4 -eq 4 ']'
++ _ip=10.1.1.185
++ '[' 4 -eq 5 ']'
++ '[' 4 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 5 -eq 0 ']'
++ '[' 5 -eq 1 ']'
++ '[' 5 -eq 2 ']'
++ '[' 5 -eq 3 ']'
++ '[' 5 -eq 4 ']'
++ '[' 5 -eq 5 ']'
++ _port=27017
++ '[' 5 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 6 -eq 0 ']'
++ '[' 6 -eq 1 ']'
++ '[' 6 -eq 2 ']'
++ '[' 6 -eq 3 ']'
++ '[' 6 -eq 4 ']'
++ '[' 6 -eq 5 ']'
++ '[' 6 -eq 6 ']'
++ _state=PRIMARY
++ let count++
++ mysql_cmd='replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "客服平台","客服","sheng.chen","hippo","10.1.1.185","27017","PRIMARY"'
++ db=MonCenter
++ mysql -umyadmin '-pNum@$%^C0ntal' -h10.1.1.209 MonCenter --default-character-set=utf8 -e 'replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "客服平台","客服","sheng.chen","hippo","10.1.1.185","27017","PRIMARY"'
++ '[' 0 -eq 0 ']'
++ echo inserted $'ok:\345\256\242\346\234\215\345\271\263\345\217\260' $'\345\256\242\346\234\215' sheng.chen hippo 10.1.1.185 27017 PRIMARY
++ read record
++ _product_name=
++ _product_owner=
++ _set=
++ _ip=
++ _port=
++ _state=
++ count=0
++ for i in '$record'
++ '[' 0 -eq 0 ']'
++ _bg_name=$'\345\271\263\345\217\260\344\272\213\344\270\232\347\276\244'
++ '[' 0 -eq 1 ']'
++ '[' 0 -eq 2 ']'
++ '[' 0 -eq 3 ']'
++ '[' 0 -eq 4 ']'
++ '[' 0 -eq 5 ']'
++ '[' 0 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 1 -eq 0 ']'
++ '[' 1 -eq 1 ']'
++ _product_name=$'M\347\253\231'
++ '[' 1 -eq 2 ']'
++ '[' 1 -eq 3 ']'
++ '[' 1 -eq 4 ']'
++ '[' 1 -eq 5 ']'
++ '[' 1 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 2 -eq 0 ']'
++ '[' 2 -eq 1 ']'
++ '[' 2 -eq 2 ']'
++ _product_owner=quanhua.ma
++ '[' 2 -eq 3 ']'
++ '[' 2 -eq 4 ']'
++ '[' 2 -eq 5 ']'
++ '[' 2 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 3 -eq 0 ']'
++ '[' 3 -eq 1 ']'
++ '[' 3 -eq 2 ']'
++ '[' 3 -eq 3 ']'
++ _set=hippo
++ '[' 3 -eq 4 ']'
++ '[' 3 -eq 5 ']'
++ '[' 3 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 4 -eq 0 ']'
++ '[' 4 -eq 1 ']'
++ '[' 4 -eq 2 ']'
++ '[' 4 -eq 3 ']'
++ '[' 4 -eq 4 ']'
++ _ip=10.1.1.185
++ '[' 4 -eq 5 ']'
++ '[' 4 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 5 -eq 0 ']'
++ '[' 5 -eq 1 ']'
++ '[' 5 -eq 2 ']'
++ '[' 5 -eq 3 ']'
++ '[' 5 -eq 4 ']'
++ '[' 5 -eq 5 ']'
++ _port=27017
++ '[' 5 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 6 -eq 0 ']'
++ '[' 6 -eq 1 ']'
++ '[' 6 -eq 2 ']'
++ '[' 6 -eq 3 ']'
++ '[' 6 -eq 4 ']'
++ '[' 6 -eq 5 ']'
++ '[' 6 -eq 6 ']'
++ _state=PRIMARY
++ let count++
++ mysql_cmd='replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "平台事业群","M站","quanhua.ma","hippo","10.1.1.185","27017","PRIMARY"'
++ db=MonCenter
++ mysql -umyadmin '-pNum@$%^C0ntal' -h10.1.1.209 MonCenter --default-character-set=utf8 -e 'replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "平台事业群","M站","quanhua.ma","hippo","10.1.1.185","27017","PRIMARY"'
++ '[' 0 -eq 0 ']'
++ echo inserted $'ok:\345\271\263\345\217\260\344\272\213\344\270\232\347\276\244' $'M\347\253\231' quanhua.ma hippo 10.1.1.185 27017 PRIMARY
++ read record
++ _product_name=
++ _product_owner=
++ _set=
++ _ip=
++ _port=
++ _state=
++ count=0
++ for i in '$record'
++ '[' 0 -eq 0 ']'
++ _bg_name=$'\345\271\263\345\217\260\344\272\213\344\270\232\347\276\244'
++ '[' 0 -eq 1 ']'
++ '[' 0 -eq 2 ']'
++ '[' 0 -eq 3 ']'
++ '[' 0 -eq 4 ']'
++ '[' 0 -eq 5 ']'
++ '[' 0 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 1 -eq 0 ']'
++ '[' 1 -eq 1 ']'
++ _product_name=poi
++ '[' 1 -eq 2 ']'
++ '[' 1 -eq 3 ']'
++ '[' 1 -eq 4 ']'
++ '[' 1 -eq 5 ']'
++ '[' 1 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 2 -eq 0 ']'
++ '[' 2 -eq 1 ']'
++ '[' 2 -eq 2 ']'
++ _product_owner=song.wang
++ '[' 2 -eq 3 ']'
++ '[' 2 -eq 4 ']'
++ '[' 2 -eq 5 ']'
++ '[' 2 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 3 -eq 0 ']'
++ '[' 3 -eq 1 ']'
++ '[' 3 -eq 2 ']'
++ '[' 3 -eq 3 ']'
++ _set=hippo
++ '[' 3 -eq 4 ']'
++ '[' 3 -eq 5 ']'
++ '[' 3 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 4 -eq 0 ']'
++ '[' 4 -eq 1 ']'
++ '[' 4 -eq 2 ']'
++ '[' 4 -eq 3 ']'
++ '[' 4 -eq 4 ']'
++ _ip=10.1.1.185
++ '[' 4 -eq 5 ']'
++ '[' 4 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 5 -eq 0 ']'
++ '[' 5 -eq 1 ']'
++ '[' 5 -eq 2 ']'
++ '[' 5 -eq 3 ']'
++ '[' 5 -eq 4 ']'
++ '[' 5 -eq 5 ']'
++ _port=27017
++ '[' 5 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 6 -eq 0 ']'
++ '[' 6 -eq 1 ']'
++ '[' 6 -eq 2 ']'
++ '[' 6 -eq 3 ']'
++ '[' 6 -eq 4 ']'
++ '[' 6 -eq 5 ']'
++ '[' 6 -eq 6 ']'
++ _state=PRIMARY
++ let count++
++ mysql_cmd='replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "平台事业群","poi","song.wang","hippo","10.1.1.185","27017","PRIMARY"'
++ db=MonCenter
++ mysql -umyadmin '-pNum@$%^C0ntal' -h10.1.1.209 MonCenter --default-character-set=utf8 -e 'replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "平台事业群","poi","song.wang","hippo","10.1.1.185","27017","PRIMARY"'
++ '[' 0 -eq 0 ']'
++ echo inserted $'ok:\345\271\263\345\217\260\344\272\213\344\270\232\347\276\244' poi song.wang hippo 10.1.1.185 27017 PRIMARY
++ read record
++ _product_name=
++ _product_owner=
++ _set=
++ _ip=
++ _port=
++ _state=
++ count=0
++ for i in '$record'
++ '[' 0 -eq 0 ']'
++ _bg_name=$'\345\271\263\345\217\260\344\272\213\344\270\232\347\276\244'
++ '[' 0 -eq 1 ']'
++ '[' 0 -eq 2 ']'
++ '[' 0 -eq 3 ']'
++ '[' 0 -eq 4 ']'
++ '[' 0 -eq 5 ']'
++ '[' 0 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 1 -eq 0 ']'
++ '[' 1 -eq 1 ']'
++ _product_name=$'UGC\345\271\263\345\217\260\346\234\215\345\212\241'
++ '[' 1 -eq 2 ']'
++ '[' 1 -eq 3 ']'
++ '[' 1 -eq 4 ']'
++ '[' 1 -eq 5 ']'
++ '[' 1 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 2 -eq 0 ']'
++ '[' 2 -eq 1 ']'
++ '[' 2 -eq 2 ']'
++ _product_owner=wentao.xu
++ '[' 2 -eq 3 ']'
++ '[' 2 -eq 4 ']'
++ '[' 2 -eq 5 ']'
++ '[' 2 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 3 -eq 0 ']'
++ '[' 3 -eq 1 ']'
++ '[' 3 -eq 2 ']'
++ '[' 3 -eq 3 ']'
++ _set=Common
++ '[' 3 -eq 4 ']'
++ '[' 3 -eq 5 ']'
++ '[' 3 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 4 -eq 0 ']'
++ '[' 4 -eq 1 ']'
++ '[' 4 -eq 2 ']'
++ '[' 4 -eq 3 ']'
++ '[' 4 -eq 4 ']'
++ _ip=10.1.101.164
++ '[' 4 -eq 5 ']'
++ '[' 4 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 5 -eq 0 ']'
++ '[' 5 -eq 1 ']'
++ '[' 5 -eq 2 ']'
++ '[' 5 -eq 3 ']'
++ '[' 5 -eq 4 ']'
++ '[' 5 -eq 5 ']'
++ _port=27017
++ '[' 5 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 6 -eq 0 ']'
++ '[' 6 -eq 1 ']'
++ '[' 6 -eq 2 ']'
++ '[' 6 -eq 3 ']'
++ '[' 6 -eq 4 ']'
++ '[' 6 -eq 5 ']'
++ '[' 6 -eq 6 ']'
++ _state=SECONDARY
++ let count++
++ mysql_cmd='replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "平台事业群","UGC平台服务","wentao.xu","Common","10.1.101.164","27017","SECONDARY"'
++ db=MonCenter
++ mysql -umyadmin '-pNum@$%^C0ntal' -h10.1.1.209 MonCenter --default-character-set=utf8 -e 'replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "平台事业群","UGC平台服务","wentao.xu","Common","10.1.101.164","27017","SECONDARY"'
++ '[' 0 -eq 0 ']'
++ echo inserted $'ok:\345\271\263\345\217\260\344\272\213\344\270\232\347\276\244' $'UGC\345\271\263\345\217\260\346\234\215\345\212\241' wentao.xu Common 10.1.101.164 27017 SECONDARY
++ read record
++ _product_name=
++ _product_owner=
++ _set=
++ _ip=
++ _port=
++ _state=
++ count=0
++ for i in '$record'
++ '[' 0 -eq 0 ']'
++ _bg_name=$'\345\271\263\345\217\260\344\272\213\344\270\232\347\276\244'
++ '[' 0 -eq 1 ']'
++ '[' 0 -eq 2 ']'
++ '[' 0 -eq 3 ']'
++ '[' 0 -eq 4 ']'
++ '[' 0 -eq 5 ']'
++ '[' 0 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 1 -eq 0 ']'
++ '[' 1 -eq 1 ']'
++ _product_name=$'UGC\345\271\263\345\217\260\346\234\215\345\212\241'
++ '[' 1 -eq 2 ']'
++ '[' 1 -eq 3 ']'
++ '[' 1 -eq 4 ']'
++ '[' 1 -eq 5 ']'
++ '[' 1 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 2 -eq 0 ']'
++ '[' 2 -eq 1 ']'
++ '[' 2 -eq 2 ']'
++ _product_owner=wentao.xu
++ '[' 2 -eq 3 ']'
++ '[' 2 -eq 4 ']'
++ '[' 2 -eq 5 ']'
++ '[' 2 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 3 -eq 0 ']'
++ '[' 3 -eq 1 ']'
++ '[' 3 -eq 2 ']'
++ '[' 3 -eq 3 ']'
++ _set=Common
++ '[' 3 -eq 4 ']'
++ '[' 3 -eq 5 ']'
++ '[' 3 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 4 -eq 0 ']'
++ '[' 4 -eq 1 ']'
++ '[' 4 -eq 2 ']'
++ '[' 4 -eq 3 ']'
++ '[' 4 -eq 4 ']'
++ _ip=10.1.101.165
++ '[' 4 -eq 5 ']'
++ '[' 4 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 5 -eq 0 ']'
++ '[' 5 -eq 1 ']'
++ '[' 5 -eq 2 ']'
++ '[' 5 -eq 3 ']'
++ '[' 5 -eq 4 ']'
++ '[' 5 -eq 5 ']'
++ _port=27017
++ '[' 5 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 6 -eq 0 ']'
++ '[' 6 -eq 1 ']'
++ '[' 6 -eq 2 ']'
++ '[' 6 -eq 3 ']'
++ '[' 6 -eq 4 ']'
++ '[' 6 -eq 5 ']'
++ '[' 6 -eq 6 ']'
++ _state=PRIMARY
++ let count++
++ mysql_cmd='replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "平台事业群","UGC平台服务","wentao.xu","Common","10.1.101.165","27017","PRIMARY"'
++ db=MonCenter
++ mysql -umyadmin '-pNum@$%^C0ntal' -h10.1.1.209 MonCenter --default-character-set=utf8 -e 'replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "平台事业群","UGC平台服务","wentao.xu","Common","10.1.101.165","27017","PRIMARY"'
++ '[' 0 -eq 0 ']'
++ echo inserted $'ok:\345\271\263\345\217\260\344\272\213\344\270\232\347\276\244' $'UGC\345\271\263\345\217\260\346\234\215\345\212\241' wentao.xu Common 10.1.101.165 27017 PRIMARY
++ read record
++ _product_name=
++ _product_owner=
++ _set=
++ _ip=
++ _port=
++ _state=
++ count=0
++ for i in '$record'
++ '[' 0 -eq 0 ']'
++ _bg_name=$'\345\271\263\345\217\260\344\272\213\344\270\232\347\276\244'
++ '[' 0 -eq 1 ']'
++ '[' 0 -eq 2 ']'
++ '[' 0 -eq 3 ']'
++ '[' 0 -eq 4 ']'
++ '[' 0 -eq 5 ']'
++ '[' 0 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 1 -eq 0 ']'
++ '[' 1 -eq 1 ']'
++ _product_name=$'UGC\345\271\263\345\217\260\346\234\215\345\212\241'
++ '[' 1 -eq 2 ']'
++ '[' 1 -eq 3 ']'
++ '[' 1 -eq 4 ']'
++ '[' 1 -eq 5 ']'
++ '[' 1 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 2 -eq 0 ']'
++ '[' 2 -eq 1 ']'
++ '[' 2 -eq 2 ']'
++ _product_owner=wentao.xu
++ '[' 2 -eq 3 ']'
++ '[' 2 -eq 4 ']'
++ '[' 2 -eq 5 ']'
++ '[' 2 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 3 -eq 0 ']'
++ '[' 3 -eq 1 ']'
++ '[' 3 -eq 2 ']'
++ '[' 3 -eq 3 ']'
++ _set=hippo
++ '[' 3 -eq 4 ']'
++ '[' 3 -eq 5 ']'
++ '[' 3 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 4 -eq 0 ']'
++ '[' 4 -eq 1 ']'
++ '[' 4 -eq 2 ']'
++ '[' 4 -eq 3 ']'
++ '[' 4 -eq 4 ']'
++ _ip=10.1.1.185
++ '[' 4 -eq 5 ']'
++ '[' 4 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 5 -eq 0 ']'
++ '[' 5 -eq 1 ']'
++ '[' 5 -eq 2 ']'
++ '[' 5 -eq 3 ']'
++ '[' 5 -eq 4 ']'
++ '[' 5 -eq 5 ']'
++ _port=27017
++ '[' 5 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 6 -eq 0 ']'
++ '[' 6 -eq 1 ']'
++ '[' 6 -eq 2 ']'
++ '[' 6 -eq 3 ']'
++ '[' 6 -eq 4 ']'
++ '[' 6 -eq 5 ']'
++ '[' 6 -eq 6 ']'
++ _state=PRIMARY
++ let count++
++ mysql_cmd='replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "平台事业群","UGC平台服务","wentao.xu","hippo","10.1.1.185","27017","PRIMARY"'
++ db=MonCenter
++ mysql -umyadmin '-pNum@$%^C0ntal' -h10.1.1.209 MonCenter --default-character-set=utf8 -e 'replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "平台事业群","UGC平台服务","wentao.xu","hippo","10.1.1.185","27017","PRIMARY"'
++ '[' 0 -eq 0 ']'
++ echo inserted $'ok:\345\271\263\345\217\260\344\272\213\344\270\232\347\276\244' $'UGC\345\271\263\345\217\260\346\234\215\345\212\241' wentao.xu hippo 10.1.1.185 27017 PRIMARY
++ read record
++ _product_name=
++ _product_owner=
++ _set=
++ _ip=
++ _port=
++ _state=
++ count=0
++ for i in '$record'
++ '[' 0 -eq 0 ']'
++ _bg_name=$'\345\271\263\345\217\260\344\272\213\344\270\232\347\276\244'
++ '[' 0 -eq 1 ']'
++ '[' 0 -eq 2 ']'
++ '[' 0 -eq 3 ']'
++ '[' 0 -eq 4 ']'
++ '[' 0 -eq 5 ']'
++ '[' 0 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 1 -eq 0 ']'
++ '[' 1 -eq 1 ']'
++ _product_name=$'UGC\345\271\263\345\217\260\346\234\215\345\212\241'
++ '[' 1 -eq 2 ']'
++ '[' 1 -eq 3 ']'
++ '[' 1 -eq 4 ']'
++ '[' 1 -eq 5 ']'
++ '[' 1 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 2 -eq 0 ']'
++ '[' 2 -eq 1 ']'
++ '[' 2 -eq 2 ']'
++ _product_owner=wentao.xu
++ '[' 2 -eq 3 ']'
++ '[' 2 -eq 4 ']'
++ '[' 2 -eq 5 ']'
++ '[' 2 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 3 -eq 0 ']'
++ '[' 3 -eq 1 ']'
++ '[' 3 -eq 2 ']'
++ '[' 3 -eq 3 ']'
++ _set=main
++ '[' 3 -eq 4 ']'
++ '[' 3 -eq 5 ']'
++ '[' 3 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 4 -eq 0 ']'
++ '[' 4 -eq 1 ']'
++ '[' 4 -eq 2 ']'
++ '[' 4 -eq 3 ']'
++ '[' 4 -eq 4 ']'
++ _ip=10.1.6.133
++ '[' 4 -eq 5 ']'
++ '[' 4 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 5 -eq 0 ']'
++ '[' 5 -eq 1 ']'
++ '[' 5 -eq 2 ']'
++ '[' 5 -eq 3 ']'
++ '[' 5 -eq 4 ']'
++ '[' 5 -eq 5 ']'
++ _port=27017
++ '[' 5 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 6 -eq 0 ']'
++ '[' 6 -eq 1 ']'
++ '[' 6 -eq 2 ']'
++ '[' 6 -eq 3 ']'
++ '[' 6 -eq 4 ']'
++ '[' 6 -eq 5 ']'
++ '[' 6 -eq 6 ']'
++ _state=PRIMARY
++ let count++
++ mysql_cmd='replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "平台事业群","UGC平台服务","wentao.xu","main","10.1.6.133","27017","PRIMARY"'
++ db=MonCenter
++ mysql -umyadmin '-pNum@$%^C0ntal' -h10.1.1.209 MonCenter --default-character-set=utf8 -e 'replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "平台事业群","UGC平台服务","wentao.xu","main","10.1.6.133","27017","PRIMARY"'
++ '[' 0 -eq 0 ']'
++ echo inserted $'ok:\345\271\263\345\217\260\344\272\213\344\270\232\347\276\244' $'UGC\345\271\263\345\217\260\346\234\215\345\212\241' wentao.xu main 10.1.6.133 27017 PRIMARY
++ read record
++ _product_name=
++ _product_owner=
++ _set=
++ _ip=
++ _port=
++ _state=
++ count=0
++ for i in '$record'
++ '[' 0 -eq 0 ']'
++ _bg_name=$'\345\271\263\345\217\260\344\272\213\344\270\232\347\276\244'
++ '[' 0 -eq 1 ']'
++ '[' 0 -eq 2 ']'
++ '[' 0 -eq 3 ']'
++ '[' 0 -eq 4 ']'
++ '[' 0 -eq 5 ']'
++ '[' 0 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 1 -eq 0 ']'
++ '[' 1 -eq 1 ']'
++ _product_name=$'UGC\345\271\263\345\217\260\346\234\215\345\212\241'
++ '[' 1 -eq 2 ']'
++ '[' 1 -eq 3 ']'
++ '[' 1 -eq 4 ']'
++ '[' 1 -eq 5 ']'
++ '[' 1 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 2 -eq 0 ']'
++ '[' 2 -eq 1 ']'
++ '[' 2 -eq 2 ']'
++ _product_owner=wentao.xu
++ '[' 2 -eq 3 ']'
++ '[' 2 -eq 4 ']'
++ '[' 2 -eq 5 ']'
++ '[' 2 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 3 -eq 0 ']'
++ '[' 3 -eq 1 ']'
++ '[' 3 -eq 2 ']'
++ '[' 3 -eq 3 ']'
++ _set=Review
++ '[' 3 -eq 4 ']'
++ '[' 3 -eq 5 ']'
++ '[' 3 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 4 -eq 0 ']'
++ '[' 4 -eq 1 ']'
++ '[' 4 -eq 2 ']'
++ '[' 4 -eq 3 ']'
++ '[' 4 -eq 4 ']'
++ _ip=10.1.101.165
++ '[' 4 -eq 5 ']'
++ '[' 4 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 5 -eq 0 ']'
++ '[' 5 -eq 1 ']'
++ '[' 5 -eq 2 ']'
++ '[' 5 -eq 3 ']'
++ '[' 5 -eq 4 ']'
++ '[' 5 -eq 5 ']'
++ _port=27018
++ '[' 5 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 6 -eq 0 ']'
++ '[' 6 -eq 1 ']'
++ '[' 6 -eq 2 ']'
++ '[' 6 -eq 3 ']'
++ '[' 6 -eq 4 ']'
++ '[' 6 -eq 5 ']'
++ '[' 6 -eq 6 ']'
++ _state=SECONDARY
++ let count++
++ mysql_cmd='replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "平台事业群","UGC平台服务","wentao.xu","Review","10.1.101.165","27018","SECONDARY"'
++ db=MonCenter
++ mysql -umyadmin '-pNum@$%^C0ntal' -h10.1.1.209 MonCenter --default-character-set=utf8 -e 'replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "平台事业群","UGC平台服务","wentao.xu","Review","10.1.101.165","27018","SECONDARY"'
++ '[' 0 -eq 0 ']'
++ echo inserted $'ok:\345\271\263\345\217\260\344\272\213\344\270\232\347\276\244' $'UGC\345\271\263\345\217\260\346\234\215\345\212\241' wentao.xu Review 10.1.101.165 27018 SECONDARY
++ read record
++ _product_name=
++ _product_owner=
++ _set=
++ _ip=
++ _port=
++ _state=
++ count=0
++ for i in '$record'
++ '[' 0 -eq 0 ']'
++ _bg_name=$'\345\271\263\345\217\260\344\272\213\344\270\232\347\276\244'
++ '[' 0 -eq 1 ']'
++ '[' 0 -eq 2 ']'
++ '[' 0 -eq 3 ']'
++ '[' 0 -eq 4 ']'
++ '[' 0 -eq 5 ']'
++ '[' 0 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 1 -eq 0 ']'
++ '[' 1 -eq 1 ']'
++ _product_name=$'\344\274\232\345\221\230\344\272\222\345\212\250\346\212\200\346\234\257'
++ '[' 1 -eq 2 ']'
++ '[' 1 -eq 3 ']'
++ '[' 1 -eq 4 ']'
++ '[' 1 -eq 5 ']'
++ '[' 1 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 2 -eq 0 ']'
++ '[' 2 -eq 1 ']'
++ '[' 2 -eq 2 ']'
++ _product_owner=baijian.su
++ '[' 2 -eq 3 ']'
++ '[' 2 -eq 4 ']'
++ '[' 2 -eq 5 ']'
++ '[' 2 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 3 -eq 0 ']'
++ '[' 3 -eq 1 ']'
++ '[' 3 -eq 2 ']'
++ '[' 3 -eq 3 ']'
++ _set=friends
++ '[' 3 -eq 4 ']'
++ '[' 3 -eq 5 ']'
++ '[' 3 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 4 -eq 0 ']'
++ '[' 4 -eq 1 ']'
++ '[' 4 -eq 2 ']'
++ '[' 4 -eq 3 ']'
++ '[' 4 -eq 4 ']'
++ _ip=10.3.10.21
++ '[' 4 -eq 5 ']'
++ '[' 4 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 5 -eq 0 ']'
++ '[' 5 -eq 1 ']'
++ '[' 5 -eq 2 ']'
++ '[' 5 -eq 3 ']'
++ '[' 5 -eq 4 ']'
++ '[' 5 -eq 5 ']'
++ _port=27017
++ '[' 5 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 6 -eq 0 ']'
++ '[' 6 -eq 1 ']'
++ '[' 6 -eq 2 ']'
++ '[' 6 -eq 3 ']'
++ '[' 6 -eq 4 ']'
++ '[' 6 -eq 5 ']'
++ '[' 6 -eq 6 ']'
++ _state=SECONDARY
++ let count++
++ mysql_cmd='replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "平台事业群","会员互动技术","baijian.su","friends","10.3.10.21","27017","SECONDARY"'
++ db=MonCenter
++ mysql -umyadmin '-pNum@$%^C0ntal' -h10.1.1.209 MonCenter --default-character-set=utf8 -e 'replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "平台事业群","会员互动技术","baijian.su","friends","10.3.10.21","27017","SECONDARY"'
++ '[' 0 -eq 0 ']'
++ echo inserted $'ok:\345\271\263\345\217\260\344\272\213\344\270\232\347\276\244' $'\344\274\232\345\221\230\344\272\222\345\212\250\346\212\200\346\234\257' baijian.su friends 10.3.10.21 27017 SECONDARY
++ read record
++ _product_name=
++ _product_owner=
++ _set=
++ _ip=
++ _port=
++ _state=
++ count=0
++ for i in '$record'
++ '[' 0 -eq 0 ']'
++ _bg_name=$'\345\271\263\345\217\260\344\272\213\344\270\232\347\276\244'
++ '[' 0 -eq 1 ']'
++ '[' 0 -eq 2 ']'
++ '[' 0 -eq 3 ']'
++ '[' 0 -eq 4 ']'
++ '[' 0 -eq 5 ']'
++ '[' 0 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 1 -eq 0 ']'
++ '[' 1 -eq 1 ']'
++ _product_name=$'\344\274\232\345\221\230\344\272\222\345\212\250\346\212\200\346\234\257'
++ '[' 1 -eq 2 ']'
++ '[' 1 -eq 3 ']'
++ '[' 1 -eq 4 ']'
++ '[' 1 -eq 5 ']'
++ '[' 1 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 2 -eq 0 ']'
++ '[' 2 -eq 1 ']'
++ '[' 2 -eq 2 ']'
++ _product_owner=baijian.su
++ '[' 2 -eq 3 ']'
++ '[' 2 -eq 4 ']'
++ '[' 2 -eq 5 ']'
++ '[' 2 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 3 -eq 0 ']'
++ '[' 3 -eq 1 ']'
++ '[' 3 -eq 2 ']'
++ '[' 3 -eq 3 ']'
++ _set=friends
++ '[' 3 -eq 4 ']'
++ '[' 3 -eq 5 ']'
++ '[' 3 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 4 -eq 0 ']'
++ '[' 4 -eq 1 ']'
++ '[' 4 -eq 2 ']'
++ '[' 4 -eq 3 ']'
++ '[' 4 -eq 4 ']'
++ _ip=10.3.10.38
++ '[' 4 -eq 5 ']'
++ '[' 4 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 5 -eq 0 ']'
++ '[' 5 -eq 1 ']'
++ '[' 5 -eq 2 ']'
++ '[' 5 -eq 3 ']'
++ '[' 5 -eq 4 ']'
++ '[' 5 -eq 5 ']'
++ _port=27017
++ '[' 5 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 6 -eq 0 ']'
++ '[' 6 -eq 1 ']'
++ '[' 6 -eq 2 ']'
++ '[' 6 -eq 3 ']'
++ '[' 6 -eq 4 ']'
++ '[' 6 -eq 5 ']'
++ '[' 6 -eq 6 ']'
++ _state=PRIMARY
++ let count++
++ mysql_cmd='replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "平台事业群","会员互动技术","baijian.su","friends","10.3.10.38","27017","PRIMARY"'
++ db=MonCenter
++ mysql -umyadmin '-pNum@$%^C0ntal' -h10.1.1.209 MonCenter --default-character-set=utf8 -e 'replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "平台事业群","会员互动技术","baijian.su","friends","10.3.10.38","27017","PRIMARY"'
++ '[' 0 -eq 0 ']'
++ echo inserted $'ok:\345\271\263\345\217\260\344\272\213\344\270\232\347\276\244' $'\344\274\232\345\221\230\344\272\222\345\212\250\346\212\200\346\234\257' baijian.su friends 10.3.10.38 27017 PRIMARY
++ read record
++ _product_name=
++ _product_owner=
++ _set=
++ _ip=
++ _port=
++ _state=
++ count=0
++ for i in '$record'
++ '[' 0 -eq 0 ']'
++ _bg_name=$'\345\271\263\345\217\260\344\272\213\344\270\232\347\276\244'
++ '[' 0 -eq 1 ']'
++ '[' 0 -eq 2 ']'
++ '[' 0 -eq 3 ']'
++ '[' 0 -eq 4 ']'
++ '[' 0 -eq 5 ']'
++ '[' 0 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 1 -eq 0 ']'
++ '[' 1 -eq 1 ']'
++ _product_name=$'\344\274\232\345\221\230\344\272\222\345\212\250\346\212\200\346\234\257'
++ '[' 1 -eq 2 ']'
++ '[' 1 -eq 3 ']'
++ '[' 1 -eq 4 ']'
++ '[' 1 -eq 5 ']'
++ '[' 1 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 2 -eq 0 ']'
++ '[' 2 -eq 1 ']'
++ '[' 2 -eq 2 ']'
++ _product_owner=baijian.su
++ '[' 2 -eq 3 ']'
++ '[' 2 -eq 4 ']'
++ '[' 2 -eq 5 ']'
++ '[' 2 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 3 -eq 0 ']'
++ '[' 3 -eq 1 ']'
++ '[' 3 -eq 2 ']'
++ '[' 3 -eq 3 ']'
++ _set=hippo
++ '[' 3 -eq 4 ']'
++ '[' 3 -eq 5 ']'
++ '[' 3 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 4 -eq 0 ']'
++ '[' 4 -eq 1 ']'
++ '[' 4 -eq 2 ']'
++ '[' 4 -eq 3 ']'
++ '[' 4 -eq 4 ']'
++ _ip=10.1.1.185
++ '[' 4 -eq 5 ']'
++ '[' 4 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 5 -eq 0 ']'
++ '[' 5 -eq 1 ']'
++ '[' 5 -eq 2 ']'
++ '[' 5 -eq 3 ']'
++ '[' 5 -eq 4 ']'
++ '[' 5 -eq 5 ']'
++ _port=27017
++ '[' 5 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 6 -eq 0 ']'
++ '[' 6 -eq 1 ']'
++ '[' 6 -eq 2 ']'
++ '[' 6 -eq 3 ']'
++ '[' 6 -eq 4 ']'
++ '[' 6 -eq 5 ']'
++ '[' 6 -eq 6 ']'
++ _state=PRIMARY
++ let count++
++ mysql_cmd='replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "平台事业群","会员互动技术","baijian.su","hippo","10.1.1.185","27017","PRIMARY"'
++ db=MonCenter
++ mysql -umyadmin '-pNum@$%^C0ntal' -h10.1.1.209 MonCenter --default-character-set=utf8 -e 'replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "平台事业群","会员互动技术","baijian.su","hippo","10.1.1.185","27017","PRIMARY"'
++ '[' 0 -eq 0 ']'
++ echo inserted $'ok:\345\271\263\345\217\260\344\272\213\344\270\232\347\276\244' $'\344\274\232\345\221\230\344\272\222\345\212\250\346\212\200\346\234\257' baijian.su hippo 10.1.1.185 27017 PRIMARY
++ read record
++ _product_name=
++ _product_owner=
++ _set=
++ _ip=
++ _port=
++ _state=
++ count=0
++ for i in '$record'
++ '[' 0 -eq 0 ']'
++ _bg_name=$'\345\271\263\345\217\260\344\272\213\344\270\232\347\276\244'
++ '[' 0 -eq 1 ']'
++ '[' 0 -eq 2 ']'
++ '[' 0 -eq 3 ']'
++ '[' 0 -eq 4 ']'
++ '[' 0 -eq 5 ']'
++ '[' 0 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 1 -eq 0 ']'
++ '[' 1 -eq 1 ']'
++ _product_name=$'\344\274\232\345\221\230\344\272\222\345\212\250\346\212\200\346\234\257'
++ '[' 1 -eq 2 ']'
++ '[' 1 -eq 3 ']'
++ '[' 1 -eq 4 ']'
++ '[' 1 -eq 5 ']'
++ '[' 1 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 2 -eq 0 ']'
++ '[' 2 -eq 1 ']'
++ '[' 2 -eq 2 ']'
++ _product_owner=baijian.su
++ '[' 2 -eq 3 ']'
++ '[' 2 -eq 4 ']'
++ '[' 2 -eq 5 ']'
++ '[' 2 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 3 -eq 0 ']'
++ '[' 3 -eq 1 ']'
++ '[' 3 -eq 2 ']'
++ '[' 3 -eq 3 ']'
++ _set=Main_New
++ '[' 3 -eq 4 ']'
++ '[' 3 -eq 5 ']'
++ '[' 3 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 4 -eq 0 ']'
++ '[' 4 -eq 1 ']'
++ '[' 4 -eq 2 ']'
++ '[' 4 -eq 3 ']'
++ '[' 4 -eq 4 ']'
++ _ip=10.1.101.166
++ '[' 4 -eq 5 ']'
++ '[' 4 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 5 -eq 0 ']'
++ '[' 5 -eq 1 ']'
++ '[' 5 -eq 2 ']'
++ '[' 5 -eq 3 ']'
++ '[' 5 -eq 4 ']'
++ '[' 5 -eq 5 ']'
++ _port=27018
++ '[' 5 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 6 -eq 0 ']'
++ '[' 6 -eq 1 ']'
++ '[' 6 -eq 2 ']'
++ '[' 6 -eq 3 ']'
++ '[' 6 -eq 4 ']'
++ '[' 6 -eq 5 ']'
++ '[' 6 -eq 6 ']'
++ _state=SECONDARY
++ let count++
++ mysql_cmd='replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "平台事业群","会员互动技术","baijian.su","Main_New","10.1.101.166","27018","SECONDARY"'
++ db=MonCenter
++ mysql -umyadmin '-pNum@$%^C0ntal' -h10.1.1.209 MonCenter --default-character-set=utf8 -e 'replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "平台事业群","会员互动技术","baijian.su","Main_New","10.1.101.166","27018","SECONDARY"'
++ '[' 0 -eq 0 ']'
++ echo inserted $'ok:\345\271\263\345\217\260\344\272\213\344\270\232\347\276\244' $'\344\274\232\345\221\230\344\272\222\345\212\250\346\212\200\346\234\257' baijian.su Main_New 10.1.101.166 27018 SECONDARY
++ read record
++ _product_name=
++ _product_owner=
++ _set=
++ _ip=
++ _port=
++ _state=
++ count=0
++ for i in '$record'
++ '[' 0 -eq 0 ']'
++ _bg_name=$'\345\271\263\345\217\260\344\272\213\344\270\232\347\276\244'
++ '[' 0 -eq 1 ']'
++ '[' 0 -eq 2 ']'
++ '[' 0 -eq 3 ']'
++ '[' 0 -eq 4 ']'
++ '[' 0 -eq 5 ']'
++ '[' 0 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 1 -eq 0 ']'
++ '[' 1 -eq 1 ']'
++ _product_name=$'\344\274\232\345\221\230\344\272\222\345\212\250\346\212\200\346\234\257'
++ '[' 1 -eq 2 ']'
++ '[' 1 -eq 3 ']'
++ '[' 1 -eq 4 ']'
++ '[' 1 -eq 5 ']'
++ '[' 1 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 2 -eq 0 ']'
++ '[' 2 -eq 1 ']'
++ '[' 2 -eq 2 ']'
++ _product_owner=baijian.su
++ '[' 2 -eq 3 ']'
++ '[' 2 -eq 4 ']'
++ '[' 2 -eq 5 ']'
++ '[' 2 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 3 -eq 0 ']'
++ '[' 3 -eq 1 ']'
++ '[' 3 -eq 2 ']'
++ '[' 3 -eq 3 ']'
++ _set=Parrot
++ '[' 3 -eq 4 ']'
++ '[' 3 -eq 5 ']'
++ '[' 3 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 4 -eq 0 ']'
++ '[' 4 -eq 1 ']'
++ '[' 4 -eq 2 ']'
++ '[' 4 -eq 3 ']'
++ '[' 4 -eq 4 ']'
++ _ip=10.1.1.177
++ '[' 4 -eq 5 ']'
++ '[' 4 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 5 -eq 0 ']'
++ '[' 5 -eq 1 ']'
++ '[' 5 -eq 2 ']'
++ '[' 5 -eq 3 ']'
++ '[' 5 -eq 4 ']'
++ '[' 5 -eq 5 ']'
++ _port=27017
++ '[' 5 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 6 -eq 0 ']'
++ '[' 6 -eq 1 ']'
++ '[' 6 -eq 2 ']'
++ '[' 6 -eq 3 ']'
++ '[' 6 -eq 4 ']'
++ '[' 6 -eq 5 ']'
++ '[' 6 -eq 6 ']'
++ _state=SECONDARY
++ let count++
++ mysql_cmd='replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "平台事业群","会员互动技术","baijian.su","Parrot","10.1.1.177","27017","SECONDARY"'
++ db=MonCenter
++ mysql -umyadmin '-pNum@$%^C0ntal' -h10.1.1.209 MonCenter --default-character-set=utf8 -e 'replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "平台事业群","会员互动技术","baijian.su","Parrot","10.1.1.177","27017","SECONDARY"'
++ '[' 0 -eq 0 ']'
++ echo inserted $'ok:\345\271\263\345\217\260\344\272\213\344\270\232\347\276\244' $'\344\274\232\345\221\230\344\272\222\345\212\250\346\212\200\346\234\257' baijian.su Parrot 10.1.1.177 27017 SECONDARY
++ read record
++ _product_name=
++ _product_owner=
++ _set=
++ _ip=
++ _port=
++ _state=
++ count=0
++ for i in '$record'
++ '[' 0 -eq 0 ']'
++ _bg_name=$'\345\271\263\345\217\260\344\272\213\344\270\232\347\276\244'
++ '[' 0 -eq 1 ']'
++ '[' 0 -eq 2 ']'
++ '[' 0 -eq 3 ']'
++ '[' 0 -eq 4 ']'
++ '[' 0 -eq 5 ']'
++ '[' 0 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 1 -eq 0 ']'
++ '[' 1 -eq 1 ']'
++ _product_name=$'\344\277\241\346\201\257\345\271\263\345\217\260'
++ '[' 1 -eq 2 ']'
++ '[' 1 -eq 3 ']'
++ '[' 1 -eq 4 ']'
++ '[' 1 -eq 5 ']'
++ '[' 1 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 2 -eq 0 ']'
++ '[' 2 -eq 1 ']'
++ '[' 2 -eq 2 ']'
++ _product_owner=xiaozhe.li
++ '[' 2 -eq 3 ']'
++ '[' 2 -eq 4 ']'
++ '[' 2 -eq 5 ']'
++ '[' 2 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 3 -eq 0 ']'
++ '[' 3 -eq 1 ']'
++ '[' 3 -eq 2 ']'
++ '[' 3 -eq 3 ']'
++ _set=hippo
++ '[' 3 -eq 4 ']'
++ '[' 3 -eq 5 ']'
++ '[' 3 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 4 -eq 0 ']'
++ '[' 4 -eq 1 ']'
++ '[' 4 -eq 2 ']'
++ '[' 4 -eq 3 ']'
++ '[' 4 -eq 4 ']'
++ _ip=10.1.1.185
++ '[' 4 -eq 5 ']'
++ '[' 4 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 5 -eq 0 ']'
++ '[' 5 -eq 1 ']'
++ '[' 5 -eq 2 ']'
++ '[' 5 -eq 3 ']'
++ '[' 5 -eq 4 ']'
++ '[' 5 -eq 5 ']'
++ _port=27017
++ '[' 5 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 6 -eq 0 ']'
++ '[' 6 -eq 1 ']'
++ '[' 6 -eq 2 ']'
++ '[' 6 -eq 3 ']'
++ '[' 6 -eq 4 ']'
++ '[' 6 -eq 5 ']'
++ '[' 6 -eq 6 ']'
++ _state=PRIMARY
++ let count++
++ mysql_cmd='replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "平台事业群","信息平台","xiaozhe.li","hippo","10.1.1.185","27017","PRIMARY"'
++ db=MonCenter
++ mysql -umyadmin '-pNum@$%^C0ntal' -h10.1.1.209 MonCenter --default-character-set=utf8 -e 'replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "平台事业群","信息平台","xiaozhe.li","hippo","10.1.1.185","27017","PRIMARY"'
++ '[' 0 -eq 0 ']'
++ echo inserted $'ok:\345\271\263\345\217\260\344\272\213\344\270\232\347\276\244' $'\344\277\241\346\201\257\345\271\263\345\217\260' xiaozhe.li hippo 10.1.1.185 27017 PRIMARY
++ read record
++ _product_name=
++ _product_owner=
++ _set=
++ _ip=
++ _port=
++ _state=
++ count=0
++ for i in '$record'
++ '[' 0 -eq 0 ']'
++ _bg_name=$'\345\271\263\345\217\260\344\272\213\344\270\232\347\276\244'
++ '[' 0 -eq 1 ']'
++ '[' 0 -eq 2 ']'
++ '[' 0 -eq 3 ']'
++ '[' 0 -eq 4 ']'
++ '[' 0 -eq 5 ']'
++ '[' 0 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 1 -eq 0 ']'
++ '[' 1 -eq 1 ']'
++ _product_name=$'\345\211\215\347\253\257\347\240\224\345\217\221'
++ '[' 1 -eq 2 ']'
++ '[' 1 -eq 3 ']'
++ '[' 1 -eq 4 ']'
++ '[' 1 -eq 5 ']'
++ '[' 1 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 2 -eq 0 ']'
++ '[' 2 -eq 1 ']'
++ '[' 2 -eq 2 ']'
++ _product_owner=yang.yu
++ '[' 2 -eq 3 ']'
++ '[' 2 -eq 4 ']'
++ '[' 2 -eq 5 ']'
++ '[' 2 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 3 -eq 0 ']'
++ '[' 3 -eq 1 ']'
++ '[' 3 -eq 2 ']'
++ '[' 3 -eq 3 ']'
++ _set=hippo
++ '[' 3 -eq 4 ']'
++ '[' 3 -eq 5 ']'
++ '[' 3 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 4 -eq 0 ']'
++ '[' 4 -eq 1 ']'
++ '[' 4 -eq 2 ']'
++ '[' 4 -eq 3 ']'
++ '[' 4 -eq 4 ']'
++ _ip=10.1.1.185
++ '[' 4 -eq 5 ']'
++ '[' 4 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 5 -eq 0 ']'
++ '[' 5 -eq 1 ']'
++ '[' 5 -eq 2 ']'
++ '[' 5 -eq 3 ']'
++ '[' 5 -eq 4 ']'
++ '[' 5 -eq 5 ']'
++ _port=27017
++ '[' 5 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 6 -eq 0 ']'
++ '[' 6 -eq 1 ']'
++ '[' 6 -eq 2 ']'
++ '[' 6 -eq 3 ']'
++ '[' 6 -eq 4 ']'
++ '[' 6 -eq 5 ']'
++ '[' 6 -eq 6 ']'
++ _state=PRIMARY
++ let count++
++ mysql_cmd='replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "平台事业群","前端研发","yang.yu","hippo","10.1.1.185","27017","PRIMARY"'
++ db=MonCenter
++ mysql -umyadmin '-pNum@$%^C0ntal' -h10.1.1.209 MonCenter --default-character-set=utf8 -e 'replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "平台事业群","前端研发","yang.yu","hippo","10.1.1.185","27017","PRIMARY"'
++ '[' 0 -eq 0 ']'
++ echo inserted $'ok:\345\271\263\345\217\260\344\272\213\344\270\232\347\276\244' $'\345\211\215\347\253\257\347\240\224\345\217\221' yang.yu hippo 10.1.1.185 27017 PRIMARY
++ read record
++ _product_name=
++ _product_owner=
++ _set=
++ _ip=
++ _port=
++ _state=
++ count=0
++ for i in '$record'
++ '[' 0 -eq 0 ']'
++ _bg_name=$'\345\271\263\345\217\260\344\272\213\344\270\232\347\276\244'
++ '[' 0 -eq 1 ']'
++ '[' 0 -eq 2 ']'
++ '[' 0 -eq 3 ']'
++ '[' 0 -eq 4 ']'
++ '[' 0 -eq 5 ']'
++ '[' 0 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 1 -eq 0 ']'
++ '[' 1 -eq 1 ']'
++ _product_name=$'\345\237\272\347\241\200\346\234\215\345\212\241'
++ '[' 1 -eq 2 ']'
++ '[' 1 -eq 3 ']'
++ '[' 1 -eq 4 ']'
++ '[' 1 -eq 5 ']'
++ '[' 1 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 2 -eq 0 ']'
++ '[' 2 -eq 1 ']'
++ '[' 2 -eq 2 ']'
++ _product_owner=zhenyu.yue
++ '[' 2 -eq 3 ']'
++ '[' 2 -eq 4 ']'
++ '[' 2 -eq 5 ']'
++ '[' 2 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 3 -eq 0 ']'
++ '[' 3 -eq 1 ']'
++ '[' 3 -eq 2 ']'
++ '[' 3 -eq 3 ']'
++ _set=hippo
++ '[' 3 -eq 4 ']'
++ '[' 3 -eq 5 ']'
++ '[' 3 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 4 -eq 0 ']'
++ '[' 4 -eq 1 ']'
++ '[' 4 -eq 2 ']'
++ '[' 4 -eq 3 ']'
++ '[' 4 -eq 4 ']'
++ _ip=10.1.1.185
++ '[' 4 -eq 5 ']'
++ '[' 4 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 5 -eq 0 ']'
++ '[' 5 -eq 1 ']'
++ '[' 5 -eq 2 ']'
++ '[' 5 -eq 3 ']'
++ '[' 5 -eq 4 ']'
++ '[' 5 -eq 5 ']'
++ _port=27017
++ '[' 5 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 6 -eq 0 ']'
++ '[' 6 -eq 1 ']'
++ '[' 6 -eq 2 ']'
++ '[' 6 -eq 3 ']'
++ '[' 6 -eq 4 ']'
++ '[' 6 -eq 5 ']'
++ '[' 6 -eq 6 ']'
++ _state=PRIMARY
++ let count++
++ mysql_cmd='replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "平台事业群","基础服务","zhenyu.yue","hippo","10.1.1.185","27017","PRIMARY"'
++ db=MonCenter
++ mysql -umyadmin '-pNum@$%^C0ntal' -h10.1.1.209 MonCenter --default-character-set=utf8 -e 'replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "平台事业群","基础服务","zhenyu.yue","hippo","10.1.1.185","27017","PRIMARY"'
++ '[' 0 -eq 0 ']'
++ echo inserted $'ok:\345\271\263\345\217\260\344\272\213\344\270\232\347\276\244' $'\345\237\272\347\241\200\346\234\215\345\212\241' zhenyu.yue hippo 10.1.1.185 27017 PRIMARY
++ read record
++ _product_name=
++ _product_owner=
++ _set=
++ _ip=
++ _port=
++ _state=
++ count=0
++ for i in '$record'
++ '[' 0 -eq 0 ']'
++ _bg_name=$'\345\271\263\345\217\260\344\272\213\344\270\232\347\276\244'
++ '[' 0 -eq 1 ']'
++ '[' 0 -eq 2 ']'
++ '[' 0 -eq 3 ']'
++ '[' 0 -eq 4 ']'
++ '[' 0 -eq 5 ']'
++ '[' 0 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 1 -eq 0 ']'
++ '[' 1 -eq 1 ']'
++ _product_name=$'\345\271\263\345\217\260DB\344\270\216\345\255\230\345\202\250'
++ '[' 1 -eq 2 ']'
++ '[' 1 -eq 3 ']'
++ '[' 1 -eq 4 ']'
++ '[' 1 -eq 5 ']'
++ '[' 1 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 2 -eq 0 ']'
++ '[' 2 -eq 1 ']'
++ '[' 2 -eq 2 ']'
++ _product_owner=dongxue.tian
++ '[' 2 -eq 3 ']'
++ '[' 2 -eq 4 ']'
++ '[' 2 -eq 5 ']'
++ '[' 2 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 3 -eq 0 ']'
++ '[' 3 -eq 1 ']'
++ '[' 3 -eq 2 ']'
++ '[' 3 -eq 3 ']'
++ _set=Common
++ '[' 3 -eq 4 ']'
++ '[' 3 -eq 5 ']'
++ '[' 3 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 4 -eq 0 ']'
++ '[' 4 -eq 1 ']'
++ '[' 4 -eq 2 ']'
++ '[' 4 -eq 3 ']'
++ '[' 4 -eq 4 ']'
++ _ip=10.1.101.165
++ '[' 4 -eq 5 ']'
++ '[' 4 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 5 -eq 0 ']'
++ '[' 5 -eq 1 ']'
++ '[' 5 -eq 2 ']'
++ '[' 5 -eq 3 ']'
++ '[' 5 -eq 4 ']'
++ '[' 5 -eq 5 ']'
++ _port=27017
++ '[' 5 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 6 -eq 0 ']'
++ '[' 6 -eq 1 ']'
++ '[' 6 -eq 2 ']'
++ '[' 6 -eq 3 ']'
++ '[' 6 -eq 4 ']'
++ '[' 6 -eq 5 ']'
++ '[' 6 -eq 6 ']'
++ _state=PRIMARY
++ let count++
++ mysql_cmd='replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "平台事业群","平台DB与存储","dongxue.tian","Common","10.1.101.165","27017","PRIMARY"'
++ db=MonCenter
++ mysql -umyadmin '-pNum@$%^C0ntal' -h10.1.1.209 MonCenter --default-character-set=utf8 -e 'replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "平台事业群","平台DB与存储","dongxue.tian","Common","10.1.101.165","27017","PRIMARY"'
++ '[' 0 -eq 0 ']'
++ echo inserted $'ok:\345\271\263\345\217\260\344\272\213\344\270\232\347\276\244' $'\345\271\263\345\217\260DB\344\270\216\345\255\230\345\202\250' dongxue.tian Common 10.1.101.165 27017 PRIMARY
++ read record
++ _product_name=
++ _product_owner=
++ _set=
++ _ip=
++ _port=
++ _state=
++ count=0
++ for i in '$record'
++ '[' 0 -eq 0 ']'
++ _bg_name=$'\345\271\263\345\217\260\344\272\213\344\270\232\347\276\244'
++ '[' 0 -eq 1 ']'
++ '[' 0 -eq 2 ']'
++ '[' 0 -eq 3 ']'
++ '[' 0 -eq 4 ']'
++ '[' 0 -eq 5 ']'
++ '[' 0 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 1 -eq 0 ']'
++ '[' 1 -eq 1 ']'
++ _product_name=$'\345\271\263\345\217\260DB\344\270\216\345\255\230\345\202\250'
++ '[' 1 -eq 2 ']'
++ '[' 1 -eq 3 ']'
++ '[' 1 -eq 4 ']'
++ '[' 1 -eq 5 ']'
++ '[' 1 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 2 -eq 0 ']'
++ '[' 2 -eq 1 ']'
++ '[' 2 -eq 2 ']'
++ _product_owner=dongxue.tian
++ '[' 2 -eq 3 ']'
++ '[' 2 -eq 4 ']'
++ '[' 2 -eq 5 ']'
++ '[' 2 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 3 -eq 0 ']'
++ '[' 3 -eq 1 ']'
++ '[' 3 -eq 2 ']'
++ '[' 3 -eq 3 ']'
++ _set=friends
++ '[' 3 -eq 4 ']'
++ '[' 3 -eq 5 ']'
++ '[' 3 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 4 -eq 0 ']'
++ '[' 4 -eq 1 ']'
++ '[' 4 -eq 2 ']'
++ '[' 4 -eq 3 ']'
++ '[' 4 -eq 4 ']'
++ _ip=10.3.10.38
++ '[' 4 -eq 5 ']'
++ '[' 4 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 5 -eq 0 ']'
++ '[' 5 -eq 1 ']'
++ '[' 5 -eq 2 ']'
++ '[' 5 -eq 3 ']'
++ '[' 5 -eq 4 ']'
++ '[' 5 -eq 5 ']'
++ _port=27017
++ '[' 5 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 6 -eq 0 ']'
++ '[' 6 -eq 1 ']'
++ '[' 6 -eq 2 ']'
++ '[' 6 -eq 3 ']'
++ '[' 6 -eq 4 ']'
++ '[' 6 -eq 5 ']'
++ '[' 6 -eq 6 ']'
++ _state=PRIMARY
++ let count++
++ mysql_cmd='replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "平台事业群","平台DB与存储","dongxue.tian","friends","10.3.10.38","27017","PRIMARY"'
++ db=MonCenter
++ mysql -umyadmin '-pNum@$%^C0ntal' -h10.1.1.209 MonCenter --default-character-set=utf8 -e 'replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "平台事业群","平台DB与存储","dongxue.tian","friends","10.3.10.38","27017","PRIMARY"'
++ '[' 0 -eq 0 ']'
++ echo inserted $'ok:\345\271\263\345\217\260\344\272\213\344\270\232\347\276\244' $'\345\271\263\345\217\260DB\344\270\216\345\255\230\345\202\250' dongxue.tian friends 10.3.10.38 27017 PRIMARY
++ read record
++ _product_name=
++ _product_owner=
++ _set=
++ _ip=
++ _port=
++ _state=
++ count=0
++ for i in '$record'
++ '[' 0 -eq 0 ']'
++ _bg_name=$'\345\271\263\345\217\260\344\272\213\344\270\232\347\276\244'
++ '[' 0 -eq 1 ']'
++ '[' 0 -eq 2 ']'
++ '[' 0 -eq 3 ']'
++ '[' 0 -eq 4 ']'
++ '[' 0 -eq 5 ']'
++ '[' 0 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 1 -eq 0 ']'
++ '[' 1 -eq 1 ']'
++ _product_name=$'\345\271\263\345\217\260DB\344\270\216\345\255\230\345\202\250'
++ '[' 1 -eq 2 ']'
++ '[' 1 -eq 3 ']'
++ '[' 1 -eq 4 ']'
++ '[' 1 -eq 5 ']'
++ '[' 1 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 2 -eq 0 ']'
++ '[' 2 -eq 1 ']'
++ '[' 2 -eq 2 ']'
++ _product_owner=dongxue.tian
++ '[' 2 -eq 3 ']'
++ '[' 2 -eq 4 ']'
++ '[' 2 -eq 5 ']'
++ '[' 2 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 3 -eq 0 ']'
++ '[' 3 -eq 1 ']'
++ '[' 3 -eq 2 ']'
++ '[' 3 -eq 3 ']'
++ _set=main
++ '[' 3 -eq 4 ']'
++ '[' 3 -eq 5 ']'
++ '[' 3 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 4 -eq 0 ']'
++ '[' 4 -eq 1 ']'
++ '[' 4 -eq 2 ']'
++ '[' 4 -eq 3 ']'
++ '[' 4 -eq 4 ']'
++ _ip=10.1.6.133
++ '[' 4 -eq 5 ']'
++ '[' 4 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 5 -eq 0 ']'
++ '[' 5 -eq 1 ']'
++ '[' 5 -eq 2 ']'
++ '[' 5 -eq 3 ']'
++ '[' 5 -eq 4 ']'
++ '[' 5 -eq 5 ']'
++ _port=27017
++ '[' 5 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 6 -eq 0 ']'
++ '[' 6 -eq 1 ']'
++ '[' 6 -eq 2 ']'
++ '[' 6 -eq 3 ']'
++ '[' 6 -eq 4 ']'
++ '[' 6 -eq 5 ']'
++ '[' 6 -eq 6 ']'
++ _state=PRIMARY
++ let count++
++ mysql_cmd='replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "平台事业群","平台DB与存储","dongxue.tian","main","10.1.6.133","27017","PRIMARY"'
++ db=MonCenter
++ mysql -umyadmin '-pNum@$%^C0ntal' -h10.1.1.209 MonCenter --default-character-set=utf8 -e 'replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "平台事业群","平台DB与存储","dongxue.tian","main","10.1.6.133","27017","PRIMARY"'
++ '[' 0 -eq 0 ']'
++ echo inserted $'ok:\345\271\263\345\217\260\344\272\213\344\270\232\347\276\244' $'\345\271\263\345\217\260DB\344\270\216\345\255\230\345\202\250' dongxue.tian main 10.1.6.133 27017 PRIMARY
++ read record
++ _product_name=
++ _product_owner=
++ _set=
++ _ip=
++ _port=
++ _state=
++ count=0
++ for i in '$record'
++ '[' 0 -eq 0 ']'
++ _bg_name=$'\345\271\263\345\217\260\344\272\213\344\270\232\347\276\244'
++ '[' 0 -eq 1 ']'
++ '[' 0 -eq 2 ']'
++ '[' 0 -eq 3 ']'
++ '[' 0 -eq 4 ']'
++ '[' 0 -eq 5 ']'
++ '[' 0 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 1 -eq 0 ']'
++ '[' 1 -eq 1 ']'
++ _product_name=$'\345\271\263\345\217\260DB\344\270\216\345\255\230\345\202\250'
++ '[' 1 -eq 2 ']'
++ '[' 1 -eq 3 ']'
++ '[' 1 -eq 4 ']'
++ '[' 1 -eq 5 ']'
++ '[' 1 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 2 -eq 0 ']'
++ '[' 2 -eq 1 ']'
++ '[' 2 -eq 2 ']'
++ _product_owner=dongxue.tian
++ '[' 2 -eq 3 ']'
++ '[' 2 -eq 4 ']'
++ '[' 2 -eq 5 ']'
++ '[' 2 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 3 -eq 0 ']'
++ '[' 3 -eq 1 ']'
++ '[' 3 -eq 2 ']'
++ '[' 3 -eq 3 ']'
++ _set=Main_New
++ '[' 3 -eq 4 ']'
++ '[' 3 -eq 5 ']'
++ '[' 3 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 4 -eq 0 ']'
++ '[' 4 -eq 1 ']'
++ '[' 4 -eq 2 ']'
++ '[' 4 -eq 3 ']'
++ '[' 4 -eq 4 ']'
++ _ip=10.1.101.134
++ '[' 4 -eq 5 ']'
++ '[' 4 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 5 -eq 0 ']'
++ '[' 5 -eq 1 ']'
++ '[' 5 -eq 2 ']'
++ '[' 5 -eq 3 ']'
++ '[' 5 -eq 4 ']'
++ '[' 5 -eq 5 ']'
++ _port=27018
++ '[' 5 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 6 -eq 0 ']'
++ '[' 6 -eq 1 ']'
++ '[' 6 -eq 2 ']'
++ '[' 6 -eq 3 ']'
++ '[' 6 -eq 4 ']'
++ '[' 6 -eq 5 ']'
++ '[' 6 -eq 6 ']'
++ _state=PRIMARY
++ let count++
++ mysql_cmd='replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "平台事业群","平台DB与存储","dongxue.tian","Main_New","10.1.101.134","27018","PRIMARY"'
++ db=MonCenter
++ mysql -umyadmin '-pNum@$%^C0ntal' -h10.1.1.209 MonCenter --default-character-set=utf8 -e 'replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "平台事业群","平台DB与存储","dongxue.tian","Main_New","10.1.101.134","27018","PRIMARY"'
++ '[' 0 -eq 0 ']'
++ echo inserted $'ok:\345\271\263\345\217\260\344\272\213\344\270\232\347\276\244' $'\345\271\263\345\217\260DB\344\270\216\345\255\230\345\202\250' dongxue.tian Main_New 10.1.101.134 27018 PRIMARY
++ read record
++ _product_name=
++ _product_owner=
++ _set=
++ _ip=
++ _port=
++ _state=
++ count=0
++ for i in '$record'
++ '[' 0 -eq 0 ']'
++ _bg_name=$'\345\271\263\345\217\260\344\272\213\344\270\232\347\276\244'
++ '[' 0 -eq 1 ']'
++ '[' 0 -eq 2 ']'
++ '[' 0 -eq 3 ']'
++ '[' 0 -eq 4 ']'
++ '[' 0 -eq 5 ']'
++ '[' 0 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 1 -eq 0 ']'
++ '[' 1 -eq 1 ']'
++ _product_name=$'\345\271\263\345\217\260DB\344\270\216\345\255\230\345\202\250'
++ '[' 1 -eq 2 ']'
++ '[' 1 -eq 3 ']'
++ '[' 1 -eq 4 ']'
++ '[' 1 -eq 5 ']'
++ '[' 1 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 2 -eq 0 ']'
++ '[' 2 -eq 1 ']'
++ '[' 2 -eq 2 ']'
++ _product_owner=dongxue.tian
++ '[' 2 -eq 3 ']'
++ '[' 2 -eq 4 ']'
++ '[' 2 -eq 5 ']'
++ '[' 2 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 3 -eq 0 ']'
++ '[' 3 -eq 1 ']'
++ '[' 3 -eq 2 ']'
++ '[' 3 -eq 3 ']'
++ _set=Review
++ '[' 3 -eq 4 ']'
++ '[' 3 -eq 5 ']'
++ '[' 3 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 4 -eq 0 ']'
++ '[' 4 -eq 1 ']'
++ '[' 4 -eq 2 ']'
++ '[' 4 -eq 3 ']'
++ '[' 4 -eq 4 ']'
++ _ip=10.1.101.164
++ '[' 4 -eq 5 ']'
++ '[' 4 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 5 -eq 0 ']'
++ '[' 5 -eq 1 ']'
++ '[' 5 -eq 2 ']'
++ '[' 5 -eq 3 ']'
++ '[' 5 -eq 4 ']'
++ '[' 5 -eq 5 ']'
++ _port=27018
++ '[' 5 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 6 -eq 0 ']'
++ '[' 6 -eq 1 ']'
++ '[' 6 -eq 2 ']'
++ '[' 6 -eq 3 ']'
++ '[' 6 -eq 4 ']'
++ '[' 6 -eq 5 ']'
++ '[' 6 -eq 6 ']'
++ _state=PRIMARY
++ let count++
++ mysql_cmd='replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "平台事业群","平台DB与存储","dongxue.tian","Review","10.1.101.164","27018","PRIMARY"'
++ db=MonCenter
++ mysql -umyadmin '-pNum@$%^C0ntal' -h10.1.1.209 MonCenter --default-character-set=utf8 -e 'replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "平台事业群","平台DB与存储","dongxue.tian","Review","10.1.101.164","27018","PRIMARY"'
++ '[' 0 -eq 0 ']'
++ echo inserted $'ok:\345\271\263\345\217\260\344\272\213\344\270\232\347\276\244' $'\345\271\263\345\217\260DB\344\270\216\345\255\230\345\202\250' dongxue.tian Review 10.1.101.164 27018 PRIMARY
++ read record
++ _product_name=
++ _product_owner=
++ _set=
++ _ip=
++ _port=
++ _state=
++ count=0
++ for i in '$record'
++ '[' 0 -eq 0 ']'
++ _bg_name=$'\345\271\263\345\217\260\344\272\213\344\270\232\347\276\244'
++ '[' 0 -eq 1 ']'
++ '[' 0 -eq 2 ']'
++ '[' 0 -eq 3 ']'
++ '[' 0 -eq 4 ']'
++ '[' 0 -eq 5 ']'
++ '[' 0 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 1 -eq 0 ']'
++ '[' 1 -eq 1 ']'
++ _product_name=$'\345\271\263\345\217\260DB\344\270\216\345\255\230\345\202\250'
++ '[' 1 -eq 2 ']'
++ '[' 1 -eq 3 ']'
++ '[' 1 -eq 4 ']'
++ '[' 1 -eq 5 ']'
++ '[' 1 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 2 -eq 0 ']'
++ '[' 2 -eq 1 ']'
++ '[' 2 -eq 2 ']'
++ _product_owner=dongxue.tian
++ '[' 2 -eq 3 ']'
++ '[' 2 -eq 4 ']'
++ '[' 2 -eq 5 ']'
++ '[' 2 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 3 -eq 0 ']'
++ '[' 3 -eq 1 ']'
++ '[' 3 -eq 2 ']'
++ '[' 3 -eq 3 ']'
++ _set=search02
++ '[' 3 -eq 4 ']'
++ '[' 3 -eq 5 ']'
++ '[' 3 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 4 -eq 0 ']'
++ '[' 4 -eq 1 ']'
++ '[' 4 -eq 2 ']'
++ '[' 4 -eq 3 ']'
++ '[' 4 -eq 4 ']'
++ _ip=10.3.40.26
++ '[' 4 -eq 5 ']'
++ '[' 4 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 5 -eq 0 ']'
++ '[' 5 -eq 1 ']'
++ '[' 5 -eq 2 ']'
++ '[' 5 -eq 3 ']'
++ '[' 5 -eq 4 ']'
++ '[' 5 -eq 5 ']'
++ _port=27017
++ '[' 5 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 6 -eq 0 ']'
++ '[' 6 -eq 1 ']'
++ '[' 6 -eq 2 ']'
++ '[' 6 -eq 3 ']'
++ '[' 6 -eq 4 ']'
++ '[' 6 -eq 5 ']'
++ '[' 6 -eq 6 ']'
++ _state=PRIMARY
++ let count++
++ mysql_cmd='replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "平台事业群","平台DB与存储","dongxue.tian","search02","10.3.40.26","27017","PRIMARY"'
++ db=MonCenter
++ mysql -umyadmin '-pNum@$%^C0ntal' -h10.1.1.209 MonCenter --default-character-set=utf8 -e 'replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "平台事业群","平台DB与存储","dongxue.tian","search02","10.3.40.26","27017","PRIMARY"'
++ '[' 0 -eq 0 ']'
++ echo inserted $'ok:\345\271\263\345\217\260\344\272\213\344\270\232\347\276\244' $'\345\271\263\345\217\260DB\344\270\216\345\255\230\345\202\250' dongxue.tian search02 10.3.40.26 27017 PRIMARY
++ read record
++ _product_name=
++ _product_owner=
++ _set=
++ _ip=
++ _port=
++ _state=
++ count=0
++ for i in '$record'
++ '[' 0 -eq 0 ']'
++ _bg_name=$'\345\271\263\345\217\260\344\272\213\344\270\232\347\276\244'
++ '[' 0 -eq 1 ']'
++ '[' 0 -eq 2 ']'
++ '[' 0 -eq 3 ']'
++ '[' 0 -eq 4 ']'
++ '[' 0 -eq 5 ']'
++ '[' 0 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 1 -eq 0 ']'
++ '[' 1 -eq 1 ']'
++ _product_name=$'\345\271\263\345\217\260DB\344\270\216\345\255\230\345\202\250'
++ '[' 1 -eq 2 ']'
++ '[' 1 -eq 3 ']'
++ '[' 1 -eq 4 ']'
++ '[' 1 -eq 5 ']'
++ '[' 1 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 2 -eq 0 ']'
++ '[' 2 -eq 1 ']'
++ '[' 2 -eq 2 ']'
++ _product_owner=dongxue.tian
++ '[' 2 -eq 3 ']'
++ '[' 2 -eq 4 ']'
++ '[' 2 -eq 5 ']'
++ '[' 2 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 3 -eq 0 ']'
++ '[' 3 -eq 1 ']'
++ '[' 3 -eq 2 ']'
++ '[' 3 -eq 3 ']'
++ _set=Search
++ '[' 3 -eq 4 ']'
++ '[' 3 -eq 5 ']'
++ '[' 3 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 4 -eq 0 ']'
++ '[' 4 -eq 1 ']'
++ '[' 4 -eq 2 ']'
++ '[' 4 -eq 3 ']'
++ '[' 4 -eq 4 ']'
++ _ip=10.1.115.11
++ '[' 4 -eq 5 ']'
++ '[' 4 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 5 -eq 0 ']'
++ '[' 5 -eq 1 ']'
++ '[' 5 -eq 2 ']'
++ '[' 5 -eq 3 ']'
++ '[' 5 -eq 4 ']'
++ '[' 5 -eq 5 ']'
++ _port=27017
++ '[' 5 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 6 -eq 0 ']'
++ '[' 6 -eq 1 ']'
++ '[' 6 -eq 2 ']'
++ '[' 6 -eq 3 ']'
++ '[' 6 -eq 4 ']'
++ '[' 6 -eq 5 ']'
++ '[' 6 -eq 6 ']'
++ _state=PRIMARY
++ let count++
++ mysql_cmd='replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "平台事业群","平台DB与存储","dongxue.tian","Search","10.1.115.11","27017","PRIMARY"'
++ db=MonCenter
++ mysql -umyadmin '-pNum@$%^C0ntal' -h10.1.1.209 MonCenter --default-character-set=utf8 -e 'replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "平台事业群","平台DB与存储","dongxue.tian","Search","10.1.115.11","27017","PRIMARY"'
++ '[' 0 -eq 0 ']'
++ echo inserted $'ok:\345\271\263\345\217\260\344\272\213\344\270\232\347\276\244' $'\345\271\263\345\217\260DB\344\270\216\345\255\230\345\202\250' dongxue.tian Search 10.1.115.11 27017 PRIMARY
++ read record
++ _product_name=
++ _product_owner=
++ _set=
++ _ip=
++ _port=
++ _state=
++ count=0
++ for i in '$record'
++ '[' 0 -eq 0 ']'
++ _bg_name=$'\345\271\263\345\217\260\344\272\213\344\270\232\347\276\244'
++ '[' 0 -eq 1 ']'
++ '[' 0 -eq 2 ']'
++ '[' 0 -eq 3 ']'
++ '[' 0 -eq 4 ']'
++ '[' 0 -eq 5 ']'
++ '[' 0 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 1 -eq 0 ']'
++ '[' 1 -eq 1 ']'
++ _product_name=$'\345\271\263\345\217\260DB\344\270\216\345\255\230\345\202\250'
++ '[' 1 -eq 2 ']'
++ '[' 1 -eq 3 ']'
++ '[' 1 -eq 4 ']'
++ '[' 1 -eq 5 ']'
++ '[' 1 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 2 -eq 0 ']'
++ '[' 2 -eq 1 ']'
++ '[' 2 -eq 2 ']'
++ _product_owner=dongxue.tian
++ '[' 2 -eq 3 ']'
++ '[' 2 -eq 4 ']'
++ '[' 2 -eq 5 ']'
++ '[' 2 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 3 -eq 0 ']'
++ '[' 3 -eq 1 ']'
++ '[' 3 -eq 2 ']'
++ '[' 3 -eq 3 ']'
++ _set=swallow01
++ '[' 3 -eq 4 ']'
++ '[' 3 -eq 5 ']'
++ '[' 3 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 4 -eq 0 ']'
++ '[' 4 -eq 1 ']'
++ '[' 4 -eq 2 ']'
++ '[' 4 -eq 3 ']'
++ '[' 4 -eq 4 ']'
++ _ip=10.1.115.12
++ '[' 4 -eq 5 ']'
++ '[' 4 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 5 -eq 0 ']'
++ '[' 5 -eq 1 ']'
++ '[' 5 -eq 2 ']'
++ '[' 5 -eq 3 ']'
++ '[' 5 -eq 4 ']'
++ '[' 5 -eq 5 ']'
++ _port=27018
++ '[' 5 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 6 -eq 0 ']'
++ '[' 6 -eq 1 ']'
++ '[' 6 -eq 2 ']'
++ '[' 6 -eq 3 ']'
++ '[' 6 -eq 4 ']'
++ '[' 6 -eq 5 ']'
++ '[' 6 -eq 6 ']'
++ _state=PRIMARY
++ let count++
++ mysql_cmd='replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "平台事业群","平台DB与存储","dongxue.tian","swallow01","10.1.115.12","27018","PRIMARY"'
++ db=MonCenter
++ mysql -umyadmin '-pNum@$%^C0ntal' -h10.1.1.209 MonCenter --default-character-set=utf8 -e 'replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "平台事业群","平台DB与存储","dongxue.tian","swallow01","10.1.115.12","27018","PRIMARY"'
++ '[' 0 -eq 0 ']'
++ echo inserted $'ok:\345\271\263\345\217\260\344\272\213\344\270\232\347\276\244' $'\345\271\263\345\217\260DB\344\270\216\345\255\230\345\202\250' dongxue.tian swallow01 10.1.115.12 27018 PRIMARY
++ read record
++ _product_name=
++ _product_owner=
++ _set=
++ _ip=
++ _port=
++ _state=
++ count=0
++ for i in '$record'
++ '[' 0 -eq 0 ']'
++ _bg_name=$'\345\271\263\345\217\260\344\272\213\344\270\232\347\276\244'
++ '[' 0 -eq 1 ']'
++ '[' 0 -eq 2 ']'
++ '[' 0 -eq 3 ']'
++ '[' 0 -eq 4 ']'
++ '[' 0 -eq 5 ']'
++ '[' 0 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 1 -eq 0 ']'
++ '[' 1 -eq 1 ']'
++ _product_name=$'\346\220\234\347\264\242\344\275\223\351\252\214'
++ '[' 1 -eq 2 ']'
++ '[' 1 -eq 3 ']'
++ '[' 1 -eq 4 ']'
++ '[' 1 -eq 5 ']'
++ '[' 1 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 2 -eq 0 ']'
++ '[' 2 -eq 1 ']'
++ '[' 2 -eq 2 ']'
++ _product_owner=gong.zhang
++ '[' 2 -eq 3 ']'
++ '[' 2 -eq 4 ']'
++ '[' 2 -eq 5 ']'
++ '[' 2 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 3 -eq 0 ']'
++ '[' 3 -eq 1 ']'
++ '[' 3 -eq 2 ']'
++ '[' 3 -eq 3 ']'
++ _set=hippo
++ '[' 3 -eq 4 ']'
++ '[' 3 -eq 5 ']'
++ '[' 3 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 4 -eq 0 ']'
++ '[' 4 -eq 1 ']'
++ '[' 4 -eq 2 ']'
++ '[' 4 -eq 3 ']'
++ '[' 4 -eq 4 ']'
++ _ip=10.1.1.185
++ '[' 4 -eq 5 ']'
++ '[' 4 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 5 -eq 0 ']'
++ '[' 5 -eq 1 ']'
++ '[' 5 -eq 2 ']'
++ '[' 5 -eq 3 ']'
++ '[' 5 -eq 4 ']'
++ '[' 5 -eq 5 ']'
++ _port=27017
++ '[' 5 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 6 -eq 0 ']'
++ '[' 6 -eq 1 ']'
++ '[' 6 -eq 2 ']'
++ '[' 6 -eq 3 ']'
++ '[' 6 -eq 4 ']'
++ '[' 6 -eq 5 ']'
++ '[' 6 -eq 6 ']'
++ _state=PRIMARY
++ let count++
++ mysql_cmd='replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "平台事业群","搜索体验","gong.zhang","hippo","10.1.1.185","27017","PRIMARY"'
++ db=MonCenter
++ mysql -umyadmin '-pNum@$%^C0ntal' -h10.1.1.209 MonCenter --default-character-set=utf8 -e 'replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "平台事业群","搜索体验","gong.zhang","hippo","10.1.1.185","27017","PRIMARY"'
++ '[' 0 -eq 0 ']'
++ echo inserted $'ok:\345\271\263\345\217\260\344\272\213\344\270\232\347\276\244' $'\346\220\234\347\264\242\344\275\223\351\252\214' gong.zhang hippo 10.1.1.185 27017 PRIMARY
++ read record
++ _product_name=
++ _product_owner=
++ _set=
++ _ip=
++ _port=
++ _state=
++ count=0
++ for i in '$record'
++ '[' 0 -eq 0 ']'
++ _bg_name=$'\345\271\263\345\217\260\344\272\213\344\270\232\347\276\244'
++ '[' 0 -eq 1 ']'
++ '[' 0 -eq 2 ']'
++ '[' 0 -eq 3 ']'
++ '[' 0 -eq 4 ']'
++ '[' 0 -eq 5 ']'
++ '[' 0 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 1 -eq 0 ']'
++ '[' 1 -eq 1 ']'
++ _product_name=$'\346\220\234\347\264\242\345\211\215\347\253\257'
++ '[' 1 -eq 2 ']'
++ '[' 1 -eq 3 ']'
++ '[' 1 -eq 4 ']'
++ '[' 1 -eq 5 ']'
++ '[' 1 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 2 -eq 0 ']'
++ '[' 2 -eq 1 ']'
++ '[' 2 -eq 2 ']'
++ _product_owner=zhitian.zhang
++ '[' 2 -eq 3 ']'
++ '[' 2 -eq 4 ']'
++ '[' 2 -eq 5 ']'
++ '[' 2 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 3 -eq 0 ']'
++ '[' 3 -eq 1 ']'
++ '[' 3 -eq 2 ']'
++ '[' 3 -eq 3 ']'
++ _set=hippo
++ '[' 3 -eq 4 ']'
++ '[' 3 -eq 5 ']'
++ '[' 3 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 4 -eq 0 ']'
++ '[' 4 -eq 1 ']'
++ '[' 4 -eq 2 ']'
++ '[' 4 -eq 3 ']'
++ '[' 4 -eq 4 ']'
++ _ip=10.1.1.185
++ '[' 4 -eq 5 ']'
++ '[' 4 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 5 -eq 0 ']'
++ '[' 5 -eq 1 ']'
++ '[' 5 -eq 2 ']'
++ '[' 5 -eq 3 ']'
++ '[' 5 -eq 4 ']'
++ '[' 5 -eq 5 ']'
++ _port=27017
++ '[' 5 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 6 -eq 0 ']'
++ '[' 6 -eq 1 ']'
++ '[' 6 -eq 2 ']'
++ '[' 6 -eq 3 ']'
++ '[' 6 -eq 4 ']'
++ '[' 6 -eq 5 ']'
++ '[' 6 -eq 6 ']'
++ _state=PRIMARY
++ let count++
++ mysql_cmd='replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "平台事业群","搜索前端","zhitian.zhang","hippo","10.1.1.185","27017","PRIMARY"'
++ db=MonCenter
++ mysql -umyadmin '-pNum@$%^C0ntal' -h10.1.1.209 MonCenter --default-character-set=utf8 -e 'replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "平台事业群","搜索前端","zhitian.zhang","hippo","10.1.1.185","27017","PRIMARY"'
++ '[' 0 -eq 0 ']'
++ echo inserted $'ok:\345\271\263\345\217\260\344\272\213\344\270\232\347\276\244' $'\346\220\234\347\264\242\345\211\215\347\253\257' zhitian.zhang hippo 10.1.1.185 27017 PRIMARY
++ read record
++ _product_name=
++ _product_owner=
++ _set=
++ _ip=
++ _port=
++ _state=
++ count=0
++ for i in '$record'
++ '[' 0 -eq 0 ']'
++ _bg_name=$'\345\271\263\345\217\260\344\272\213\344\270\232\347\276\244'
++ '[' 0 -eq 1 ']'
++ '[' 0 -eq 2 ']'
++ '[' 0 -eq 3 ']'
++ '[' 0 -eq 4 ']'
++ '[' 0 -eq 5 ']'
++ '[' 0 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 1 -eq 0 ']'
++ '[' 1 -eq 1 ']'
++ _product_name=$'\346\220\234\347\264\242\346\241\206\346\236\266'
++ '[' 1 -eq 2 ']'
++ '[' 1 -eq 3 ']'
++ '[' 1 -eq 4 ']'
++ '[' 1 -eq 5 ']'
++ '[' 1 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 2 -eq 0 ']'
++ '[' 2 -eq 1 ']'
++ '[' 2 -eq 2 ']'
++ _product_owner=junhao.zhang
++ '[' 2 -eq 3 ']'
++ '[' 2 -eq 4 ']'
++ '[' 2 -eq 5 ']'
++ '[' 2 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 3 -eq 0 ']'
++ '[' 3 -eq 1 ']'
++ '[' 3 -eq 2 ']'
++ '[' 3 -eq 3 ']'
++ _set=hippo
++ '[' 3 -eq 4 ']'
++ '[' 3 -eq 5 ']'
++ '[' 3 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 4 -eq 0 ']'
++ '[' 4 -eq 1 ']'
++ '[' 4 -eq 2 ']'
++ '[' 4 -eq 3 ']'
++ '[' 4 -eq 4 ']'
++ _ip=10.1.1.185
++ '[' 4 -eq 5 ']'
++ '[' 4 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 5 -eq 0 ']'
++ '[' 5 -eq 1 ']'
++ '[' 5 -eq 2 ']'
++ '[' 5 -eq 3 ']'
++ '[' 5 -eq 4 ']'
++ '[' 5 -eq 5 ']'
++ _port=27017
++ '[' 5 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 6 -eq 0 ']'
++ '[' 6 -eq 1 ']'
++ '[' 6 -eq 2 ']'
++ '[' 6 -eq 3 ']'
++ '[' 6 -eq 4 ']'
++ '[' 6 -eq 5 ']'
++ '[' 6 -eq 6 ']'
++ _state=PRIMARY
++ let count++
++ mysql_cmd='replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "平台事业群","搜索框架","junhao.zhang","hippo","10.1.1.185","27017","PRIMARY"'
++ db=MonCenter
++ mysql -umyadmin '-pNum@$%^C0ntal' -h10.1.1.209 MonCenter --default-character-set=utf8 -e 'replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "平台事业群","搜索框架","junhao.zhang","hippo","10.1.1.185","27017","PRIMARY"'
++ '[' 0 -eq 0 ']'
++ echo inserted $'ok:\345\271\263\345\217\260\344\272\213\344\270\232\347\276\244' $'\346\220\234\347\264\242\346\241\206\346\236\266' junhao.zhang hippo 10.1.1.185 27017 PRIMARY
++ read record
++ _product_name=
++ _product_owner=
++ _set=
++ _ip=
++ _port=
++ _state=
++ count=0
++ for i in '$record'
++ '[' 0 -eq 0 ']'
++ _bg_name=$'\346\212\200\346\234\257\345\267\245\347\250\213\345\217\212\345\237\272\347\241\200\346\225\260\346\215\256\345\271\263\345\217\260'
++ '[' 0 -eq 1 ']'
++ '[' 0 -eq 2 ']'
++ '[' 0 -eq 3 ']'
++ '[' 0 -eq 4 ']'
++ '[' 0 -eq 5 ']'
++ '[' 0 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 1 -eq 0 ']'
++ '[' 1 -eq 1 ']'
++ _product_name=$'\345\267\245\345\205\267'
++ '[' 1 -eq 2 ']'
++ '[' 1 -eq 3 ']'
++ '[' 1 -eq 4 ']'
++ '[' 1 -eq 5 ']'
++ '[' 1 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 2 -eq 0 ']'
++ '[' 2 -eq 1 ']'
++ '[' 2 -eq 2 ']'
++ _product_owner=yinhaibo
++ '[' 2 -eq 3 ']'
++ '[' 2 -eq 4 ']'
++ '[' 2 -eq 5 ']'
++ '[' 2 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 3 -eq 0 ']'
++ '[' 3 -eq 1 ']'
++ '[' 3 -eq 2 ']'
++ '[' 3 -eq 3 ']'
++ _set=Search
++ '[' 3 -eq 4 ']'
++ '[' 3 -eq 5 ']'
++ '[' 3 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 4 -eq 0 ']'
++ '[' 4 -eq 1 ']'
++ '[' 4 -eq 2 ']'
++ '[' 4 -eq 3 ']'
++ '[' 4 -eq 4 ']'
++ _ip=10.1.115.11
++ '[' 4 -eq 5 ']'
++ '[' 4 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 5 -eq 0 ']'
++ '[' 5 -eq 1 ']'
++ '[' 5 -eq 2 ']'
++ '[' 5 -eq 3 ']'
++ '[' 5 -eq 4 ']'
++ '[' 5 -eq 5 ']'
++ _port=27017
++ '[' 5 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 6 -eq 0 ']'
++ '[' 6 -eq 1 ']'
++ '[' 6 -eq 2 ']'
++ '[' 6 -eq 3 ']'
++ '[' 6 -eq 4 ']'
++ '[' 6 -eq 5 ']'
++ '[' 6 -eq 6 ']'
++ _state=PRIMARY
++ let count++
++ mysql_cmd='replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "技术工程及基础数据平台","工具","yinhaibo","Search","10.1.115.11","27017","PRIMARY"'
++ db=MonCenter
++ mysql -umyadmin '-pNum@$%^C0ntal' -h10.1.1.209 MonCenter --default-character-set=utf8 -e 'replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "技术工程及基础数据平台","工具","yinhaibo","Search","10.1.115.11","27017","PRIMARY"'
++ '[' 0 -eq 0 ']'
++ echo inserted $'ok:\346\212\200\346\234\257\345\267\245\347\250\213\345\217\212\345\237\272\347\241\200\346\225\260\346\215\256\345\271\263\345\217\260' $'\345\267\245\345\205\267' yinhaibo Search 10.1.115.11 27017 PRIMARY
++ read record
++ _product_name=
++ _product_owner=
++ _set=
++ _ip=
++ _port=
++ _state=
++ count=0
++ for i in '$record'
++ '[' 0 -eq 0 ']'
++ _bg_name=$'\346\212\200\346\234\257\345\267\245\347\250\213\345\217\212\345\237\272\347\241\200\346\225\260\346\215\256\345\271\263\345\217\260'
++ '[' 0 -eq 1 ']'
++ '[' 0 -eq 2 ']'
++ '[' 0 -eq 3 ']'
++ '[' 0 -eq 4 ']'
++ '[' 0 -eq 5 ']'
++ '[' 0 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 1 -eq 0 ']'
++ '[' 1 -eq 1 ']'
++ _product_name=$'\351\200\232\344\277\241\345\271\263\345\217\260'
++ '[' 1 -eq 2 ']'
++ '[' 1 -eq 3 ']'
++ '[' 1 -eq 4 ']'
++ '[' 1 -eq 5 ']'
++ '[' 1 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 2 -eq 0 ']'
++ '[' 2 -eq 1 ']'
++ '[' 2 -eq 2 ']'
++ _product_owner=enlight.chen
++ '[' 2 -eq 3 ']'
++ '[' 2 -eq 4 ']'
++ '[' 2 -eq 5 ']'
++ '[' 2 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 3 -eq 0 ']'
++ '[' 3 -eq 1 ']'
++ '[' 3 -eq 2 ']'
++ '[' 3 -eq 3 ']'
++ _set=alpaca
++ '[' 3 -eq 4 ']'
++ '[' 3 -eq 5 ']'
++ '[' 3 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 4 -eq 0 ']'
++ '[' 4 -eq 1 ']'
++ '[' 4 -eq 2 ']'
++ '[' 4 -eq 3 ']'
++ '[' 4 -eq 4 ']'
++ _ip=10.1.6.89
++ '[' 4 -eq 5 ']'
++ '[' 4 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 5 -eq 0 ']'
++ '[' 5 -eq 1 ']'
++ '[' 5 -eq 2 ']'
++ '[' 5 -eq 3 ']'
++ '[' 5 -eq 4 ']'
++ '[' 5 -eq 5 ']'
++ _port=27017
++ '[' 5 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 6 -eq 0 ']'
++ '[' 6 -eq 1 ']'
++ '[' 6 -eq 2 ']'
++ '[' 6 -eq 3 ']'
++ '[' 6 -eq 4 ']'
++ '[' 6 -eq 5 ']'
++ '[' 6 -eq 6 ']'
++ _state=PRIMARY
++ let count++
++ mysql_cmd='replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "技术工程及基础数据平台","通信平台","enlight.chen","alpaca","10.1.6.89","27017","PRIMARY"'
++ db=MonCenter
++ mysql -umyadmin '-pNum@$%^C0ntal' -h10.1.1.209 MonCenter --default-character-set=utf8 -e 'replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "技术工程及基础数据平台","通信平台","enlight.chen","alpaca","10.1.6.89","27017","PRIMARY"'
++ '[' 0 -eq 0 ']'
++ echo inserted $'ok:\346\212\200\346\234\257\345\267\245\347\250\213\345\217\212\345\237\272\347\241\200\346\225\260\346\215\256\345\271\263\345\217\260' $'\351\200\232\344\277\241\345\271\263\345\217\260' enlight.chen alpaca 10.1.6.89 27017 PRIMARY
++ read record
++ _product_name=
++ _product_owner=
++ _set=
++ _ip=
++ _port=
++ _state=
++ count=0
++ for i in '$record'
++ '[' 0 -eq 0 ']'
++ _bg_name=$'\346\212\200\346\234\257\345\267\245\347\250\213\345\217\212\345\237\272\347\241\200\346\225\260\346\215\256\345\271\263\345\217\260'
++ '[' 0 -eq 1 ']'
++ '[' 0 -eq 2 ']'
++ '[' 0 -eq 3 ']'
++ '[' 0 -eq 4 ']'
++ '[' 0 -eq 5 ']'
++ '[' 0 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 1 -eq 0 ']'
++ '[' 1 -eq 1 ']'
++ _product_name=$'\351\200\232\344\277\241\345\271\263\345\217\260'
++ '[' 1 -eq 2 ']'
++ '[' 1 -eq 3 ']'
++ '[' 1 -eq 4 ']'
++ '[' 1 -eq 5 ']'
++ '[' 1 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 2 -eq 0 ']'
++ '[' 2 -eq 1 ']'
++ '[' 2 -eq 2 ']'
++ _product_owner=enlight.chen
++ '[' 2 -eq 3 ']'
++ '[' 2 -eq 4 ']'
++ '[' 2 -eq 5 ']'
++ '[' 2 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 3 -eq 0 ']'
++ '[' 3 -eq 1 ']'
++ '[' 3 -eq 2 ']'
++ '[' 3 -eq 3 ']'
++ _set=NewSwallow
++ '[' 3 -eq 4 ']'
++ '[' 3 -eq 5 ']'
++ '[' 3 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 4 -eq 0 ']'
++ '[' 4 -eq 1 ']'
++ '[' 4 -eq 2 ']'
++ '[' 4 -eq 3 ']'
++ '[' 4 -eq 4 ']'
++ _ip=10.1.101.155
++ '[' 4 -eq 5 ']'
++ '[' 4 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 5 -eq 0 ']'
++ '[' 5 -eq 1 ']'
++ '[' 5 -eq 2 ']'
++ '[' 5 -eq 3 ']'
++ '[' 5 -eq 4 ']'
++ '[' 5 -eq 5 ']'
++ _port=27017
++ '[' 5 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 6 -eq 0 ']'
++ '[' 6 -eq 1 ']'
++ '[' 6 -eq 2 ']'
++ '[' 6 -eq 3 ']'
++ '[' 6 -eq 4 ']'
++ '[' 6 -eq 5 ']'
++ '[' 6 -eq 6 ']'
++ _state=SECONDARY
++ let count++
++ mysql_cmd='replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "技术工程及基础数据平台","通信平台","enlight.chen","NewSwallow","10.1.101.155","27017","SECONDARY"'
++ db=MonCenter
++ mysql -umyadmin '-pNum@$%^C0ntal' -h10.1.1.209 MonCenter --default-character-set=utf8 -e 'replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "技术工程及基础数据平台","通信平台","enlight.chen","NewSwallow","10.1.101.155","27017","SECONDARY"'
++ '[' 0 -eq 0 ']'
++ echo inserted $'ok:\346\212\200\346\234\257\345\267\245\347\250\213\345\217\212\345\237\272\347\241\200\346\225\260\346\215\256\345\271\263\345\217\260' $'\351\200\232\344\277\241\345\271\263\345\217\260' enlight.chen NewSwallow 10.1.101.155 27017 SECONDARY
++ read record
++ _product_name=
++ _product_owner=
++ _set=
++ _ip=
++ _port=
++ _state=
++ count=0
++ for i in '$record'
++ '[' 0 -eq 0 ']'
++ _bg_name=$'\346\212\200\346\234\257\345\267\245\347\250\213\345\217\212\345\237\272\347\241\200\346\225\260\346\215\256\345\271\263\345\217\260'
++ '[' 0 -eq 1 ']'
++ '[' 0 -eq 2 ']'
++ '[' 0 -eq 3 ']'
++ '[' 0 -eq 4 ']'
++ '[' 0 -eq 5 ']'
++ '[' 0 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 1 -eq 0 ']'
++ '[' 1 -eq 1 ']'
++ _product_name=$'\351\200\232\344\277\241\345\271\263\345\217\260'
++ '[' 1 -eq 2 ']'
++ '[' 1 -eq 3 ']'
++ '[' 1 -eq 4 ']'
++ '[' 1 -eq 5 ']'
++ '[' 1 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 2 -eq 0 ']'
++ '[' 2 -eq 1 ']'
++ '[' 2 -eq 2 ']'
++ _product_owner=enlight.chen
++ '[' 2 -eq 3 ']'
++ '[' 2 -eq 4 ']'
++ '[' 2 -eq 5 ']'
++ '[' 2 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 3 -eq 0 ']'
++ '[' 3 -eq 1 ']'
++ '[' 3 -eq 2 ']'
++ '[' 3 -eq 3 ']'
++ _set=NewSwallow
++ '[' 3 -eq 4 ']'
++ '[' 3 -eq 5 ']'
++ '[' 3 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 4 -eq 0 ']'
++ '[' 4 -eq 1 ']'
++ '[' 4 -eq 2 ']'
++ '[' 4 -eq 3 ']'
++ '[' 4 -eq 4 ']'
++ _ip=10.1.101.157
++ '[' 4 -eq 5 ']'
++ '[' 4 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 5 -eq 0 ']'
++ '[' 5 -eq 1 ']'
++ '[' 5 -eq 2 ']'
++ '[' 5 -eq 3 ']'
++ '[' 5 -eq 4 ']'
++ '[' 5 -eq 5 ']'
++ _port=27017
++ '[' 5 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 6 -eq 0 ']'
++ '[' 6 -eq 1 ']'
++ '[' 6 -eq 2 ']'
++ '[' 6 -eq 3 ']'
++ '[' 6 -eq 4 ']'
++ '[' 6 -eq 5 ']'
++ '[' 6 -eq 6 ']'
++ _state=PRIMARY
++ let count++
++ mysql_cmd='replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "技术工程及基础数据平台","通信平台","enlight.chen","NewSwallow","10.1.101.157","27017","PRIMARY"'
++ db=MonCenter
++ mysql -umyadmin '-pNum@$%^C0ntal' -h10.1.1.209 MonCenter --default-character-set=utf8 -e 'replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "技术工程及基础数据平台","通信平台","enlight.chen","NewSwallow","10.1.101.157","27017","PRIMARY"'
++ '[' 0 -eq 0 ']'
++ echo inserted $'ok:\346\212\200\346\234\257\345\267\245\347\250\213\345\217\212\345\237\272\347\241\200\346\225\260\346\215\256\345\271\263\345\217\260' $'\351\200\232\344\277\241\345\271\263\345\217\260' enlight.chen NewSwallow 10.1.101.157 27017 PRIMARY
++ read record
++ _product_name=
++ _product_owner=
++ _set=
++ _ip=
++ _port=
++ _state=
++ count=0
++ for i in '$record'
++ '[' 0 -eq 0 ']'
++ _bg_name=$'\346\212\200\346\234\257\345\267\245\347\250\213\345\217\212\345\237\272\347\241\200\346\225\260\346\215\256\345\271\263\345\217\260'
++ '[' 0 -eq 1 ']'
++ '[' 0 -eq 2 ']'
++ '[' 0 -eq 3 ']'
++ '[' 0 -eq 4 ']'
++ '[' 0 -eq 5 ']'
++ '[' 0 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 1 -eq 0 ']'
++ '[' 1 -eq 1 ']'
++ _product_name=$'\351\200\232\344\277\241\345\271\263\345\217\260'
++ '[' 1 -eq 2 ']'
++ '[' 1 -eq 3 ']'
++ '[' 1 -eq 4 ']'
++ '[' 1 -eq 5 ']'
++ '[' 1 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 2 -eq 0 ']'
++ '[' 2 -eq 1 ']'
++ '[' 2 -eq 2 ']'
++ _product_owner=enlight.chen
++ '[' 2 -eq 3 ']'
++ '[' 2 -eq 4 ']'
++ '[' 2 -eq 5 ']'
++ '[' 2 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 3 -eq 0 ']'
++ '[' 3 -eq 1 ']'
++ '[' 3 -eq 2 ']'
++ '[' 3 -eq 3 ']'
++ _set=NewSwallow
++ '[' 3 -eq 4 ']'
++ '[' 3 -eq 5 ']'
++ '[' 3 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 4 -eq 0 ']'
++ '[' 4 -eq 1 ']'
++ '[' 4 -eq 2 ']'
++ '[' 4 -eq 3 ']'
++ '[' 4 -eq 4 ']'
++ _ip=10.1.101.195
++ '[' 4 -eq 5 ']'
++ '[' 4 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 5 -eq 0 ']'
++ '[' 5 -eq 1 ']'
++ '[' 5 -eq 2 ']'
++ '[' 5 -eq 3 ']'
++ '[' 5 -eq 4 ']'
++ '[' 5 -eq 5 ']'
++ _port=27017
++ '[' 5 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 6 -eq 0 ']'
++ '[' 6 -eq 1 ']'
++ '[' 6 -eq 2 ']'
++ '[' 6 -eq 3 ']'
++ '[' 6 -eq 4 ']'
++ '[' 6 -eq 5 ']'
++ '[' 6 -eq 6 ']'
++ _state=SECONDARY
++ let count++
++ mysql_cmd='replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "技术工程及基础数据平台","通信平台","enlight.chen","NewSwallow","10.1.101.195","27017","SECONDARY"'
++ db=MonCenter
++ mysql -umyadmin '-pNum@$%^C0ntal' -h10.1.1.209 MonCenter --default-character-set=utf8 -e 'replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "技术工程及基础数据平台","通信平台","enlight.chen","NewSwallow","10.1.101.195","27017","SECONDARY"'
++ '[' 0 -eq 0 ']'
++ echo inserted $'ok:\346\212\200\346\234\257\345\267\245\347\250\213\345\217\212\345\237\272\347\241\200\346\225\260\346\215\256\345\271\263\345\217\260' $'\351\200\232\344\277\241\345\271\263\345\217\260' enlight.chen NewSwallow 10.1.101.195 27017 SECONDARY
++ read record
++ _product_name=
++ _product_owner=
++ _set=
++ _ip=
++ _port=
++ _state=
++ count=0
++ for i in '$record'
++ '[' 0 -eq 0 ']'
++ _bg_name=$'\346\212\200\346\234\257\345\267\245\347\250\213\345\217\212\345\237\272\347\241\200\346\225\260\346\215\256\345\271\263\345\217\260'
++ '[' 0 -eq 1 ']'
++ '[' 0 -eq 2 ']'
++ '[' 0 -eq 3 ']'
++ '[' 0 -eq 4 ']'
++ '[' 0 -eq 5 ']'
++ '[' 0 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 1 -eq 0 ']'
++ '[' 1 -eq 1 ']'
++ _product_name=$'\351\200\232\344\277\241\345\271\263\345\217\260'
++ '[' 1 -eq 2 ']'
++ '[' 1 -eq 3 ']'
++ '[' 1 -eq 4 ']'
++ '[' 1 -eq 5 ']'
++ '[' 1 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 2 -eq 0 ']'
++ '[' 2 -eq 1 ']'
++ '[' 2 -eq 2 ']'
++ _product_owner=enlight.chen
++ '[' 2 -eq 3 ']'
++ '[' 2 -eq 4 ']'
++ '[' 2 -eq 5 ']'
++ '[' 2 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 3 -eq 0 ']'
++ '[' 3 -eq 1 ']'
++ '[' 3 -eq 2 ']'
++ '[' 3 -eq 3 ']'
++ _set=Order
++ '[' 3 -eq 4 ']'
++ '[' 3 -eq 5 ']'
++ '[' 3 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 4 -eq 0 ']'
++ '[' 4 -eq 1 ']'
++ '[' 4 -eq 2 ']'
++ '[' 4 -eq 3 ']'
++ '[' 4 -eq 4 ']'
++ _ip=10.1.101.155
++ '[' 4 -eq 5 ']'
++ '[' 4 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 5 -eq 0 ']'
++ '[' 5 -eq 1 ']'
++ '[' 5 -eq 2 ']'
++ '[' 5 -eq 3 ']'
++ '[' 5 -eq 4 ']'
++ '[' 5 -eq 5 ']'
++ _port=27018
++ '[' 5 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 6 -eq 0 ']'
++ '[' 6 -eq 1 ']'
++ '[' 6 -eq 2 ']'
++ '[' 6 -eq 3 ']'
++ '[' 6 -eq 4 ']'
++ '[' 6 -eq 5 ']'
++ '[' 6 -eq 6 ']'
++ _state=PRIMARY
++ let count++
++ mysql_cmd='replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "技术工程及基础数据平台","通信平台","enlight.chen","Order","10.1.101.155","27018","PRIMARY"'
++ db=MonCenter
++ mysql -umyadmin '-pNum@$%^C0ntal' -h10.1.1.209 MonCenter --default-character-set=utf8 -e 'replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "技术工程及基础数据平台","通信平台","enlight.chen","Order","10.1.101.155","27018","PRIMARY"'
++ '[' 0 -eq 0 ']'
++ echo inserted $'ok:\346\212\200\346\234\257\345\267\245\347\250\213\345\217\212\345\237\272\347\241\200\346\225\260\346\215\256\345\271\263\345\217\260' $'\351\200\232\344\277\241\345\271\263\345\217\260' enlight.chen Order 10.1.101.155 27018 PRIMARY
++ read record
++ _product_name=
++ _product_owner=
++ _set=
++ _ip=
++ _port=
++ _state=
++ count=0
++ for i in '$record'
++ '[' 0 -eq 0 ']'
++ _bg_name=$'\346\212\200\346\234\257\345\267\245\347\250\213\345\217\212\345\237\272\347\241\200\346\225\260\346\215\256\345\271\263\345\217\260'
++ '[' 0 -eq 1 ']'
++ '[' 0 -eq 2 ']'
++ '[' 0 -eq 3 ']'
++ '[' 0 -eq 4 ']'
++ '[' 0 -eq 5 ']'
++ '[' 0 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 1 -eq 0 ']'
++ '[' 1 -eq 1 ']'
++ _product_name=$'\351\200\232\344\277\241\345\271\263\345\217\260'
++ '[' 1 -eq 2 ']'
++ '[' 1 -eq 3 ']'
++ '[' 1 -eq 4 ']'
++ '[' 1 -eq 5 ']'
++ '[' 1 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 2 -eq 0 ']'
++ '[' 2 -eq 1 ']'
++ '[' 2 -eq 2 ']'
++ _product_owner=enlight.chen
++ '[' 2 -eq 3 ']'
++ '[' 2 -eq 4 ']'
++ '[' 2 -eq 5 ']'
++ '[' 2 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 3 -eq 0 ']'
++ '[' 3 -eq 1 ']'
++ '[' 3 -eq 2 ']'
++ '[' 3 -eq 3 ']'
++ _set=Order
++ '[' 3 -eq 4 ']'
++ '[' 3 -eq 5 ']'
++ '[' 3 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 4 -eq 0 ']'
++ '[' 4 -eq 1 ']'
++ '[' 4 -eq 2 ']'
++ '[' 4 -eq 3 ']'
++ '[' 4 -eq 4 ']'
++ _ip=10.1.101.157
++ '[' 4 -eq 5 ']'
++ '[' 4 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 5 -eq 0 ']'
++ '[' 5 -eq 1 ']'
++ '[' 5 -eq 2 ']'
++ '[' 5 -eq 3 ']'
++ '[' 5 -eq 4 ']'
++ '[' 5 -eq 5 ']'
++ _port=27018
++ '[' 5 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 6 -eq 0 ']'
++ '[' 6 -eq 1 ']'
++ '[' 6 -eq 2 ']'
++ '[' 6 -eq 3 ']'
++ '[' 6 -eq 4 ']'
++ '[' 6 -eq 5 ']'
++ '[' 6 -eq 6 ']'
++ _state=SECONDARY
++ let count++
++ mysql_cmd='replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "技术工程及基础数据平台","通信平台","enlight.chen","Order","10.1.101.157","27018","SECONDARY"'
++ db=MonCenter
++ mysql -umyadmin '-pNum@$%^C0ntal' -h10.1.1.209 MonCenter --default-character-set=utf8 -e 'replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "技术工程及基础数据平台","通信平台","enlight.chen","Order","10.1.101.157","27018","SECONDARY"'
++ '[' 0 -eq 0 ']'
++ echo inserted $'ok:\346\212\200\346\234\257\345\267\245\347\250\213\345\217\212\345\237\272\347\241\200\346\225\260\346\215\256\345\271\263\345\217\260' $'\351\200\232\344\277\241\345\271\263\345\217\260' enlight.chen Order 10.1.101.157 27018 SECONDARY
++ read record
++ _product_name=
++ _product_owner=
++ _set=
++ _ip=
++ _port=
++ _state=
++ count=0
++ for i in '$record'
++ '[' 0 -eq 0 ']'
++ _bg_name=$'\346\212\200\346\234\257\345\267\245\347\250\213\345\217\212\345\237\272\347\241\200\346\225\260\346\215\256\345\271\263\345\217\260'
++ '[' 0 -eq 1 ']'
++ '[' 0 -eq 2 ']'
++ '[' 0 -eq 3 ']'
++ '[' 0 -eq 4 ']'
++ '[' 0 -eq 5 ']'
++ '[' 0 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 1 -eq 0 ']'
++ '[' 1 -eq 1 ']'
++ _product_name=$'\351\200\232\344\277\241\345\271\263\345\217\260'
++ '[' 1 -eq 2 ']'
++ '[' 1 -eq 3 ']'
++ '[' 1 -eq 4 ']'
++ '[' 1 -eq 5 ']'
++ '[' 1 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 2 -eq 0 ']'
++ '[' 2 -eq 1 ']'
++ '[' 2 -eq 2 ']'
++ _product_owner=enlight.chen
++ '[' 2 -eq 3 ']'
++ '[' 2 -eq 4 ']'
++ '[' 2 -eq 5 ']'
++ '[' 2 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 3 -eq 0 ']'
++ '[' 3 -eq 1 ']'
++ '[' 3 -eq 2 ']'
++ '[' 3 -eq 3 ']'
++ _set=Parrot
++ '[' 3 -eq 4 ']'
++ '[' 3 -eq 5 ']'
++ '[' 3 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 4 -eq 0 ']'
++ '[' 4 -eq 1 ']'
++ '[' 4 -eq 2 ']'
++ '[' 4 -eq 3 ']'
++ '[' 4 -eq 4 ']'
++ _ip=10.1.1.178
++ '[' 4 -eq 5 ']'
++ '[' 4 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 5 -eq 0 ']'
++ '[' 5 -eq 1 ']'
++ '[' 5 -eq 2 ']'
++ '[' 5 -eq 3 ']'
++ '[' 5 -eq 4 ']'
++ '[' 5 -eq 5 ']'
++ _port=27017
++ '[' 5 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 6 -eq 0 ']'
++ '[' 6 -eq 1 ']'
++ '[' 6 -eq 2 ']'
++ '[' 6 -eq 3 ']'
++ '[' 6 -eq 4 ']'
++ '[' 6 -eq 5 ']'
++ '[' 6 -eq 6 ']'
++ _state=PRIMARY
++ let count++
++ mysql_cmd='replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "技术工程及基础数据平台","通信平台","enlight.chen","Parrot","10.1.1.178","27017","PRIMARY"'
++ db=MonCenter
++ mysql -umyadmin '-pNum@$%^C0ntal' -h10.1.1.209 MonCenter --default-character-set=utf8 -e 'replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "技术工程及基础数据平台","通信平台","enlight.chen","Parrot","10.1.1.178","27017","PRIMARY"'
++ '[' 0 -eq 0 ']'
++ echo inserted $'ok:\346\212\200\346\234\257\345\267\245\347\250\213\345\217\212\345\237\272\347\241\200\346\225\260\346\215\256\345\271\263\345\217\260' $'\351\200\232\344\277\241\345\271\263\345\217\260' enlight.chen Parrot 10.1.1.178 27017 PRIMARY
++ read record
++ _product_name=
++ _product_owner=
++ _set=
++ _ip=
++ _port=
++ _state=
++ count=0
++ for i in '$record'
++ '[' 0 -eq 0 ']'
++ _bg_name=$'\346\212\200\346\234\257\345\267\245\347\250\213\345\217\212\345\237\272\347\241\200\346\225\260\346\215\256\345\271\263\345\217\260'
++ '[' 0 -eq 1 ']'
++ '[' 0 -eq 2 ']'
++ '[' 0 -eq 3 ']'
++ '[' 0 -eq 4 ']'
++ '[' 0 -eq 5 ']'
++ '[' 0 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 1 -eq 0 ']'
++ '[' 1 -eq 1 ']'
++ _product_name=$'\351\200\232\344\277\241\345\271\263\345\217\260'
++ '[' 1 -eq 2 ']'
++ '[' 1 -eq 3 ']'
++ '[' 1 -eq 4 ']'
++ '[' 1 -eq 5 ']'
++ '[' 1 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 2 -eq 0 ']'
++ '[' 2 -eq 1 ']'
++ '[' 2 -eq 2 ']'
++ _product_owner=enlight.chen
++ '[' 2 -eq 3 ']'
++ '[' 2 -eq 4 ']'
++ '[' 2 -eq 5 ']'
++ '[' 2 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 3 -eq 0 ']'
++ '[' 3 -eq 1 ']'
++ '[' 3 -eq 2 ']'
++ '[' 3 -eq 3 ']'
++ _set=PayCenter
++ '[' 3 -eq 4 ']'
++ '[' 3 -eq 5 ']'
++ '[' 3 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 4 -eq 0 ']'
++ '[' 4 -eq 1 ']'
++ '[' 4 -eq 2 ']'
++ '[' 4 -eq 3 ']'
++ '[' 4 -eq 4 ']'
++ _ip=10.1.101.197
++ '[' 4 -eq 5 ']'
++ '[' 4 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 5 -eq 0 ']'
++ '[' 5 -eq 1 ']'
++ '[' 5 -eq 2 ']'
++ '[' 5 -eq 3 ']'
++ '[' 5 -eq 4 ']'
++ '[' 5 -eq 5 ']'
++ _port=27017
++ '[' 5 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 6 -eq 0 ']'
++ '[' 6 -eq 1 ']'
++ '[' 6 -eq 2 ']'
++ '[' 6 -eq 3 ']'
++ '[' 6 -eq 4 ']'
++ '[' 6 -eq 5 ']'
++ '[' 6 -eq 6 ']'
++ _state=SECONDARY
++ let count++
++ mysql_cmd='replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "技术工程及基础数据平台","通信平台","enlight.chen","PayCenter","10.1.101.197","27017","SECONDARY"'
++ db=MonCenter
++ mysql -umyadmin '-pNum@$%^C0ntal' -h10.1.1.209 MonCenter --default-character-set=utf8 -e 'replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "技术工程及基础数据平台","通信平台","enlight.chen","PayCenter","10.1.101.197","27017","SECONDARY"'
++ '[' 0 -eq 0 ']'
++ echo inserted $'ok:\346\212\200\346\234\257\345\267\245\347\250\213\345\217\212\345\237\272\347\241\200\346\225\260\346\215\256\345\271\263\345\217\260' $'\351\200\232\344\277\241\345\271\263\345\217\260' enlight.chen PayCenter 10.1.101.197 27017 SECONDARY
++ read record
++ _product_name=
++ _product_owner=
++ _set=
++ _ip=
++ _port=
++ _state=
++ count=0
++ for i in '$record'
++ '[' 0 -eq 0 ']'
++ _bg_name=$'\346\212\200\346\234\257\345\267\245\347\250\213\345\217\212\345\237\272\347\241\200\346\225\260\346\215\256\345\271\263\345\217\260'
++ '[' 0 -eq 1 ']'
++ '[' 0 -eq 2 ']'
++ '[' 0 -eq 3 ']'
++ '[' 0 -eq 4 ']'
++ '[' 0 -eq 5 ']'
++ '[' 0 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 1 -eq 0 ']'
++ '[' 1 -eq 1 ']'
++ _product_name=$'\351\200\232\344\277\241\345\271\263\345\217\260'
++ '[' 1 -eq 2 ']'
++ '[' 1 -eq 3 ']'
++ '[' 1 -eq 4 ']'
++ '[' 1 -eq 5 ']'
++ '[' 1 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 2 -eq 0 ']'
++ '[' 2 -eq 1 ']'
++ '[' 2 -eq 2 ']'
++ _product_owner=enlight.chen
++ '[' 2 -eq 3 ']'
++ '[' 2 -eq 4 ']'
++ '[' 2 -eq 5 ']'
++ '[' 2 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 3 -eq 0 ']'
++ '[' 3 -eq 1 ']'
++ '[' 3 -eq 2 ']'
++ '[' 3 -eq 3 ']'
++ _set=payorder02
++ '[' 3 -eq 4 ']'
++ '[' 3 -eq 5 ']'
++ '[' 3 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 4 -eq 0 ']'
++ '[' 4 -eq 1 ']'
++ '[' 4 -eq 2 ']'
++ '[' 4 -eq 3 ']'
++ '[' 4 -eq 4 ']'
++ _ip=10.3.10.44
++ '[' 4 -eq 5 ']'
++ '[' 4 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 5 -eq 0 ']'
++ '[' 5 -eq 1 ']'
++ '[' 5 -eq 2 ']'
++ '[' 5 -eq 3 ']'
++ '[' 5 -eq 4 ']'
++ '[' 5 -eq 5 ']'
++ _port=27017
++ '[' 5 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 6 -eq 0 ']'
++ '[' 6 -eq 1 ']'
++ '[' 6 -eq 2 ']'
++ '[' 6 -eq 3 ']'
++ '[' 6 -eq 4 ']'
++ '[' 6 -eq 5 ']'
++ '[' 6 -eq 6 ']'
++ _state=PRIMARY
++ let count++
++ mysql_cmd='replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "技术工程及基础数据平台","通信平台","enlight.chen","payorder02","10.3.10.44","27017","PRIMARY"'
++ db=MonCenter
++ mysql -umyadmin '-pNum@$%^C0ntal' -h10.1.1.209 MonCenter --default-character-set=utf8 -e 'replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "技术工程及基础数据平台","通信平台","enlight.chen","payorder02","10.3.10.44","27017","PRIMARY"'
++ '[' 0 -eq 0 ']'
++ echo inserted $'ok:\346\212\200\346\234\257\345\267\245\347\250\213\345\217\212\345\237\272\347\241\200\346\225\260\346\215\256\345\271\263\345\217\260' $'\351\200\232\344\277\241\345\271\263\345\217\260' enlight.chen payorder02 10.3.10.44 27017 PRIMARY
++ read record
++ _product_name=
++ _product_owner=
++ _set=
++ _ip=
++ _port=
++ _state=
++ count=0
++ for i in '$record'
++ '[' 0 -eq 0 ']'
++ _bg_name=$'\346\212\200\346\234\257\345\267\245\347\250\213\345\217\212\345\237\272\347\241\200\346\225\260\346\215\256\345\271\263\345\217\260'
++ '[' 0 -eq 1 ']'
++ '[' 0 -eq 2 ']'
++ '[' 0 -eq 3 ']'
++ '[' 0 -eq 4 ']'
++ '[' 0 -eq 5 ']'
++ '[' 0 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 1 -eq 0 ']'
++ '[' 1 -eq 1 ']'
++ _product_name=$'\351\200\232\344\277\241\345\271\263\345\217\260'
++ '[' 1 -eq 2 ']'
++ '[' 1 -eq 3 ']'
++ '[' 1 -eq 4 ']'
++ '[' 1 -eq 5 ']'
++ '[' 1 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 2 -eq 0 ']'
++ '[' 2 -eq 1 ']'
++ '[' 2 -eq 2 ']'
++ _product_owner=enlight.chen
++ '[' 2 -eq 3 ']'
++ '[' 2 -eq 4 ']'
++ '[' 2 -eq 5 ']'
++ '[' 2 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 3 -eq 0 ']'
++ '[' 3 -eq 1 ']'
++ '[' 3 -eq 2 ']'
++ '[' 3 -eq 3 ']'
++ _set=payorder02
++ '[' 3 -eq 4 ']'
++ '[' 3 -eq 5 ']'
++ '[' 3 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 4 -eq 0 ']'
++ '[' 4 -eq 1 ']'
++ '[' 4 -eq 2 ']'
++ '[' 4 -eq 3 ']'
++ '[' 4 -eq 4 ']'
++ _ip=10.3.10.48
++ '[' 4 -eq 5 ']'
++ '[' 4 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 5 -eq 0 ']'
++ '[' 5 -eq 1 ']'
++ '[' 5 -eq 2 ']'
++ '[' 5 -eq 3 ']'
++ '[' 5 -eq 4 ']'
++ '[' 5 -eq 5 ']'
++ _port=27017
++ '[' 5 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 6 -eq 0 ']'
++ '[' 6 -eq 1 ']'
++ '[' 6 -eq 2 ']'
++ '[' 6 -eq 3 ']'
++ '[' 6 -eq 4 ']'
++ '[' 6 -eq 5 ']'
++ '[' 6 -eq 6 ']'
++ _state=SECONDARY
++ let count++
++ mysql_cmd='replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "技术工程及基础数据平台","通信平台","enlight.chen","payorder02","10.3.10.48","27017","SECONDARY"'
++ db=MonCenter
++ mysql -umyadmin '-pNum@$%^C0ntal' -h10.1.1.209 MonCenter --default-character-set=utf8 -e 'replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "技术工程及基础数据平台","通信平台","enlight.chen","payorder02","10.3.10.48","27017","SECONDARY"'
++ '[' 0 -eq 0 ']'
++ echo inserted $'ok:\346\212\200\346\234\257\345\267\245\347\250\213\345\217\212\345\237\272\347\241\200\346\225\260\346\215\256\345\271\263\345\217\260' $'\351\200\232\344\277\241\345\271\263\345\217\260' enlight.chen payorder02 10.3.10.48 27017 SECONDARY
++ read record
++ _product_name=
++ _product_owner=
++ _set=
++ _ip=
++ _port=
++ _state=
++ count=0
++ for i in '$record'
++ '[' 0 -eq 0 ']'
++ _bg_name=$'\346\212\200\346\234\257\345\267\245\347\250\213\345\217\212\345\237\272\347\241\200\346\225\260\346\215\256\345\271\263\345\217\260'
++ '[' 0 -eq 1 ']'
++ '[' 0 -eq 2 ']'
++ '[' 0 -eq 3 ']'
++ '[' 0 -eq 4 ']'
++ '[' 0 -eq 5 ']'
++ '[' 0 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 1 -eq 0 ']'
++ '[' 1 -eq 1 ']'
++ _product_name=$'\351\200\232\344\277\241\345\271\263\345\217\260'
++ '[' 1 -eq 2 ']'
++ '[' 1 -eq 3 ']'
++ '[' 1 -eq 4 ']'
++ '[' 1 -eq 5 ']'
++ '[' 1 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 2 -eq 0 ']'
++ '[' 2 -eq 1 ']'
++ '[' 2 -eq 2 ']'
++ _product_owner=enlight.chen
++ '[' 2 -eq 3 ']'
++ '[' 2 -eq 4 ']'
++ '[' 2 -eq 5 ']'
++ '[' 2 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 3 -eq 0 ']'
++ '[' 3 -eq 1 ']'
++ '[' 3 -eq 2 ']'
++ '[' 3 -eq 3 ']'
++ _set=search02
++ '[' 3 -eq 4 ']'
++ '[' 3 -eq 5 ']'
++ '[' 3 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 4 -eq 0 ']'
++ '[' 4 -eq 1 ']'
++ '[' 4 -eq 2 ']'
++ '[' 4 -eq 3 ']'
++ '[' 4 -eq 4 ']'
++ _ip=10.3.40.26
++ '[' 4 -eq 5 ']'
++ '[' 4 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 5 -eq 0 ']'
++ '[' 5 -eq 1 ']'
++ '[' 5 -eq 2 ']'
++ '[' 5 -eq 3 ']'
++ '[' 5 -eq 4 ']'
++ '[' 5 -eq 5 ']'
++ _port=27017
++ '[' 5 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 6 -eq 0 ']'
++ '[' 6 -eq 1 ']'
++ '[' 6 -eq 2 ']'
++ '[' 6 -eq 3 ']'
++ '[' 6 -eq 4 ']'
++ '[' 6 -eq 5 ']'
++ '[' 6 -eq 6 ']'
++ _state=PRIMARY
++ let count++
++ mysql_cmd='replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "技术工程及基础数据平台","通信平台","enlight.chen","search02","10.3.40.26","27017","PRIMARY"'
++ db=MonCenter
++ mysql -umyadmin '-pNum@$%^C0ntal' -h10.1.1.209 MonCenter --default-character-set=utf8 -e 'replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "技术工程及基础数据平台","通信平台","enlight.chen","search02","10.3.40.26","27017","PRIMARY"'
++ '[' 0 -eq 0 ']'
++ echo inserted $'ok:\346\212\200\346\234\257\345\267\245\347\250\213\345\217\212\345\237\272\347\241\200\346\225\260\346\215\256\345\271\263\345\217\260' $'\351\200\232\344\277\241\345\271\263\345\217\260' enlight.chen search02 10.3.40.26 27017 PRIMARY
++ read record
++ _product_name=
++ _product_owner=
++ _set=
++ _ip=
++ _port=
++ _state=
++ count=0
++ for i in '$record'
++ '[' 0 -eq 0 ']'
++ _bg_name=$'\346\212\200\346\234\257\345\267\245\347\250\213\345\217\212\345\237\272\347\241\200\346\225\260\346\215\256\345\271\263\345\217\260'
++ '[' 0 -eq 1 ']'
++ '[' 0 -eq 2 ']'
++ '[' 0 -eq 3 ']'
++ '[' 0 -eq 4 ']'
++ '[' 0 -eq 5 ']'
++ '[' 0 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 1 -eq 0 ']'
++ '[' 1 -eq 1 ']'
++ _product_name=$'\351\200\232\344\277\241\345\271\263\345\217\260'
++ '[' 1 -eq 2 ']'
++ '[' 1 -eq 3 ']'
++ '[' 1 -eq 4 ']'
++ '[' 1 -eq 5 ']'
++ '[' 1 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 2 -eq 0 ']'
++ '[' 2 -eq 1 ']'
++ '[' 2 -eq 2 ']'
++ _product_owner=enlight.chen
++ '[' 2 -eq 3 ']'
++ '[' 2 -eq 4 ']'
++ '[' 2 -eq 5 ']'
++ '[' 2 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 3 -eq 0 ']'
++ '[' 3 -eq 1 ']'
++ '[' 3 -eq 2 ']'
++ '[' 3 -eq 3 ']'
++ _set=Search
++ '[' 3 -eq 4 ']'
++ '[' 3 -eq 5 ']'
++ '[' 3 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 4 -eq 0 ']'
++ '[' 4 -eq 1 ']'
++ '[' 4 -eq 2 ']'
++ '[' 4 -eq 3 ']'
++ '[' 4 -eq 4 ']'
++ _ip=10.1.115.11
++ '[' 4 -eq 5 ']'
++ '[' 4 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 5 -eq 0 ']'
++ '[' 5 -eq 1 ']'
++ '[' 5 -eq 2 ']'
++ '[' 5 -eq 3 ']'
++ '[' 5 -eq 4 ']'
++ '[' 5 -eq 5 ']'
++ _port=27017
++ '[' 5 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 6 -eq 0 ']'
++ '[' 6 -eq 1 ']'
++ '[' 6 -eq 2 ']'
++ '[' 6 -eq 3 ']'
++ '[' 6 -eq 4 ']'
++ '[' 6 -eq 5 ']'
++ '[' 6 -eq 6 ']'
++ _state=PRIMARY
++ let count++
++ mysql_cmd='replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "技术工程及基础数据平台","通信平台","enlight.chen","Search","10.1.115.11","27017","PRIMARY"'
++ db=MonCenter
++ mysql -umyadmin '-pNum@$%^C0ntal' -h10.1.1.209 MonCenter --default-character-set=utf8 -e 'replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "技术工程及基础数据平台","通信平台","enlight.chen","Search","10.1.115.11","27017","PRIMARY"'
++ '[' 0 -eq 0 ']'
++ echo inserted $'ok:\346\212\200\346\234\257\345\267\245\347\250\213\345\217\212\345\237\272\347\241\200\346\225\260\346\215\256\345\271\263\345\217\260' $'\351\200\232\344\277\241\345\271\263\345\217\260' enlight.chen Search 10.1.115.11 27017 PRIMARY
++ read record
++ _product_name=
++ _product_owner=
++ _set=
++ _ip=
++ _port=
++ _state=
++ count=0
++ for i in '$record'
++ '[' 0 -eq 0 ']'
++ _bg_name=$'\346\212\200\346\234\257\345\267\245\347\250\213\345\217\212\345\237\272\347\241\200\346\225\260\346\215\256\345\271\263\345\217\260'
++ '[' 0 -eq 1 ']'
++ '[' 0 -eq 2 ']'
++ '[' 0 -eq 3 ']'
++ '[' 0 -eq 4 ']'
++ '[' 0 -eq 5 ']'
++ '[' 0 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 1 -eq 0 ']'
++ '[' 1 -eq 1 ']'
++ _product_name=$'\351\200\232\344\277\241\345\271\263\345\217\260'
++ '[' 1 -eq 2 ']'
++ '[' 1 -eq 3 ']'
++ '[' 1 -eq 4 ']'
++ '[' 1 -eq 5 ']'
++ '[' 1 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 2 -eq 0 ']'
++ '[' 2 -eq 1 ']'
++ '[' 2 -eq 2 ']'
++ _product_owner=enlight.chen
++ '[' 2 -eq 3 ']'
++ '[' 2 -eq 4 ']'
++ '[' 2 -eq 5 ']'
++ '[' 2 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 3 -eq 0 ']'
++ '[' 3 -eq 1 ']'
++ '[' 3 -eq 2 ']'
++ '[' 3 -eq 3 ']'
++ _set=swallow01
++ '[' 3 -eq 4 ']'
++ '[' 3 -eq 5 ']'
++ '[' 3 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 4 -eq 0 ']'
++ '[' 4 -eq 1 ']'
++ '[' 4 -eq 2 ']'
++ '[' 4 -eq 3 ']'
++ '[' 4 -eq 4 ']'
++ _ip=10.1.115.12
++ '[' 4 -eq 5 ']'
++ '[' 4 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 5 -eq 0 ']'
++ '[' 5 -eq 1 ']'
++ '[' 5 -eq 2 ']'
++ '[' 5 -eq 3 ']'
++ '[' 5 -eq 4 ']'
++ '[' 5 -eq 5 ']'
++ _port=27018
++ '[' 5 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 6 -eq 0 ']'
++ '[' 6 -eq 1 ']'
++ '[' 6 -eq 2 ']'
++ '[' 6 -eq 3 ']'
++ '[' 6 -eq 4 ']'
++ '[' 6 -eq 5 ']'
++ '[' 6 -eq 6 ']'
++ _state=PRIMARY
++ let count++
++ mysql_cmd='replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "技术工程及基础数据平台","通信平台","enlight.chen","swallow01","10.1.115.12","27018","PRIMARY"'
++ db=MonCenter
++ mysql -umyadmin '-pNum@$%^C0ntal' -h10.1.1.209 MonCenter --default-character-set=utf8 -e 'replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "技术工程及基础数据平台","通信平台","enlight.chen","swallow01","10.1.115.12","27018","PRIMARY"'
++ '[' 0 -eq 0 ']'
++ echo inserted $'ok:\346\212\200\346\234\257\345\267\245\347\250\213\345\217\212\345\237\272\347\241\200\346\225\260\346\215\256\345\271\263\345\217\260' $'\351\200\232\344\277\241\345\271\263\345\217\260' enlight.chen swallow01 10.1.115.12 27018 PRIMARY
++ read record
++ _product_name=
++ _product_owner=
++ _set=
++ _ip=
++ _port=
++ _state=
++ count=0
++ for i in '$record'
++ '[' 0 -eq 0 ']'
++ _bg_name=$'\346\212\200\346\234\257\345\267\245\347\250\213\345\217\212\345\237\272\347\241\200\346\225\260\346\215\256\345\271\263\345\217\260'
++ '[' 0 -eq 1 ']'
++ '[' 0 -eq 2 ']'
++ '[' 0 -eq 3 ']'
++ '[' 0 -eq 4 ']'
++ '[' 0 -eq 5 ']'
++ '[' 0 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 1 -eq 0 ']'
++ '[' 1 -eq 1 ']'
++ _product_name=$'\351\200\232\344\277\241\345\271\263\345\217\260'
++ '[' 1 -eq 2 ']'
++ '[' 1 -eq 3 ']'
++ '[' 1 -eq 4 ']'
++ '[' 1 -eq 5 ']'
++ '[' 1 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 2 -eq 0 ']'
++ '[' 2 -eq 1 ']'
++ '[' 2 -eq 2 ']'
++ _product_owner=enlight.chen
++ '[' 2 -eq 3 ']'
++ '[' 2 -eq 4 ']'
++ '[' 2 -eq 5 ']'
++ '[' 2 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 3 -eq 0 ']'
++ '[' 3 -eq 1 ']'
++ '[' 3 -eq 2 ']'
++ '[' 3 -eq 3 ']'
++ _set=swallow02
++ '[' 3 -eq 4 ']'
++ '[' 3 -eq 5 ']'
++ '[' 3 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 4 -eq 0 ']'
++ '[' 4 -eq 1 ']'
++ '[' 4 -eq 2 ']'
++ '[' 4 -eq 3 ']'
++ '[' 4 -eq 4 ']'
++ _ip=10.3.40.38
++ '[' 4 -eq 5 ']'
++ '[' 4 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 5 -eq 0 ']'
++ '[' 5 -eq 1 ']'
++ '[' 5 -eq 2 ']'
++ '[' 5 -eq 3 ']'
++ '[' 5 -eq 4 ']'
++ '[' 5 -eq 5 ']'
++ _port=27017
++ '[' 5 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 6 -eq 0 ']'
++ '[' 6 -eq 1 ']'
++ '[' 6 -eq 2 ']'
++ '[' 6 -eq 3 ']'
++ '[' 6 -eq 4 ']'
++ '[' 6 -eq 5 ']'
++ '[' 6 -eq 6 ']'
++ _state=PRIMARY
++ let count++
++ mysql_cmd='replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "技术工程及基础数据平台","通信平台","enlight.chen","swallow02","10.3.40.38","27017","PRIMARY"'
++ db=MonCenter
++ mysql -umyadmin '-pNum@$%^C0ntal' -h10.1.1.209 MonCenter --default-character-set=utf8 -e 'replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "技术工程及基础数据平台","通信平台","enlight.chen","swallow02","10.3.40.38","27017","PRIMARY"'
++ '[' 0 -eq 0 ']'
++ echo inserted $'ok:\346\212\200\346\234\257\345\267\245\347\250\213\345\217\212\345\237\272\347\241\200\346\225\260\346\215\256\345\271\263\345\217\260' $'\351\200\232\344\277\241\345\271\263\345\217\260' enlight.chen swallow02 10.3.40.38 27017 PRIMARY
++ read record
++ _product_name=
++ _product_owner=
++ _set=
++ _ip=
++ _port=
++ _state=
++ count=0
++ for i in '$record'
++ '[' 0 -eq 0 ']'
++ _bg_name=$'\346\212\200\346\234\257\345\267\245\347\250\213\345\217\212\345\237\272\347\241\200\346\225\260\346\215\256\345\271\263\345\217\260'
++ '[' 0 -eq 1 ']'
++ '[' 0 -eq 2 ']'
++ '[' 0 -eq 3 ']'
++ '[' 0 -eq 4 ']'
++ '[' 0 -eq 5 ']'
++ '[' 0 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 1 -eq 0 ']'
++ '[' 1 -eq 1 ']'
++ _product_name=$'\351\200\232\344\277\241\345\271\263\345\217\260'
++ '[' 1 -eq 2 ']'
++ '[' 1 -eq 3 ']'
++ '[' 1 -eq 4 ']'
++ '[' 1 -eq 5 ']'
++ '[' 1 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 2 -eq 0 ']'
++ '[' 2 -eq 1 ']'
++ '[' 2 -eq 2 ']'
++ _product_owner=enlight.chen
++ '[' 2 -eq 3 ']'
++ '[' 2 -eq 4 ']'
++ '[' 2 -eq 5 ']'
++ '[' 2 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 3 -eq 0 ']'
++ '[' 3 -eq 1 ']'
++ '[' 3 -eq 2 ']'
++ '[' 3 -eq 3 ']'
++ _set=Swallow
++ '[' 3 -eq 4 ']'
++ '[' 3 -eq 5 ']'
++ '[' 3 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 4 -eq 0 ']'
++ '[' 4 -eq 1 ']'
++ '[' 4 -eq 2 ']'
++ '[' 4 -eq 3 ']'
++ '[' 4 -eq 4 ']'
++ _ip=10.1.1.138
++ '[' 4 -eq 5 ']'
++ '[' 4 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 5 -eq 0 ']'
++ '[' 5 -eq 1 ']'
++ '[' 5 -eq 2 ']'
++ '[' 5 -eq 3 ']'
++ '[' 5 -eq 4 ']'
++ '[' 5 -eq 5 ']'
++ _port=27017
++ '[' 5 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 6 -eq 0 ']'
++ '[' 6 -eq 1 ']'
++ '[' 6 -eq 2 ']'
++ '[' 6 -eq 3 ']'
++ '[' 6 -eq 4 ']'
++ '[' 6 -eq 5 ']'
++ '[' 6 -eq 6 ']'
++ _state=PRIMARY
++ let count++
++ mysql_cmd='replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "技术工程及基础数据平台","通信平台","enlight.chen","Swallow","10.1.1.138","27017","PRIMARY"'
++ db=MonCenter
++ mysql -umyadmin '-pNum@$%^C0ntal' -h10.1.1.209 MonCenter --default-character-set=utf8 -e 'replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "技术工程及基础数据平台","通信平台","enlight.chen","Swallow","10.1.1.138","27017","PRIMARY"'
++ '[' 0 -eq 0 ']'
++ echo inserted $'ok:\346\212\200\346\234\257\345\267\245\347\250\213\345\217\212\345\237\272\347\241\200\346\225\260\346\215\256\345\271\263\345\217\260' $'\351\200\232\344\277\241\345\271\263\345\217\260' enlight.chen Swallow 10.1.1.138 27017 PRIMARY
++ read record
++ _product_name=
++ _product_owner=
++ _set=
++ _ip=
++ _port=
++ _state=
++ count=0
++ for i in '$record'
++ '[' 0 -eq 0 ']'
++ _bg_name=$'\346\212\200\346\234\257\345\267\245\347\250\213\345\217\212\345\237\272\347\241\200\346\225\260\346\215\256\345\271\263\345\217\260'
++ '[' 0 -eq 1 ']'
++ '[' 0 -eq 2 ']'
++ '[' 0 -eq 3 ']'
++ '[' 0 -eq 4 ']'
++ '[' 0 -eq 5 ']'
++ '[' 0 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 1 -eq 0 ']'
++ '[' 1 -eq 1 ']'
++ _product_name=$'\351\200\232\344\277\241\345\271\263\345\217\260'
++ '[' 1 -eq 2 ']'
++ '[' 1 -eq 3 ']'
++ '[' 1 -eq 4 ']'
++ '[' 1 -eq 5 ']'
++ '[' 1 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 2 -eq 0 ']'
++ '[' 2 -eq 1 ']'
++ '[' 2 -eq 2 ']'
++ _product_owner=enlight.chen
++ '[' 2 -eq 3 ']'
++ '[' 2 -eq 4 ']'
++ '[' 2 -eq 5 ']'
++ '[' 2 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 3 -eq 0 ']'
++ '[' 3 -eq 1 ']'
++ '[' 3 -eq 2 ']'
++ '[' 3 -eq 3 ']'
++ _set=SwallowCap
++ '[' 3 -eq 4 ']'
++ '[' 3 -eq 5 ']'
++ '[' 3 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 4 -eq 0 ']'
++ '[' 4 -eq 1 ']'
++ '[' 4 -eq 2 ']'
++ '[' 4 -eq 3 ']'
++ '[' 4 -eq 4 ']'
++ _ip=10.1.125.26
++ '[' 4 -eq 5 ']'
++ '[' 4 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 5 -eq 0 ']'
++ '[' 5 -eq 1 ']'
++ '[' 5 -eq 2 ']'
++ '[' 5 -eq 3 ']'
++ '[' 5 -eq 4 ']'
++ '[' 5 -eq 5 ']'
++ _port=27018
++ '[' 5 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 6 -eq 0 ']'
++ '[' 6 -eq 1 ']'
++ '[' 6 -eq 2 ']'
++ '[' 6 -eq 3 ']'
++ '[' 6 -eq 4 ']'
++ '[' 6 -eq 5 ']'
++ '[' 6 -eq 6 ']'
++ _state=SECONDARY
++ let count++
++ mysql_cmd='replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "技术工程及基础数据平台","通信平台","enlight.chen","SwallowCap","10.1.125.26","27018","SECONDARY"'
++ db=MonCenter
++ mysql -umyadmin '-pNum@$%^C0ntal' -h10.1.1.209 MonCenter --default-character-set=utf8 -e 'replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "技术工程及基础数据平台","通信平台","enlight.chen","SwallowCap","10.1.125.26","27018","SECONDARY"'
++ '[' 0 -eq 0 ']'
++ echo inserted $'ok:\346\212\200\346\234\257\345\267\245\347\250\213\345\217\212\345\237\272\347\241\200\346\225\260\346\215\256\345\271\263\345\217\260' $'\351\200\232\344\277\241\345\271\263\345\217\260' enlight.chen SwallowCap 10.1.125.26 27018 SECONDARY
++ read record
++ _product_name=
++ _product_owner=
++ _set=
++ _ip=
++ _port=
++ _state=
++ count=0
++ for i in '$record'
++ '[' 0 -eq 0 ']'
++ _bg_name=$'\346\212\200\346\234\257\345\267\245\347\250\213\345\217\212\345\237\272\347\241\200\346\225\260\346\215\256\345\271\263\345\217\260'
++ '[' 0 -eq 1 ']'
++ '[' 0 -eq 2 ']'
++ '[' 0 -eq 3 ']'
++ '[' 0 -eq 4 ']'
++ '[' 0 -eq 5 ']'
++ '[' 0 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 1 -eq 0 ']'
++ '[' 1 -eq 1 ']'
++ _product_name=$'\351\200\232\344\277\241\345\271\263\345\217\260'
++ '[' 1 -eq 2 ']'
++ '[' 1 -eq 3 ']'
++ '[' 1 -eq 4 ']'
++ '[' 1 -eq 5 ']'
++ '[' 1 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 2 -eq 0 ']'
++ '[' 2 -eq 1 ']'
++ '[' 2 -eq 2 ']'
++ _product_owner=enlight.chen
++ '[' 2 -eq 3 ']'
++ '[' 2 -eq 4 ']'
++ '[' 2 -eq 5 ']'
++ '[' 2 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 3 -eq 0 ']'
++ '[' 3 -eq 1 ']'
++ '[' 3 -eq 2 ']'
++ '[' 3 -eq 3 ']'
++ _set=SwallowCap
++ '[' 3 -eq 4 ']'
++ '[' 3 -eq 5 ']'
++ '[' 3 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 4 -eq 0 ']'
++ '[' 4 -eq 1 ']'
++ '[' 4 -eq 2 ']'
++ '[' 4 -eq 3 ']'
++ '[' 4 -eq 4 ']'
++ _ip=10.1.6.31
++ '[' 4 -eq 5 ']'
++ '[' 4 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 5 -eq 0 ']'
++ '[' 5 -eq 1 ']'
++ '[' 5 -eq 2 ']'
++ '[' 5 -eq 3 ']'
++ '[' 5 -eq 4 ']'
++ '[' 5 -eq 5 ']'
++ _port=27018
++ '[' 5 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 6 -eq 0 ']'
++ '[' 6 -eq 1 ']'
++ '[' 6 -eq 2 ']'
++ '[' 6 -eq 3 ']'
++ '[' 6 -eq 4 ']'
++ '[' 6 -eq 5 ']'
++ '[' 6 -eq 6 ']'
++ _state=PRIMARY
++ let count++
++ mysql_cmd='replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "技术工程及基础数据平台","通信平台","enlight.chen","SwallowCap","10.1.6.31","27018","PRIMARY"'
++ db=MonCenter
++ mysql -umyadmin '-pNum@$%^C0ntal' -h10.1.1.209 MonCenter --default-character-set=utf8 -e 'replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "技术工程及基础数据平台","通信平台","enlight.chen","SwallowCap","10.1.6.31","27018","PRIMARY"'
++ '[' 0 -eq 0 ']'
++ echo inserted $'ok:\346\212\200\346\234\257\345\267\245\347\250\213\345\217\212\345\237\272\347\241\200\346\225\260\346\215\256\345\271\263\345\217\260' $'\351\200\232\344\277\241\345\271\263\345\217\260' enlight.chen SwallowCap 10.1.6.31 27018 PRIMARY
++ read record
++ _product_name=
++ _product_owner=
++ _set=
++ _ip=
++ _port=
++ _state=
++ count=0
++ for i in '$record'
++ '[' 0 -eq 0 ']'
++ _bg_name=$'\346\212\200\346\234\257\345\267\245\347\250\213\345\217\212\345\237\272\347\241\200\346\225\260\346\215\256\345\271\263\345\217\260'
++ '[' 0 -eq 1 ']'
++ '[' 0 -eq 2 ']'
++ '[' 0 -eq 3 ']'
++ '[' 0 -eq 4 ']'
++ '[' 0 -eq 5 ']'
++ '[' 0 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 1 -eq 0 ']'
++ '[' 1 -eq 1 ']'
++ _product_name=$'\351\200\232\344\277\241\345\271\263\345\217\260'
++ '[' 1 -eq 2 ']'
++ '[' 1 -eq 3 ']'
++ '[' 1 -eq 4 ']'
++ '[' 1 -eq 5 ']'
++ '[' 1 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 2 -eq 0 ']'
++ '[' 2 -eq 1 ']'
++ '[' 2 -eq 2 ']'
++ _product_owner=enlight.chen
++ '[' 2 -eq 3 ']'
++ '[' 2 -eq 4 ']'
++ '[' 2 -eq 5 ']'
++ '[' 2 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 3 -eq 0 ']'
++ '[' 3 -eq 1 ']'
++ '[' 3 -eq 2 ']'
++ '[' 3 -eq 3 ']'
++ _set=SwallowCap
++ '[' 3 -eq 4 ']'
++ '[' 3 -eq 5 ']'
++ '[' 3 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 4 -eq 0 ']'
++ '[' 4 -eq 1 ']'
++ '[' 4 -eq 2 ']'
++ '[' 4 -eq 3 ']'
++ '[' 4 -eq 4 ']'
++ _ip=10.1.6.32
++ '[' 4 -eq 5 ']'
++ '[' 4 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 5 -eq 0 ']'
++ '[' 5 -eq 1 ']'
++ '[' 5 -eq 2 ']'
++ '[' 5 -eq 3 ']'
++ '[' 5 -eq 4 ']'
++ '[' 5 -eq 5 ']'
++ _port=27018
++ '[' 5 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 6 -eq 0 ']'
++ '[' 6 -eq 1 ']'
++ '[' 6 -eq 2 ']'
++ '[' 6 -eq 3 ']'
++ '[' 6 -eq 4 ']'
++ '[' 6 -eq 5 ']'
++ '[' 6 -eq 6 ']'
++ _state=SECONDARY
++ let count++
++ mysql_cmd='replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "技术工程及基础数据平台","通信平台","enlight.chen","SwallowCap","10.1.6.32","27018","SECONDARY"'
++ db=MonCenter
++ mysql -umyadmin '-pNum@$%^C0ntal' -h10.1.1.209 MonCenter --default-character-set=utf8 -e 'replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "技术工程及基础数据平台","通信平台","enlight.chen","SwallowCap","10.1.6.32","27018","SECONDARY"'
++ '[' 0 -eq 0 ']'
++ echo inserted $'ok:\346\212\200\346\234\257\345\267\245\347\250\213\345\217\212\345\237\272\347\241\200\346\225\260\346\215\256\345\271\263\345\217\260' $'\351\200\232\344\277\241\345\271\263\345\217\260' enlight.chen SwallowCap 10.1.6.32 27018 SECONDARY
++ read record
++ _product_name=
++ _product_owner=
++ _set=
++ _ip=
++ _port=
++ _state=
++ count=0
++ for i in '$record'
++ '[' 0 -eq 0 ']'
++ _bg_name=$'\346\212\200\346\234\257\345\267\245\347\250\213\345\217\212\345\237\272\347\241\200\346\225\260\346\215\256\345\271\263\345\217\260'
++ '[' 0 -eq 1 ']'
++ '[' 0 -eq 2 ']'
++ '[' 0 -eq 3 ']'
++ '[' 0 -eq 4 ']'
++ '[' 0 -eq 5 ']'
++ '[' 0 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 1 -eq 0 ']'
++ '[' 1 -eq 1 ']'
++ _product_name=$'\351\200\232\344\277\241\345\271\263\345\217\260'
++ '[' 1 -eq 2 ']'
++ '[' 1 -eq 3 ']'
++ '[' 1 -eq 4 ']'
++ '[' 1 -eq 5 ']'
++ '[' 1 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 2 -eq 0 ']'
++ '[' 2 -eq 1 ']'
++ '[' 2 -eq 2 ']'
++ _product_owner=enlight.chen
++ '[' 2 -eq 3 ']'
++ '[' 2 -eq 4 ']'
++ '[' 2 -eq 5 ']'
++ '[' 2 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 3 -eq 0 ']'
++ '[' 3 -eq 1 ']'
++ '[' 3 -eq 2 ']'
++ '[' 3 -eq 3 ']'
++ _set=Topic
++ '[' 3 -eq 4 ']'
++ '[' 3 -eq 5 ']'
++ '[' 3 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 4 -eq 0 ']'
++ '[' 4 -eq 1 ']'
++ '[' 4 -eq 2 ']'
++ '[' 4 -eq 3 ']'
++ '[' 4 -eq 4 ']'
++ _ip=10.1.1.138
++ '[' 4 -eq 5 ']'
++ '[' 4 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 5 -eq 0 ']'
++ '[' 5 -eq 1 ']'
++ '[' 5 -eq 2 ']'
++ '[' 5 -eq 3 ']'
++ '[' 5 -eq 4 ']'
++ '[' 5 -eq 5 ']'
++ _port=27018
++ '[' 5 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 6 -eq 0 ']'
++ '[' 6 -eq 1 ']'
++ '[' 6 -eq 2 ']'
++ '[' 6 -eq 3 ']'
++ '[' 6 -eq 4 ']'
++ '[' 6 -eq 5 ']'
++ '[' 6 -eq 6 ']'
++ _state=PRIMARY
++ let count++
++ mysql_cmd='replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "技术工程及基础数据平台","通信平台","enlight.chen","Topic","10.1.1.138","27018","PRIMARY"'
++ db=MonCenter
++ mysql -umyadmin '-pNum@$%^C0ntal' -h10.1.1.209 MonCenter --default-character-set=utf8 -e 'replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "技术工程及基础数据平台","通信平台","enlight.chen","Topic","10.1.1.138","27018","PRIMARY"'
++ '[' 0 -eq 0 ']'
++ echo inserted $'ok:\346\212\200\346\234\257\345\267\245\347\250\213\345\217\212\345\237\272\347\241\200\346\225\260\346\215\256\345\271\263\345\217\260' $'\351\200\232\344\277\241\345\271\263\345\217\260' enlight.chen Topic 10.1.1.138 27018 PRIMARY
++ read record
++ _product_name=
++ _product_owner=
++ _set=
++ _ip=
++ _port=
++ _state=
++ count=0
++ for i in '$record'
++ '[' 0 -eq 0 ']'
++ _bg_name=$'\346\212\200\346\234\257\345\267\245\347\250\213\345\217\212\345\237\272\347\241\200\346\225\260\346\215\256\345\271\263\345\217\260'
++ '[' 0 -eq 1 ']'
++ '[' 0 -eq 2 ']'
++ '[' 0 -eq 3 ']'
++ '[' 0 -eq 4 ']'
++ '[' 0 -eq 5 ']'
++ '[' 0 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 1 -eq 0 ']'
++ '[' 1 -eq 1 ']'
++ _product_name=$'\351\243\216\346\216\247\345\271\263\345\217\260'
++ '[' 1 -eq 2 ']'
++ '[' 1 -eq 3 ']'
++ '[' 1 -eq 4 ']'
++ '[' 1 -eq 5 ']'
++ '[' 1 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 2 -eq 0 ']'
++ '[' 2 -eq 1 ']'
++ '[' 2 -eq 2 ']'
++ _product_owner=jidong.shao
++ '[' 2 -eq 3 ']'
++ '[' 2 -eq 4 ']'
++ '[' 2 -eq 5 ']'
++ '[' 2 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 3 -eq 0 ']'
++ '[' 3 -eq 1 ']'
++ '[' 3 -eq 2 ']'
++ '[' 3 -eq 3 ']'
++ _set=Honesty
++ '[' 3 -eq 4 ']'
++ '[' 3 -eq 5 ']'
++ '[' 3 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 4 -eq 0 ']'
++ '[' 4 -eq 1 ']'
++ '[' 4 -eq 2 ']'
++ '[' 4 -eq 3 ']'
++ '[' 4 -eq 4 ']'
++ _ip=10.1.1.178
++ '[' 4 -eq 5 ']'
++ '[' 4 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 5 -eq 0 ']'
++ '[' 5 -eq 1 ']'
++ '[' 5 -eq 2 ']'
++ '[' 5 -eq 3 ']'
++ '[' 5 -eq 4 ']'
++ '[' 5 -eq 5 ']'
++ _port=27018
++ '[' 5 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 6 -eq 0 ']'
++ '[' 6 -eq 1 ']'
++ '[' 6 -eq 2 ']'
++ '[' 6 -eq 3 ']'
++ '[' 6 -eq 4 ']'
++ '[' 6 -eq 5 ']'
++ '[' 6 -eq 6 ']'
++ _state=PRIMARY
++ let count++
++ mysql_cmd='replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "技术工程及基础数据平台","风控平台","jidong.shao","Honesty","10.1.1.178","27018","PRIMARY"'
++ db=MonCenter
++ mysql -umyadmin '-pNum@$%^C0ntal' -h10.1.1.209 MonCenter --default-character-set=utf8 -e 'replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "技术工程及基础数据平台","风控平台","jidong.shao","Honesty","10.1.1.178","27018","PRIMARY"'
++ '[' 0 -eq 0 ']'
++ echo inserted $'ok:\346\212\200\346\234\257\345\267\245\347\250\213\345\217\212\345\237\272\347\241\200\346\225\260\346\215\256\345\271\263\345\217\260' $'\351\243\216\346\216\247\345\271\263\345\217\260' jidong.shao Honesty 10.1.1.178 27018 PRIMARY
++ read record
++ _product_name=
++ _product_owner=
++ _set=
++ _ip=
++ _port=
++ _state=
++ count=0
++ for i in '$record'
++ '[' 0 -eq 0 ']'
++ _bg_name=$'\347\214\253\347\234\274\347\224\265\345\275\261'
++ '[' 0 -eq 1 ']'
++ '[' 0 -eq 2 ']'
++ '[' 0 -eq 3 ']'
++ '[' 0 -eq 4 ']'
++ '[' 0 -eq 5 ']'
++ '[' 0 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 1 -eq 0 ']'
++ '[' 1 -eq 1 ']'
++ _product_name=$'\347\224\265\345\275\261\344\270\216\346\274\224\345\207\272'
++ '[' 1 -eq 2 ']'
++ '[' 1 -eq 3 ']'
++ '[' 1 -eq 4 ']'
++ '[' 1 -eq 5 ']'
++ '[' 1 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 2 -eq 0 ']'
++ '[' 2 -eq 1 ']'
++ '[' 2 -eq 2 ']'
++ _product_owner=zhitian.zhang
++ '[' 2 -eq 3 ']'
++ '[' 2 -eq 4 ']'
++ '[' 2 -eq 5 ']'
++ '[' 2 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 3 -eq 0 ']'
++ '[' 3 -eq 1 ']'
++ '[' 3 -eq 2 ']'
++ '[' 3 -eq 3 ']'
++ _set=hippo
++ '[' 3 -eq 4 ']'
++ '[' 3 -eq 5 ']'
++ '[' 3 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 4 -eq 0 ']'
++ '[' 4 -eq 1 ']'
++ '[' 4 -eq 2 ']'
++ '[' 4 -eq 3 ']'
++ '[' 4 -eq 4 ']'
++ _ip=10.1.1.185
++ '[' 4 -eq 5 ']'
++ '[' 4 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 5 -eq 0 ']'
++ '[' 5 -eq 1 ']'
++ '[' 5 -eq 2 ']'
++ '[' 5 -eq 3 ']'
++ '[' 5 -eq 4 ']'
++ '[' 5 -eq 5 ']'
++ _port=27017
++ '[' 5 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 6 -eq 0 ']'
++ '[' 6 -eq 1 ']'
++ '[' 6 -eq 2 ']'
++ '[' 6 -eq 3 ']'
++ '[' 6 -eq 4 ']'
++ '[' 6 -eq 5 ']'
++ '[' 6 -eq 6 ']'
++ _state=PRIMARY
++ let count++
++ mysql_cmd='replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "猫眼电影","电影与演出","zhitian.zhang","hippo","10.1.1.185","27017","PRIMARY"'
++ db=MonCenter
++ mysql -umyadmin '-pNum@$%^C0ntal' -h10.1.1.209 MonCenter --default-character-set=utf8 -e 'replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "猫眼电影","电影与演出","zhitian.zhang","hippo","10.1.1.185","27017","PRIMARY"'
++ '[' 0 -eq 0 ']'
++ echo inserted $'ok:\347\214\253\347\234\274\347\224\265\345\275\261' $'\347\224\265\345\275\261\344\270\216\346\274\224\345\207\272' zhitian.zhang hippo 10.1.1.185 27017 PRIMARY
++ read record
++ _product_name=
++ _product_owner=
++ _set=
++ _ip=
++ _port=
++ _state=
++ count=0
++ for i in '$record'
++ '[' 0 -eq 0 ']'
++ _bg_name=$'\351\205\222\345\272\227\346\227\205\346\270\270\344\272\213\344\270\232\347\276\244'
++ '[' 0 -eq 1 ']'
++ '[' 0 -eq 2 ']'
++ '[' 0 -eq 3 ']'
++ '[' 0 -eq 4 ']'
++ '[' 0 -eq 5 ']'
++ '[' 0 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 1 -eq 0 ']'
++ '[' 1 -eq 1 ']'
++ _product_name=$'\344\275\217\345\256\277'
++ '[' 1 -eq 2 ']'
++ '[' 1 -eq 3 ']'
++ '[' 1 -eq 4 ']'
++ '[' 1 -eq 5 ']'
++ '[' 1 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 2 -eq 0 ']'
++ '[' 2 -eq 1 ']'
++ '[' 2 -eq 2 ']'
++ _product_owner=xiaolong.yu
++ '[' 2 -eq 3 ']'
++ '[' 2 -eq 4 ']'
++ '[' 2 -eq 5 ']'
++ '[' 2 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 3 -eq 0 ']'
++ '[' 3 -eq 1 ']'
++ '[' 3 -eq 2 ']'
++ '[' 3 -eq 3 ']'
++ _set=hippo
++ '[' 3 -eq 4 ']'
++ '[' 3 -eq 5 ']'
++ '[' 3 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 4 -eq 0 ']'
++ '[' 4 -eq 1 ']'
++ '[' 4 -eq 2 ']'
++ '[' 4 -eq 3 ']'
++ '[' 4 -eq 4 ']'
++ _ip=10.1.1.185
++ '[' 4 -eq 5 ']'
++ '[' 4 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 5 -eq 0 ']'
++ '[' 5 -eq 1 ']'
++ '[' 5 -eq 2 ']'
++ '[' 5 -eq 3 ']'
++ '[' 5 -eq 4 ']'
++ '[' 5 -eq 5 ']'
++ _port=27017
++ '[' 5 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 6 -eq 0 ']'
++ '[' 6 -eq 1 ']'
++ '[' 6 -eq 2 ']'
++ '[' 6 -eq 3 ']'
++ '[' 6 -eq 4 ']'
++ '[' 6 -eq 5 ']'
++ '[' 6 -eq 6 ']'
++ _state=PRIMARY
++ let count++
++ mysql_cmd='replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "酒店旅游事业群","住宿","xiaolong.yu","hippo","10.1.1.185","27017","PRIMARY"'
++ db=MonCenter
++ mysql -umyadmin '-pNum@$%^C0ntal' -h10.1.1.209 MonCenter --default-character-set=utf8 -e 'replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "酒店旅游事业群","住宿","xiaolong.yu","hippo","10.1.1.185","27017","PRIMARY"'
++ '[' 0 -eq 0 ']'
++ echo inserted $'ok:\351\205\222\345\272\227\346\227\205\346\270\270\344\272\213\344\270\232\347\276\244' $'\344\275\217\345\256\277' xiaolong.yu hippo 10.1.1.185 27017 PRIMARY
++ read record
++ _product_name=
++ _product_owner=
++ _set=
++ _ip=
++ _port=
++ _state=
++ count=0
++ for i in '$record'
++ '[' 0 -eq 0 ']'
++ _bg_name=$'\351\205\222\345\272\227\346\227\205\346\270\270\344\272\213\344\270\232\347\276\244'
++ '[' 0 -eq 1 ']'
++ '[' 0 -eq 2 ']'
++ '[' 0 -eq 3 ']'
++ '[' 0 -eq 4 ']'
++ '[' 0 -eq 5 ']'
++ '[' 0 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 1 -eq 0 ']'
++ '[' 1 -eq 1 ']'
++ _product_name=$'\346\227\205\346\270\270\351\227\250\347\245\250\347\273\204'
++ '[' 1 -eq 2 ']'
++ '[' 1 -eq 3 ']'
++ '[' 1 -eq 4 ']'
++ '[' 1 -eq 5 ']'
++ '[' 1 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 2 -eq 0 ']'
++ '[' 2 -eq 1 ']'
++ '[' 2 -eq 2 ']'
++ _product_owner=zenglvlin
++ '[' 2 -eq 3 ']'
++ '[' 2 -eq 4 ']'
++ '[' 2 -eq 5 ']'
++ '[' 2 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 3 -eq 0 ']'
++ '[' 3 -eq 1 ']'
++ '[' 3 -eq 2 ']'
++ '[' 3 -eq 3 ']'
++ _set=hippo
++ '[' 3 -eq 4 ']'
++ '[' 3 -eq 5 ']'
++ '[' 3 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 4 -eq 0 ']'
++ '[' 4 -eq 1 ']'
++ '[' 4 -eq 2 ']'
++ '[' 4 -eq 3 ']'
++ '[' 4 -eq 4 ']'
++ _ip=10.1.1.185
++ '[' 4 -eq 5 ']'
++ '[' 4 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 5 -eq 0 ']'
++ '[' 5 -eq 1 ']'
++ '[' 5 -eq 2 ']'
++ '[' 5 -eq 3 ']'
++ '[' 5 -eq 4 ']'
++ '[' 5 -eq 5 ']'
++ _port=27017
++ '[' 5 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 6 -eq 0 ']'
++ '[' 6 -eq 1 ']'
++ '[' 6 -eq 2 ']'
++ '[' 6 -eq 3 ']'
++ '[' 6 -eq 4 ']'
++ '[' 6 -eq 5 ']'
++ '[' 6 -eq 6 ']'
++ _state=PRIMARY
++ let count++
++ mysql_cmd='replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "酒店旅游事业群","旅游门票组","zenglvlin","hippo","10.1.1.185","27017","PRIMARY"'
++ db=MonCenter
++ mysql -umyadmin '-pNum@$%^C0ntal' -h10.1.1.209 MonCenter --default-character-set=utf8 -e 'replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "酒店旅游事业群","旅游门票组","zenglvlin","hippo","10.1.1.185","27017","PRIMARY"'
++ '[' 0 -eq 0 ']'
++ echo inserted $'ok:\351\205\222\345\272\227\346\227\205\346\270\270\344\272\213\344\270\232\347\276\244' $'\346\227\205\346\270\270\351\227\250\347\245\250\347\273\204' zenglvlin hippo 10.1.1.185 27017 PRIMARY
++ read record
++ _product_name=
++ _product_owner=
++ _set=
++ _ip=
++ _port=
++ _state=
++ count=0
++ for i in '$record'
++ '[' 0 -eq 0 ']'
++ _bg_name=$'\351\205\222\345\272\227\346\227\205\346\270\270\344\272\213\344\270\232\347\276\244'
++ '[' 0 -eq 1 ']'
++ '[' 0 -eq 2 ']'
++ '[' 0 -eq 3 ']'
++ '[' 0 -eq 4 ']'
++ '[' 0 -eq 5 ']'
++ '[' 0 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 1 -eq 0 ']'
++ '[' 1 -eq 1 ']'
++ _product_name=$'\346\265\267\345\244\226\347\253\231'
++ '[' 1 -eq 2 ']'
++ '[' 1 -eq 3 ']'
++ '[' 1 -eq 4 ']'
++ '[' 1 -eq 5 ']'
++ '[' 1 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 2 -eq 0 ']'
++ '[' 2 -eq 1 ']'
++ '[' 2 -eq 2 ']'
++ _product_owner=biao.gan
++ '[' 2 -eq 3 ']'
++ '[' 2 -eq 4 ']'
++ '[' 2 -eq 5 ']'
++ '[' 2 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 3 -eq 0 ']'
++ '[' 3 -eq 1 ']'
++ '[' 3 -eq 2 ']'
++ '[' 3 -eq 3 ']'
++ _set=hippo
++ '[' 3 -eq 4 ']'
++ '[' 3 -eq 5 ']'
++ '[' 3 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 4 -eq 0 ']'
++ '[' 4 -eq 1 ']'
++ '[' 4 -eq 2 ']'
++ '[' 4 -eq 3 ']'
++ '[' 4 -eq 4 ']'
++ _ip=10.1.1.185
++ '[' 4 -eq 5 ']'
++ '[' 4 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 5 -eq 0 ']'
++ '[' 5 -eq 1 ']'
++ '[' 5 -eq 2 ']'
++ '[' 5 -eq 3 ']'
++ '[' 5 -eq 4 ']'
++ '[' 5 -eq 5 ']'
++ _port=27017
++ '[' 5 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 6 -eq 0 ']'
++ '[' 6 -eq 1 ']'
++ '[' 6 -eq 2 ']'
++ '[' 6 -eq 3 ']'
++ '[' 6 -eq 4 ']'
++ '[' 6 -eq 5 ']'
++ '[' 6 -eq 6 ']'
++ _state=PRIMARY
++ let count++
++ mysql_cmd='replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "酒店旅游事业群","海外站","biao.gan","hippo","10.1.1.185","27017","PRIMARY"'
++ db=MonCenter
++ mysql -umyadmin '-pNum@$%^C0ntal' -h10.1.1.209 MonCenter --default-character-set=utf8 -e 'replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "酒店旅游事业群","海外站","biao.gan","hippo","10.1.1.185","27017","PRIMARY"'
++ '[' 0 -eq 0 ']'
++ echo inserted $'ok:\351\205\222\345\272\227\346\227\205\346\270\270\344\272\213\344\270\232\347\276\244' $'\346\265\267\345\244\226\347\253\231' biao.gan hippo 10.1.1.185 27017 PRIMARY
++ read record
++ _product_name=
++ _product_owner=
++ _set=
++ _ip=
++ _port=
++ _state=
++ count=0
++ for i in '$record'
++ '[' 0 -eq 0 ']'
++ _bg_name=$'\351\205\222\345\272\227\346\227\205\346\270\270\344\272\213\344\270\232\347\276\244'
++ '[' 0 -eq 1 ']'
++ '[' 0 -eq 2 ']'
++ '[' 0 -eq 3 ']'
++ '[' 0 -eq 4 ']'
++ '[' 0 -eq 5 ']'
++ '[' 0 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 1 -eq 0 ']'
++ '[' 1 -eq 1 ']'
++ _product_name=$'\351\205\222\346\231\257\347\240\224\345\217\221\347\273\204'
++ '[' 1 -eq 2 ']'
++ '[' 1 -eq 3 ']'
++ '[' 1 -eq 4 ']'
++ '[' 1 -eq 5 ']'
++ '[' 1 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 2 -eq 0 ']'
++ '[' 2 -eq 1 ']'
++ '[' 2 -eq 2 ']'
++ _product_owner=wangchao14
++ '[' 2 -eq 3 ']'
++ '[' 2 -eq 4 ']'
++ '[' 2 -eq 5 ']'
++ '[' 2 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 3 -eq 0 ']'
++ '[' 3 -eq 1 ']'
++ '[' 3 -eq 2 ']'
++ '[' 3 -eq 3 ']'
++ _set=hippo
++ '[' 3 -eq 4 ']'
++ '[' 3 -eq 5 ']'
++ '[' 3 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 4 -eq 0 ']'
++ '[' 4 -eq 1 ']'
++ '[' 4 -eq 2 ']'
++ '[' 4 -eq 3 ']'
++ '[' 4 -eq 4 ']'
++ _ip=10.1.1.185
++ '[' 4 -eq 5 ']'
++ '[' 4 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 5 -eq 0 ']'
++ '[' 5 -eq 1 ']'
++ '[' 5 -eq 2 ']'
++ '[' 5 -eq 3 ']'
++ '[' 5 -eq 4 ']'
++ '[' 5 -eq 5 ']'
++ _port=27017
++ '[' 5 -eq 6 ']'
++ let count++
++ for i in '$record'
++ '[' 6 -eq 0 ']'
++ '[' 6 -eq 1 ']'
++ '[' 6 -eq 2 ']'
++ '[' 6 -eq 3 ']'
++ '[' 6 -eq 4 ']'
++ '[' 6 -eq 5 ']'
++ '[' 6 -eq 6 ']'
++ _state=PRIMARY
++ let count++
++ mysql_cmd='replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "酒店旅游事业群","酒景研发组","wangchao14","hippo","10.1.1.185","27017","PRIMARY"'
++ db=MonCenter
++ mysql -umyadmin '-pNum@$%^C0ntal' -h10.1.1.209 MonCenter --default-character-set=utf8 -e 'replace  into DP_Mongo_detail(bg_name,product_name,product_owner,`set`,ip,port,state) select "酒店旅游事业群","酒景研发组","wangchao14","hippo","10.1.1.185","27017","PRIMARY"'
++ '[' 0 -eq 0 ']'
++ echo inserted $'ok:\351\205\222\345\272\227\346\227\205\346\270\270\344\272\213\344\270\232\347\276\244' $'\351\205\222\346\231\257\347\240\224\345\217\221\347\273\204' wangchao14 hippo 10.1.1.185 27017 PRIMARY
++ read record

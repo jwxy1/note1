@@ -1,0 +1,16 @@
+[
+    {
+      "ci_type": "product",
+      "product_owner": "wentao.xu",
+      "_type": 10,
+      "product_owner_email": "wentao.xu@dianping.com",
+      "ci_eng_name": null,
+      "unique": "product_name",
+      "organization_id": "3031",
+      "product_owner_mobile": "13636324695",
+      "product_op_duty": "qingzhu.qu",
+      "product_en_name": "ugc",
+      "_id": 145563,
+      "product_name": "UGC\u5e73\u53f0\u670d\u52a1"
+    }
+  ]
