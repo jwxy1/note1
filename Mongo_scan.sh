@@ -46,7 +46,6 @@ fi
 
 
 function restore(){
-cd $(dirname $0)
 sort -u ./*.tmp  | while read record;
 do
 
@@ -82,7 +81,7 @@ done;
 cd $(dirname $0)
 mysql_cmd="select t.set,t.ip,t.port,t.state from DP_Mng_MongoRepl as t where env=1 and state in ('PRIMARY','SECONDARY') "
 setlist=$(mysql -umyadmin -p'Num@$%^C0ntal' -h10.1.1.209 MonCenter -e"$mysql_cmd")
-keylist=("bg_name" "product_name" "product_owner") 
+keylist=("bg_name" "product_name" "product_owner")
 echo -e  "$setlist" | while read item;do
 #echo item:$item >> $$.tmp;
 count=0
@@ -105,7 +104,7 @@ count=0
 for i in $clientline;
 do
 let count++
-[ $count -eq 1 ] && clientIP=$i 
+[ $count -eq 1 ] && clientIP=$i
 [ $count -eq 2 ] && acessDB=$i
 done;
 
@@ -132,4 +131,6 @@ fi
 done;
 #end  return obj
 done
-restore
+tmpfilenums=$(ls -l  *.tmp1 2>/dev/null | wc -l)
+[ $tmpfilenums -ge 5 ] &&  restore
+[ $tmpfilenums -ge 10 ] && find ./ -maxdepth 1 -type f ! -newer $$.tmp -mmin +30  -name "*[0-9].tmp" -delete
