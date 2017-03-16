@@ -131,6 +131,6 @@ fi
 done;
 #end  return obj
 done
-tmpfilenums=$(ls -l  *.tmp1 2>/dev/null | wc -l)
+tmpfilenums=$(ls -l  *.tmp 2>/dev/null | wc -l)
 [ $tmpfilenums -ge 5 ] &&  restore
 [ $tmpfilenums -ge 10 ] && find ./ -maxdepth 1 -type f ! -newer $$.tmp -mmin +30  -name "*[0-9].tmp" -delete
