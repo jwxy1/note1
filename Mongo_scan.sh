@@ -117,7 +117,7 @@ do
 obj[$count]=$(pythonshell $clientIP $item)
 let count++
 done;
-[ $count -lt ${#keylist[*]} ] && count=${#keylist[*]}
+
 obj[$count]=$Set
 let count++
 obj[$count]=$serverIP
@@ -125,7 +125,8 @@ let count++
 obj[$count]=$serverPort
 let count++
 obj[$count]=$state
-echo ${obj[*]} >> $$.tmp
+
+[ ${#obj[*]} -gt 4 ] &&  echo ${obj[*]} >> $$.tmp
 
 fi
 done;
